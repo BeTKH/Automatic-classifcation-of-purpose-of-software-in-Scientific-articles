@@ -1,0 +1,19 @@
+@article{goble2014better,
+  title={Better software, better research},
+  author={Goble, Carole},
+  journal={IEEE Internet Computing},
+  volume={18},
+  number={5},
+  pages={4--8},
+  year={2014},
+  publisher={IEEE}
+}
+
+@inproceedings{hannay2009scientists,
+  title={How do scientists develop and use scientific software?},
+  author={Hannay, Jo Erskine and MacLeod, Carolyn and Singer, Janice and Langtangen, Hans Petter and Pfahl, Dietmar and Wilson, Greg},
+  booktitle={2009 ICSE Workshop on Software Engineering for Computational Science and Engineering},
+  pages={1--8},
+  year={2009},
+  organization={Ieee}
+}

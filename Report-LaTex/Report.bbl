@@ -1,0 +1,82 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Goble%
+}{%
+Goble%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+goble2014better}
+\APACinsertmetastar {%
+goble2014better}%
+\begin{APACrefauthors}%
+Goble, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Better software, better research} {Better software,
+  better research}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Internet Computing}{18}{5}{4--8}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hannay%
+\ \protect \BOthers {.}}{%
+Hannay%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+hannay2009scientists}
+\APACinsertmetastar {%
+hannay2009scientists}%
+\begin{APACrefauthors}%
+Hannay, J\BPBI E.%
+, MacLeod, C.%
+, Singer, J.%
+, Langtangen, H\BPBI P.%
+, Pfahl, D.%
+\BCBL {}\ \BBA {} Wilson, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {How do scientists develop and use scientific software?}
+  {How do scientists develop and use scientific software?}{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2009 ICSE Workshop on Software Engineering for
+  Computational Science and Engineering} {2009 icse workshop on software
+  engineering for computational science and engineering}\ (\BPGS\ 1--8).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Wikipedia contributors}%
+}{%
+{Wikipedia contributors}%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+enwiki:1056292826}
+\APACinsertmetastar {%
+enwiki:1056292826}%
+\begin{APACrefauthors}%
+{Wikipedia contributors}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {Software --- {Wikipedia}{,} The Free Encyclopedia.} {Software
+  --- {Wikipedia}{,} the free encyclopedia.}
+\newblock
+\APAChowpublished
+  {\url{https://en.wikipedia.org/w/index.php?title=Software&oldid=1056292826}}.
+\newblock
+\APACrefnote{[Online; accessed 28-November-2021]}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
