@@ -1,4 +1,4 @@
-# Automatic-classifcation-of-purpose-of-software-in-Scientific-articles
+# Automatic Classification of purpose of Software Usage Statements from Scientific Articles
 Master Thesis
 
 
