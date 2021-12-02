@@ -1,6 +1,5 @@
 \documentclass[12pt, a4paper]{article}
 
-
 % PACKAGES
 \usepackage{blindtext}
 \usepackage{enumitem}
@@ -9,9 +8,10 @@
 \usepackage{url}
 \usepackage{apacite}
 
+\author{author : Kobro Bekalue}
 
-\author{Kobro Bekalue}
-\title{Automatic classification of software usage purpose statements from scientific articles}
+%{Supervisors: Dr. Frank Krüger and David Schindler}
+\title{Automatic Classification of Software Usage Purpose Statements from Scientific Articles}
 
 
 
@@ -20,183 +20,40 @@
 %\pagenumbering{Roman}
 
 \maketitle
-
-
 \clearpage
+
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+\thispagestyle{empty}
+\setcounter{page}{1}
+\newpage
 
 % --------------------------------------------------------------------
 % SECTION - I - INTRODUCTION
 % --------------------------------------------------------------------
-\section{Introduction}
 
-\subsection{Recap}
-
-According to the researh conducted by \cite{}
-
-\begin{itemize}
-    \item Analysis of research papers can give a lot of insights about software resources and their dependency. 
-    \item In a scientific research different kinds of input resources are used. One of such input is a software. 
-    \item Used resources in a research are typically mentioned in a citation. Citation practices of formal articles in a research are matured and various citation styles exist. Even if principles  for formal citation of a software has already been put out, most scientists are not properly citing resources.  
-	\item Surprisingly, sometimes researchers do not mention the type of software they used entirely or mention it with a abbreviation ... not enough creadit is being given to research software developers .
-	\item As long as software is mentioned using formal methods, like RRID, it is possible to perform citation analysis using regular expressions which can be constructed to capture the pattern of citation.
-	\item hough regular expression based analysis can give basic insights about the software citation it has limitations because:
-			
-% sub-bullets------------------------------------------------------------------------
-			\begin{itemize}
-				\item Not so many authors use formal citation of software, like RRIDs
-				\item Even if scientists use formal citations, they may fail to properly follow the guidelines. For example, some authors tend to ignore the RRID-part and that creates an ambiguity by it self that it is not possible to know weather the author is actually making a software citation or it is completely something else. 
-				\item Rule based method fails to capture context information and ignores dependencies. It is not possible to be sure about the authors intention whether or not using a software citation. 
-
-			\end{itemize}
-% end sub-bullets------------------------------------------------------------------------
-
-	\item At the same time pattern based analysis, like using regX, is not suitable to extract information about software citation, for instance the particular use of a software, especially when a software mention statement lacks any form of formality where the information is concealed in a natural language description. 
-	\item Therefore it is required to automatically extract the purpose of software use in scientific literatures. This might help to answer questions like:
-		
-% sub-bullets------------------------------------------------------------------------
-		\begin{itemize}
-			\item What type of software is being frequently used for what purpose in a specific area of research? This also allows to find an answer further question like what is  the most common technique researchers follow when trying to solve a given research problem in a given domain )
-
-
-		\end{itemize}	
-% end sub-bullets------------------------------------------------------------------------
-	\item Previous attempts to automatically extract information using machine learning techniques, specifically supervised machine learning technique, about the software use purpose was constrained mainly because of lack of ground truth data. But this time, with the advent of SoMeSci, it is possible to do so. 	
-	
-\end{itemize}
-
-
-\subsection{Problem Satement}
-\subsection{Objectives of this project}
-This project has the following objectives:
-		
-		%\vspace{-5mm}   %make sapce on the top
-		\begin{itemize}[noitemsep,topsep=5pt]   % decrease the space between bullets
-	
-			\item List down the purpose of software usage .
-			\item To extend SoMeSci with annotation of purpose of software usage. 
-			\item To select feature for the training model
-			\item To select a classifier and train a model.
-			\item To evaluate and optimize results 
-
-		\end{itemize}	
-
-\clearpage
-
-
+\input{inc/sections/1.Introduction}
 
 % --------------------------------------------------------------------
-% SECTION - II - LIRITURE REVIEW
+% SECTION - II - LIRITURE REVIEW - THE ROLE OF SW IN RESEARH
 % --------------------------------------------------------------------
-
-\section{Literature Review }
-
-\subsection{The role of Software in Scientific research}
-%-----------------------------
-\subsubsection{Introduction}
-%-----------------------------
-Software is a collection of instructions that supervise a computer how to execute a given task [33]. The behavior of such instructions is specified by algorithms which are derived from scientific laws [36].  Implementation of algorithms is carried out using programming languages, the end result being a software [34][35]. 
-
-Modern research is unthinkable without a use of software and scientific investigations in various areas of science are becoming increasingly reliant on software tools [1, 3 , 4, 14]. 
-
-A software is very important asset for building a scientific knowledge and more discoveries in a research are made possible than ever by a use of software tools that automate processing of huge amount of data [9]. Typically a software is used in a research for control processes, simulation, modelling, data analysis, knowledge dissemination, etc. [2][25].
-
-Since software is not often considered as an academic output [24][25], it is usually not cited in research papers across several fields of research [25]. To counteract against this culture, a task force that advocates about the role of software in a research, known as Research software Alliance(\href{https://www.researchsoft.org/}{ ReSA}), has been established. The ReSa promotes the inclusion of software as a primary research out put, influences decision makers to value a research software and give credits to the developers [21]. In 2019, the task force has collected literatures, at \href{https://www.zotero.org/groups/2400609/resa/library}{Zetoro group libraray} , that evident significant roles of software in a research [22].  
-
-Scientific software is often complicated and requires specialized domain knowledge for its development [3]. Due to this, increasing number of scientists are developing a software as part of their research work or directly taking part in the development process of a research software [9, 15]. This fact is clearly reinforced by a  survey results  from 2008, 2014, and 2017  in the UK and USA. Participants of the survey were ….. around 2000 academic staff, postdocs, Tas… [6, 39, 40].  The results indicate that:
-
-\begin{itemize}[noitemsep,topsep=5pt, leftmargin=0.3in] % decrease the space between bullets
-	\item Almost half of scientists spend more time developing a software as part of their research work than five years ago.
-	\item 38\% of researchers spend at least 20\% of their time developing a software.
-	\item Over 90\% of scientists say software is important for their research \&
-	\item Nearly 70\% claim that their research directly depends on a use of a software.  
-
-\end{itemize}
-
-%-----------------------------
-\subsubsection{General roles of software in a research }
-%-----------------------------
-
-Software is playing various crucial roles in a research and making a shift in a research culture. For example, software tools are making most of research to be increasingly data driven i.e. insights from an in-depth analysis of large volume of data-sets form the basis of a research conclusion [1][16]. Some of the most general roles of a software in a research are:
-
-\begin{itemize}[noitemsep,topsep=5pt, leftmargin=0.5in] % decrease the space between bullets
-
-	\item Software helps to explore und understand a research problem [2].
-	\item Results from a scientific software is presented as an evidence to support a research result [15]. 
-	\item A software dictates the quality of a research outcome[2] [23]. Outcome of a research becomes unreliable or even useless if there is an error in the software [5]. For example, several scientists retracted their scientific publications up on a retrospective discovery of a bug in their software [3, 6, 8, 37]. A more palpable failure of a research ambition due to an error in the control-system software, for instance, is the failure of Ariane rocket in 1996 [17].  
-	\item A software also helps to document a research process and to validate results of a given research [16]. Executable cells in a Jupyter notebook is one real world example where a software can be used to validate a research result.
-	\item Software allows experiments to be made beyond constrains of the physical world. This is because experiments that run on a computer are not limited by processes that occur in nature but only by the laws imbedded in the computer code [36]. 
-
-\end{itemize}
-
-%-----------------------------
-\subsubsection{Domain Specific Examples of Software Role in  Research  }
-%-----------------------------
-A software is being extensively used for a research in various areas of science such as physics, chemistry, space science, life science and so on.
-
-The physics research facility, the Large Hydron Collider at CERN, for instance uses a software with more than 5 million lines of code which is used for processing of terabytes of data generated from experiments [4].
-In a nuclear research, a software is being developed increasingly to be used for experiments [19]. For example, testing a modification in a nuclear weapon can not be field tested, but instead a software that simulate the impact of modification is usually used [15]. This is because of regulations like nuclear test ban treaties and the potential disaster, to the environment and life, associated with nuclear weapons [20]. 
-
-In chemistry research, a software can be used to model and simulate chemical processes that are challenging, too complex or expensive to conduct in reality. Karplus and Levitt used computer simulations for their joint-research “the development of multi-scale models for complex chemical systems”  and won a Nobel prize in 2013 for their work [4, 18]. 
-In a climate and environmental studies, software is used to make predictions about climate changes. For example a historical temperature data can be integrated to make predictions about future temperature variations [4].
-
-In a space science, space probes heavily rely on software. In this case a software navigates space crafts to other planets, processes and transmits scientific data back to Earth fur more processing, helps researchers interpret results, etc[28].
-
-
-%-----------------------------
-\subsubsection{The Role of Software in Research Breakthroughs  }
-%-----------------------------
-A use of software also allowed to produces better scientific discoveries and several research breakthroughs has been made possible[1]. 
-
-One of the research breakthroughs is creation of the very first visual representation of a black hole using an open source software NumFOCUS. To observe a black hole that is 55 million light years away, it would have required to build a huge telescope of size of planet earth. But instead of building one giant telescope, hundreds of scientists spent decades of years creating a global network of telescopes, known as Event Horizon Telescope (EHT) [29], synchronized precisely using atomic clocks. The EHT gathered a huge amount of data for years. However there was a lot of noise in the collected data because :
-	\vspace{-1mm}   %make sapce on the top
-	\begin{itemize}[noitemsep,topsep=5pt, leftmargin=0.5in] % decrease the space between bullets
-		\item The EHT was a network of non-similar telescopes.
-		\item The radio signals were coming through attenuated due to atmospheric effect like water vapor, clouds, turbulence … etc.
-	\end{itemize}
-Therefore the scientists had to use various algorithms and data analysis pipelines. The resulting image from various data processing was compared to ensure the integrity of the result. This huge scientific breakthrough in a space research, can be attributed to mainly the use of powerful data processing software. 
-
-Other scientific breakthroughs that can be attributed to software use in a research include:
-
-	\vspace{-1mm}   %make sapce on the top
-	\begin{itemize}[noitemsep,topsep=5pt, leftmargin=0.5in] % decrease the space between bullets
-		\item The detection and visualization of gravitational waves for the first time, using a LIGO software [30][31]. 
-		\item Software accelerates drug discovery [32].
-	\end{itemize}
-
-
-\subsection{Literature Review on Software Usage Purpose in Research }
-\subsubsection{Introduction}
-Scientists use various kinds of software, during their research, for different purposes. Some times software is used for execution of some trivial tasks like word processing and in other cases they use a software to perform critical tasks that can ultimately determine their research end result. 
-
-\subsubsection{Software usage purposes in a research}
-In a modern research, where a research is increasingly relying on processing of huge amount of data, the most common purpose of software usage purpose is to perform data analysis. 
-
-Data analysis is a broad term which can refer to inspecting, cleaning, transforming, modelling data, etc. with a particular goal of discovering a meaningful information from the data which can be used to make conclusions or decisions [13] . 
-
-When it comes to the application of data analysis in actual research works, various kinds of data analysis techniques exit. Some of the data analysis techniques can be more general where as others are more domain specific. Some common examples of software usage purposes:
-\vspace{-1mm}   %make sapce on the top
-	\begin{itemize}[noitemsep,topsep=5pt, leftmargin=0.5in] % decrease the space between bullets
-		\item Data Analysis, Mathematical Analysis, Statistical Analysis, Numerical Analysis, Text Analysis
-		\item Domain specific Analysis e.g. Densitometric Analysis, Voxel-based Analysis
-		\item Data Processing , e.g. Image processing
-		\item Data Collection
-		\item Modelling
-		\item Simulation
-		\item Programming
-		
-	\end{itemize}
-
-\clearpage
+\input{inc/sections/2.Literature Review}
 
 % --------------------------------------------------------------------
-% SECTION - II
+% SECTION - III -  LIRITURE REVIEW - SOFTWARE USAGE PURPOSES IN RESEARCH
 % --------------------------------------------------------------------
-\section{na}
+\input{inc/sections/3.Software Usage Purposes in Research}
 
-some claim \cite{goble2014better} that according to \cite{hannay2009scientists} it was true and accoording to wiki \cite{enwiki:1056292826} it  was ... other scholars also have pointed out that ... \cite{wilson2014best}
+% --------------------------------------------------------------------
+% SECTION - IV -  CLASSIFICATION OF SOFTWARE USAGE PURPOSES
+% --------------------------------------------------------------------
+\input{inc/sections/4.Classification of Software Usage purposes}
 
-\clearpage
+% --------------------------------------------------------------------
+% SECTION  -  REFERENCES
+% --------------------------------------------------------------------
 \bibliographystyle{apacite}
 \bibliography{References} 
+
 
 \end{document}
