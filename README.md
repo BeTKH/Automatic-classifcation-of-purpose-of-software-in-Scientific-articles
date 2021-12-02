@@ -1,7 +1,6 @@
 # Automatic Classification of purpose of Software Usage Statements from Scientific Articles
 
-
-## Master Thesis
+### (Master Thesis)
 
 In a modern research, scientists use various kinds of software for various purposes to accomplish tasks ranging from very simple ones to complicated. Typically, scientists use software for purposes like Data Analysis, Modelling, Simulation and so on.  
 
