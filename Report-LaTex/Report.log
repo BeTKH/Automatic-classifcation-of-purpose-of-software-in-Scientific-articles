@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.15)  28 NOV 2021 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.15)  2 DEC 2021 15:54
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -295,54 +295,86 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 23.
  [1
 
-{C:/Users/Beck/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2
-
-] [3] [4
-
-] [5] [6] [7] [8
-
-]
-(Report.bbl
+{C:/Users/Beck/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (Report.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 77.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 77.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 77.
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write4
+\openout4 = `Report.toc'.
 
-Underfull \hbox (badness 2460) in paragraph at lines 67--81
-[]\OT1/cmr/m/n/12 Wikipedia con-trib-u-tors.  (2021).  \OT1/cmr/m/it/12 Soft-wa
-re --- Wikipedia, the free
- []
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 \newpage
+              [1
+
+] (inc/sections/1.Introduction.tex [2] [3])
+(inc/sections/2.Literature Review.tex [4
+
+] [5] [6])
+(inc/sections/3.Software Usage Purposes in Research.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2.
+
+[7
+
+]) (inc/sections/4.Classification of Software Usage purposes.tex
+
+LaTeX Warning: Citation `goble2014better' undefined on input line 4.
 
 
-Underfull \hbox (badness 6110) in paragraph at lines 67--81
-\OT1/cmr/m/it/12 en-cy-clo-pe-dia.  []$\OT1/cmtt/m/n/12 https :// en [] .wikipe
-dia [] .org / w / index [] .php [] ?title =
- []
+LaTeX Warning: Citation `hannay2009scientists' undefined on input line 4.
 
-) [9
 
-] (Report.aux)
+LaTeX Warning: Citation `enwiki:1056292826' undefined on input line 4.
+
+
+LaTeX Warning: Citation `wilson2014best' undefined on input line 4.
+
+[8
+
+])
+No file Report.bbl.
+(Report.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 60066322832F3FBAAFCE214E1EB44C7D;2957.
+(rerunfilecheck)             Checksum: 83926BBF6AFF18886DAFE8AA667EF5BC;2623.
  ) 
 Here is how much of TeX's memory you used:
- 9249 strings out of 478699
- 141899 string characters out of 2863449
- 457554 words of memory out of 3000000
- 27224 multiletter control sequences out of 15000+600000
- 409451 words of font info for 47 fonts, out of 8000000 for 9000
+ 9276 strings out of 478699
+ 143603 string characters out of 2863449
+ 457301 words of memory out of 3000000
+ 27230 multiletter control sequences out of 15000+600000
+ 408935 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,63p,769b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Beck\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
-200.pk><C:/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MikTex/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/MikTex/fonts/typ
-e1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Report.pdf (9 pages, 105239 bytes).
+ 60i,6n,63p,810b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.wilson2014best} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.enwiki:1056292826} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.hannay2009scientists} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.goble2014better} has been referenced but does 
+not exist, replaced by a fixed one
+
+ <C:\Users\Beck\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm120
+0.pk><C:/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MikTex/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmr17.
+pfb>
+Output written on Report.pdf (9 pages, 84100 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
+ 155 PDF objects out of 1000 (max. 8388607)
  28 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
