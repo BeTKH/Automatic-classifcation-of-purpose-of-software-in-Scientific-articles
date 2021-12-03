@@ -1,0 +1,17 @@
+SELECT 
+
+?Software_Category 
+?sc_parent 
+?Software_CategoryLabel 
+?sc_parentLabel (COUNT(DISTINCT ?software) AS ?num_software) 
+
+WHERE {
+  
+  ?Software_Category (wdt:P279*) wd:Q7397; wdt:P31 wd:Q17155032; wdt:P279 ?sc_parent.
+  
+  OPTIONAL { ?software wdt:P31 ?Software_Category. }
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+GROUP BY ?Software_Category ?Software_CategoryLabel ?sc_parent ?sc_parentLabel
