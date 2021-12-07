@@ -1,0 +1,563 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Andr{\'e}%
+}{%
+Andr{\'e}%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+andre2014nobel}
+\APACinsertmetastar {%
+andre2014nobel}%
+\begin{APACrefauthors}%
+Andr{\'e}, J\BHBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The nobel prize in chemistry 2013} {The nobel prize in
+  chemistry 2013}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chemistry International}{36}{2}{2--7}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Goble%
+}{%
+Goble%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+goble2014better}
+\APACinsertmetastar {%
+goble2014better}%
+\begin{APACrefauthors}%
+Goble, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Better software, better research} {Better software,
+  better research}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Internet Computing}{18}{5}{4--8}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hannay%
+\ \protect \BOthers {.}}{%
+Hannay%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+hannay2009scientists}
+\APACinsertmetastar {%
+hannay2009scientists}%
+\begin{APACrefauthors}%
+Hannay, J\BPBI E.%
+, MacLeod, C.%
+, Singer, J.%
+, Langtangen, H\BPBI P.%
+, Pfahl, D.%
+\BCBL {}\ \BBA {} Wilson, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {How do scientists develop and use scientific software?}
+  {How do scientists develop and use scientific software?}{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2009 ICSE Workshop on Software Engineering for
+  Computational Science and Engineering} {2009 icse workshop on software
+  engineering for computational science and engineering}\ (\BPGS\ 1--8).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hettrick%
+\ \protect \BOthers {.}}{%
+Hettrick%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+hettrick2014uk}
+\APACinsertmetastar {%
+hettrick2014uk}%
+\begin{APACrefauthors}%
+Hettrick, S.%
+, Antonioletti, M.%
+, Carr, L.%
+, Chue~Hong, N.%
+, Crouch, S.%
+, De~Roure, D.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Uk research software survey 2014} {Uk research software
+  survey 2014}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jay%
+, Haines%
+\BCBL {}\ \BBA {} Katz%
+}{%
+Jay%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+jay2020software}
+\APACinsertmetastar {%
+jay2020software}%
+\begin{APACrefauthors}%
+Jay, C.%
+, Haines, R.%
+\BCBL {}\ \BBA {} Katz, D\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Software must be recognised as an important output of
+  scholarly research} {Software must be recognised as an important output of
+  scholarly research}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:2011.07571}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jim{\'e}nez%
+\ \protect \BOthers {.}}{%
+Jim{\'e}nez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+jimenez2017four}
+\APACinsertmetastar {%
+jimenez2017four}%
+\begin{APACrefauthors}%
+Jim{\'e}nez, R\BPBI C.%
+, Kuzak, M.%
+, Alhamdoosh, M.%
+, Barker, M.%
+, Batut, B.%
+, Borg, M.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Four simple recommendations to encourage best practices
+  in research software} {Four simple recommendations to encourage best
+  practices in research software}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{F1000Research}{6}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kanewala%
+\ \BBA {} Bieman%
+}{%
+Kanewala%
+\ \BBA {} Bieman%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+kanewala2014testing}
+\APACinsertmetastar {%
+kanewala2014testing}%
+\begin{APACrefauthors}%
+Kanewala, U.%
+\BCBT {}\ \BBA {} Bieman, J\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Testing scientific software: A systematic literature
+  review} {Testing scientific software: A systematic literature review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Information and software
+  technology}{56}{10}{1219--1232}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Merali%
+}{%
+Merali%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+merali2010computational}
+\APACinsertmetastar {%
+merali2010computational}%
+\begin{APACrefauthors}%
+Merali, Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Computational science:... error.} {Computational
+  science:... error.}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{467}{7317}{775--777}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Miller%
+}{%
+Miller%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+miller2006scientist}
+\APACinsertmetastar {%
+miller2006scientist}%
+\begin{APACrefauthors}%
+Miller, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+\APACrefbtitle {A scientist's nightmare: software problem leads to five
+  retractions.} {A scientist's nightmare: software problem leads to five
+  retractions.}
+\newblock
+\APACaddressPublisher{}{American Association for the Advancement of Science}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nangia%
+, Katz%
+\BCBL {}\ \protect \BOthers {.}}{%
+Nangia%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+nangia2017track}
+\APACinsertmetastar {%
+nangia2017track}%
+\begin{APACrefauthors}%
+Nangia, U.%
+, Katz, D\BPBI S.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Track 1 paper: surveying the US National Postdoctoral
+  Association regarding software use and training in research} {Track 1 paper:
+  surveying the us national postdoctoral association regarding software use and
+  training in research}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Workshop on Sustainable Software for Science: Practice
+  and Experiences (WSSSPE 5.1).} {Workshop on sustainable software for science:
+  Practice and experiences (wssspe 5.1).}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pan%
+, Yan%
+\BCBL {}\ \BBA {} Hua%
+}{%
+Pan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+pan2016disciplinary}
+\APACinsertmetastar {%
+pan2016disciplinary}%
+\begin{APACrefauthors}%
+Pan, X.%
+, Yan, E.%
+\BCBL {}\ \BBA {} Hua, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Disciplinary differences of software use and impact in
+  scientific literature} {Disciplinary differences of software use and impact
+  in scientific literature}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Scientometrics}{109}{3}{1593--1610}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Soergel%
+}{%
+Soergel%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+soergel2014rampant}
+\APACinsertmetastar {%
+soergel2014rampant}%
+\begin{APACrefauthors}%
+Soergel, D\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rampant software errors may undermine scientific
+  results} {Rampant software errors may undermine scientific results}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{F1000Research}{3}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Storer%
+}{%
+Storer%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+storer2017bridging}
+\APACinsertmetastar {%
+storer2017bridging}%
+\begin{APACrefauthors}%
+Storer, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bridging the chasm: A survey of software engineering
+  practice in scientific programming} {Bridging the chasm: A survey of software
+  engineering practice in scientific programming}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{ACM Computing Surveys (CSUR)}{50}{4}{1--32}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Wikipedia contributors}%
+}{%
+{Wikipedia contributors}%
+}{%
+{\protect \APACyear {2021}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+enwiki:1055624679}
+\APACinsertmetastar {%
+enwiki:1055624679}%
+\begin{APACrefauthors}%
+{Wikipedia contributors}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {Algorithm --- {Wikipedia}{,} The Free Encyclopedia.} {Algorithm
+  --- {Wikipedia}{,} the free encyclopedia.}
+\newblock
+\begin{APACrefURL}
+  \url{https://en.wikipedia.org/w/index.php?title=Algorithm&oldid=1055624679}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{[Online; accessed 7-December-2021]}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Wikipedia contributors}%
+}{%
+{Wikipedia contributors}%
+}{%
+{\protect \APACyear {2021}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+enwiki:1054482061}
+\APACinsertmetastar {%
+enwiki:1054482061}%
+\begin{APACrefauthors}%
+{Wikipedia contributors}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021{\protect \BCnt {2}}}{}{}.
+\newblock
+\APACrefbtitle {Ariane 5 --- {Wikipedia}{,} The Free Encyclopedia.} {Ariane 5
+  --- {Wikipedia}{,} the free encyclopedia.}
+\newblock
+\begin{APACrefURL}
+  \url{https://en.wikipedia.org/w/index.php?title=Ariane_5&oldid=1054482061}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{[Online; accessed 7-December-2021]}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Wikipedia contributors}%
+}{%
+{Wikipedia contributors}%
+}{%
+{\protect \APACyear {2021}}%
+{\protect \APACexlab {{\protect \BCnt {3}}}}}]{%
+enwiki:1055665216}
+\APACinsertmetastar {%
+enwiki:1055665216}%
+\begin{APACrefauthors}%
+{Wikipedia contributors}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021{\protect \BCnt {3}}}{}{}.
+\newblock
+\APACrefbtitle {Programming language --- {Wikipedia}{,} The Free Encyclopedia.}
+  {Programming language --- {Wikipedia}{,} the free encyclopedia.}
+\newblock
+\begin{APACrefURL}
+  \url{https://en.wikipedia.org/w/index.php?title=Programming_language&oldid=1055665216}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{[Online; accessed 7-December-2021]}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Wikipedia contributors}%
+}{%
+{Wikipedia contributors}%
+}{%
+{\protect \APACyear {2021}}%
+{\protect \APACexlab {{\protect \BCnt {4}}}}}]{%
+enwiki:1056292826}
+\APACinsertmetastar {%
+enwiki:1056292826}%
+\begin{APACrefauthors}%
+{Wikipedia contributors}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021{\protect \BCnt {4}}}{}{}.
+\newblock
+\APACrefbtitle {Software --- {Wikipedia}{,} The Free Encyclopedia.} {Software
+  --- {Wikipedia}{,} the free encyclopedia.}
+\newblock
+\begin{APACrefURL}
+  \url{https://en.wikipedia.org/w/index.php?title=Software&oldid=1056292826}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{[Online; accessed 7-December-2021]}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wilson%
+\ \protect \BOthers {.}}{%
+Wilson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+wilson2014best}
+\APACinsertmetastar {%
+wilson2014best}%
+\begin{APACrefauthors}%
+Wilson, G.%
+, Aruliah, D\BPBI A.%
+, Brown, C\BPBI T.%
+, Hong, N\BPBI P\BPBI C.%
+, Davis, M.%
+, Guy, R\BPBI T.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Best practices for scientific computing} {Best practices
+  for scientific computing}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{PLoS biology}{12}{1}{e1001745}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wolfram%
+}{%
+Wolfram%
+}{%
+{\protect \APACyear {1984}}%
+}]{%
+wolfram1984computer}
+\APACinsertmetastar {%
+wolfram1984computer}%
+\begin{APACrefauthors}%
+Wolfram, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Computer software in science and mathematics} {Computer
+  software in science and mathematics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Scientific American}{251}{3}{188--203}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yan%
+\ \BBA {} Yatabe%
+}{%
+Yan%
+\ \BBA {} Yatabe%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+yan2017case}
+\APACinsertmetastar {%
+yan2017case}%
+\begin{APACrefauthors}%
+Yan, H.%
+\BCBT {}\ \BBA {} Yatabe, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Case studies of nuclear research software development}
+  {Case studies of nuclear research software development}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{CNL Nuclear Review}{8}{1}{35--51}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yang%
+, Rousseau%
+, Wang%
+\BCBL {}\ \BBA {} Huang%
+}{%
+Yang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+yang2018important}
+\APACinsertmetastar {%
+yang2018important}%
+\begin{APACrefauthors}%
+Yang, B.%
+, Rousseau, R.%
+, Wang, X.%
+\BCBL {}\ \BBA {} Huang, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {How important is scientific software in bioinformatics
+  research? A comparative study between international and Chinese research
+  communities} {How important is scientific software in bioinformatics
+  research? a comparative study between international and chinese research
+  communities}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the Association for Information Science and
+  Technology}{69}{9}{1122--1133}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

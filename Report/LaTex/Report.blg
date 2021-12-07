@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Report.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apacite.bst
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: 3.Back_matter/References.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in hettrick2014uk
+Warning--`others' not consistent with 6th ed. of the APA Manual
+You've used 21 entries,
+            6951 wiz_defined-function locations,
+            1393 strings with 14570 characters,
+and the built_in function-call counts, 39083 in all, are:
+= -- 4817
+> -- 332
+< -- 1839
++ -- 1839
+- -- 61
+* -- 2484
+:= -- 7021
+add.period$ -- 85
+call.type$ -- 21
+change.case$ -- 391
+chr.to.int$ -- 0
+cite$ -- 43
+duplicate$ -- 1051
+empty$ -- 1590
+format.name$ -- 567
+if$ -- 7483
+int.to.chr$ -- 0
+int.to.str$ -- 71
+missing$ -- 0
+newline$ -- 518
+num.names$ -- 168
+pop$ -- 850
+preamble$ -- 1
+purify$ -- 84
+quote$ -- 0
+skip$ -- 2482
+stack$ -- 0
+substring$ -- 1986
+swap$ -- 611
+text.length$ -- 54
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1808
+warning$ -- 2
+while$ -- 194
+width$ -- 0
+write$ -- 629
+(There were 2 warnings)
