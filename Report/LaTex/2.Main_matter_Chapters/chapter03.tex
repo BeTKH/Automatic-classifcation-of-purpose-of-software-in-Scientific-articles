@@ -1,23 +1,200 @@
-\section{Literature Review on Software Usage Purpose in Research }
-\subsubsection{Introduction}
+\chapter{Literature Review on Software Usage Purpose in Research }
+\label{ch:chapter03}
+ 
+
+%
+% Section: intro
+%
+\section{Introduction}
+\label{sec:chapter03:intro}
 Scientists use various kinds of software, during their research, for different purposes. Some times software is used for execution of some trivial tasks like word processing and in other cases they use a software to perform critical tasks that can ultimately determine their research end result. 
 
-\subsubsection{Software usage purposes in a research}
-In a modern research, where a research is increasingly relying on processing of huge amount of data, the most common purpose of software usage purpose is to perform data analysis. 
 
-Data analysis is a broad term which can refer to inspecting, cleaning, transforming, modelling data, etc. with a particular goal of discovering a meaningful information from the data which can be used to make conclusions or decisions [13] . 
+Numbered list 
 
-When it comes to the application of data analysis in actual research works, various kinds of data analysis techniques exit. Some of the data analysis techniques can be more general where as others are more domain specific. Some common examples of software usage purposes:
-\vspace{-1mm}   %make sapce on the top
-	\begin{itemize}[noitemsep,topsep=5pt, leftmargin=0.5in] % decrease the space between bullets
-		\item Data Analysis, Mathematical Analysis, Statistical Analysis, Numerical Analysis, Text Analysis
-		\item Domain specific Analysis e.g. Densitometric Analysis, Voxel-based Analysis
-		\item Data Processing , e.g. Image processing
-		\item Data Collection
-		\item Modelling
-		\item Simulation
-		\item Programming
-		
-	\end{itemize}
+\begin{enumerate}
+ \item Enumeration with small numbers
+ \item Nulla dapibus, ante ac sagittis molestie, neque nulla venenatis turpis, non scelerisque lorem sapien non turpis. Sed dolor magna, vestibulum imperdiet condimentum vel, imperdiet ac mi. Cras in orci egestas purus rhoncus congue. Cras cursus leo nec turpis laoreet non malesuada est pretium.
+ \item Nunc ut tortor massa. Fusce ullamcorper mauris eget tellus egestas faucibus. Ut nec nunc quis lectus iaculis ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+\end{enumerate}
 
-\clearpage
+Enumerate alpahbet
+
+\begin{aenumerate}
+ \item Enumeration with small caps (alpha)
+ \item Second item ed ac risus dolor, ac molestie tellus. Fusce nulla lacus, viverra vel tempus et, viverra eget augue. Nunc id dui sed velit feugiat tristique. Integer at velit justo, eget ornare nulla.
+
+\end{aenumerate}
+
+Cite author and its paper as  Asia \citeauthor{bentley:1999} \citep{bentley:1999} 
+
+Description
+\begin{description}
+  \item[Description-Label Test:] Illo secundo continentes sia il, sia russo distinguer se. Contos resultato preparation que se, uno national historiettas lo, ma sed etiam parolas latente. Ma unic quales sia. Pan in patre altere summario, le pro latino resultato.
+ 
+\end{description}
+
+%
+% Section: Pictures
+%
+\section{Pictures}
+\label{sec:chapter03:Pictures}
+Insert pictures like this ...
+
+\subsection{Simple picture}
+\label{sec:chapter03:grafiken:simple}
+
+%% inserting a picture
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.5\textwidth]{4.graphics/figures/setup}
+ \caption{Dies ist eine einfache Grafik}
+ \label{fig:chapter03:setup}
+\end{figure}
+
+
+
+\subsection{Inserting a picture with sub-parts}
+\label{sec:chapter03:grafiken:subfloat}
+
+Insert a collection of pictures as shown here
+
+\begin{figure}[bth]
+  \myfloatalign
+  \subfloat[Asia personas duo.]{
+     \label{fig:chapter03:subfloat:grafik1}
+     \includegraphics[width=.45\linewidth]{4.graphics/figures/qq-plot_gaus_vs_160}
+   } \quad
+   \subfloat[Pan ma signo.] {
+     \label{fig:chapter03:subfloat:grafik2}
+     \includegraphics[width=.45\linewidth]{4.graphics/figures/pdf_gaus_vs_uni_vs_10_40_160}
+   } \\
+   \subfloat[Methodicamente o uno.]{
+     \label{fig:chapter03:subfloat:grafik3}
+     \includegraphics[width=.45\linewidth]{4.graphics/figures/pdf_gaus_vs_uni_vs_10_40_160}
+   } \quad
+   \subfloat[Titulo debitas.]{
+     \label{fig:chapter03:subfloat:grafik4}
+     \includegraphics[width=.45\linewidth]{4.graphics/figures/qq-plot_gaus_vs_160}
+   }
+   \caption[Subfloat - Figure]{Mit Subfloat lassen sich mehrere Grafiken neben- und untereinander darstellen. Jeder Figure kann dabei mit einem eigenen Text versehen werden.}
+   \label{fig:chapter03:subfloat}
+\end{figure}
+
+
+\subsection{Two pictures side by side}
+\label{sec:chapter03:grafiken:minipage}
+Insert two pics like this ...
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{5 cm}
+    \includegraphics[width=\linewidth]{4.graphics/figures/qq-plot_gaus_vs_160} 
+    \caption{Minipage-Grafik Nummero uno}
+    \label{fig:chapter03:minipage:grafik1}
+  \end{minipage}
+  \begin{minipage}[b]{5 cm}
+    \includegraphics[width=\linewidth]{4.graphics/figures/pdf_gaus_vs_uni_vs_10_40_160}  
+    \caption{Minipage-Grafik Nummer zwei}
+    \label{fig:chapter03:minipage:grafik2}
+  \end{minipage}
+\end{figure}
+
+
+
+%
+% Section: Tabellen 
+%
+\section{Tables}
+\label{sec:chapter03:tables}
+Sed lobortis vestibulum euismod. Vivamus vestibulum gravida nisi vitae condimentum. Nullam 
+
+%
+% Section: Listings 
+%
+\section{Listings}
+\label{sec:chapter03:listings}
+Aliquam ut pretium lectus. Curabitur in eros et sapien aliquet luctus ut sit amet eros. Proin et libero non mi venenatis aliquet at sed lorem. 
+
+
+%
+% Section: Equations
+%
+\section{Equations}
+\label{sec:chapter03:equations}
+Pellentesque sed quam quis dui vulputate convallis ut ac diam. In hac habitasse platea dictumst. 
+%
+\begin{equation}
+ U = R * I
+\end{equation}
+
+ Aenean quis commodo libero. Nulla quis semper dolor.
+%
+\begin{equation}
+ I = \frac{U}{R} 
+\end{equation}
+
+In the following we use probability theory to derive closed-form expressions for the fairness that is achieved among $M$ contending stations. We tag station $M$ and denote $K_i$ the inter-transmissions of station $i = 1 \dots M-1$ and let $K = \sum_{i=1}^{M-1} K_i$. The conditional probability $P[K\!=\!k|l]$ can be defined for $M \ge 2$ as
+%
+\begin{equation}
+\mathsf{P}[K\!=\!k|l] = \mathsf{P} \Biggl[\sum_{i=1}^{M-1} K_i = k \Big| l \Biggr]
+\label{eq:chapter03:exactpmf}
+\end{equation}
+%
+where the random variables $K_i$ are the integers that satisfy
+%
+\begin{equation*}
+\sum_{j=1}^{K_i} b_i(j) \le \sum_{j=1}^{l} b_M(j) \;\;\; \textmd{and} \;\;\; \sum_{j=1}^{K_i+1} b_i(j) > \sum_{j=1}^{l} b_M(j) .
+\end{equation*}
+
+
+%
+% Section: Theorem and Proof
+%
+\section{Theorem and Proof}
+\label{sec:chapter03:theorem}
+We use the central limit theorem to derive the long-term fairness. In the sequel, we denote normal random variables $N(\mu,\sigma^2)$ where $\mu$ is the mean and $\sigma^2$ the variance.
+%
+\begin{Theorem}[Gaussian approximation]
+\label{th:chapter03:twostationsgaussian}
+%
+Let the $b_i(j)$ be i.i.d. random variables with mean $\mu$ and variance $\sigma^2$ and let $M=2$. For $k,l \gg 1$ (\ref{eq:chapter03:exactpmf}) is approximately Gaussian where
+%
+\begin{equation*}
+\mathsf{P}[K \!\le\! k|l] \approx \mathsf{P}\biggl[ N(0,1) \le \frac{\mu\,(k-l)}{\sigma\,\sqrt{k+l}} \biggr] .
+\end{equation*}
+%
+\end{Theorem}
+%
+\begin{proof}
+%
+For $M=2$ we have from (\ref{eq:chapter03:exactpmf}) that
+%
+\begin{equation*}
+\mathsf{P}[K \!<\! k|l] = \mathsf{P} \Biggl[\, \sum_{j=1}^k b_1(j) > \sum_{j=1}^l b_2(j) \Biggr]
+\end{equation*}
+%
+and after expansion and some normalization this equals
+%
+\begin{equation*}
+= \mathsf{P}\Biggl[ \frac{\sum_{j=1}^{l}b_2(j) - l\mu}{\sigma\sqrt{l}} - \frac{\sum_{j=1}^{k}b_1(j) - k\mu}{\sigma\sqrt{l}} < \frac{\mu(k-l)}{\sigma\sqrt{l}} \Biggr].
+\end{equation*}
+%
+Using the central limit theorem it follows that
+%
+\begin{equation*}
+\mathsf{P}[K \!<\! k|l] \approx \mathsf{P} \biggl[ N(0,1) - N \biggl(0,\frac{k}{l}\biggr) < \frac{\mu(k-l)}{\sigma\sqrt{l}} \biggr] .
+\end{equation*}
+%
+Since the normal distribution with zero mean is symmetric we can replace the subtraction of $N(0,k/l)$ by addition. Furthermore, the sum of two normal random variables $N(\mu_1, \sigma_1^2)$ and $N(\mu_2, \sigma_2^2)$ is normal with $N(\mu_1+\mu_2, \sigma_1^2+ \sigma_2^2)$ such that
+%
+\begin{equation*}
+\mathsf{P}[K \!<\! k|l] \approx \mathsf{P} \biggl[ N\biggl(0,\frac{k+l}{l}\biggr) < \frac{\mu(k-l)}{\sigma\sqrt{l}} \biggr] .
+\end{equation*}
+%
+Finally, we use that if $X$ is $N(a\mu,a^2\sigma^2)$ then $Y = X/a$ is $N(\mu,\sigma^2)$ with $a^2 = (k+l)/l$ to standardize the result.
+%
+\end{proof}
+
+Th. \ref{th:chapter03:twostationsgaussian} assumes i.i.d. random countdown values. It does, however, not make any assumption about their distribution.
