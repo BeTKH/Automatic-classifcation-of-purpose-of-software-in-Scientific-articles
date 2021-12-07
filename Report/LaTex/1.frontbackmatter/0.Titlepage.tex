@@ -1,0 +1,85 @@
+%*******************************************************
+% Titlepage
+%*******************************************************
+%%%
+%%% title page (german)
+%%%
+\thispagestyle{empty}
+\pdfbookmark[0]{Titelblatt}{title}
+\begin{titlepage}
+
+  % If printed on two sides, center the title page
+  \condTWOSIDE{\changetext{}{19mm}{}{19mm}{}}
+  
+% ----------------------------------------------------------------------------------
+% University Logo -- Dimension and Location
+% ----------------------------------------------------------------------------------
+  \vspace{1cm}
+  \begin{center}
+    \includegraphics[width=6.5cm]{4.graphics/logo/uni_rostock_logo} \\ 
+  \end{center}
+% ----------------------------------------------------------------------------------
+
+
+
+% ----------------------------------------------------------------------------------
+% University Name  and Faculty name Section 
+% ----------------------------------------------------------------------------------
+  \begin{center}
+    \vspace{0.07cm}
+    
+    % font for the name of the university
+    \huge \textbf{\myUni}\\
+    
+    % gap between the faculty and the university name
+    \vspace{0.4cm}
+    
+    % font for the faculty
+    \LARGE \myFaculty
+  \end{center}
+% ----------------------------------------------------------------------------------
+  \vfill
+  \vfill
+% ----------------------------------------------------------------------------------
+% THESIS TITLE
+% ----------------------------------------------------------------------------------
+  \begin{center}
+    \LARGE \textbf{\myTitle}
+   \vspace{0.3cm}
+  \end{center} 
+
+
+
+% ----------------------------------------------------------------------------------
+% THESIS SUBMITTED FOR -- PARTIAL FULFILLEMNT OF MASTERS DEGREE
+% ----------------------------------------------------------------------------------
+  \begin{center}
+    \Large Thesis for : \\
+    \vspace{0.3cm}
+    \Large \myDegree
+  \end{center}
+% ----------------------------------------------------------------------------------
+
+  \vfill
+  \begin{center}
+    \normalsize Author:\\
+    \vspace{0.3cm}
+    \Large \textbf{\myName}\\
+    \vspace{0.3cm}
+    \normalsize Matriculation Number: \myId
+  \end{center}
+
+  \vfill
+  \vfill
+
+  \begin{center}
+    \begin{tabular}{lll}
+      Supervisors    & : & \myProf \\
+      Examiner & : & \myOtherProf
+    \end{tabular}
+  \end{center} 
+
+  % If printed on two sides, center the title page
+  \condTWOSIDE{\changetext{}{-19mm}{}{-19mm}{}}
+
+\end{titlepage}
