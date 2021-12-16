@@ -1,4 +1,4 @@
-\chapter{The role of Software in Scientific research}
+\chapter{The role of Software in Scientific investigation}
 \label{ch:Roles}
 
 %
@@ -8,7 +8,6 @@
 \section{Introduction}
 %-----------------------------
 \label{sec:background:intro}
-Software is a collection of instructions that supervise a computer how to execute a given task \citep{enwiki:1056292826}. The behavior of such instructions is specified by algorithms which are derived from scientific laws \citep{wolfram1984computer}.  Implementation of algorithms is carried out using programming languages, the end result being a software \citep{enwiki:1055624679, enwiki:1055665216}. 
 
 Modern research is unthinkable without a use of software and scientific investigations in various areas of science are becoming increasingly reliant on software tools \citep{goble2014better, wilson2014best, storer2017bridging}.
 
@@ -16,21 +15,29 @@ A software is very important asset for building a scientific knowledge and more 
 
 Since software is not often considered as an academic output \citep{yang2018important, pan2016disciplinary}, it is usually not cited in research papers across several fields of research  \cite{pan2016disciplinary}. To counteract against this culture, a task force that advocates about the role of software in a research, known as \ac{ReSA}, has been established. The \ac{ReSA} promotes the inclusion of software as a primary research output, influences decision makers to value a research software and give credits to the developers\footnote{researchsoft.org/about-resa/}. In 2019, the task force has collected literatures, at \href{https://www.zotero.org/groups/2400609/resa/library}{Zetoro group libraray} , that evident significant roles of software in a research\footnote{doi.org/10.5281/zenodo.3884311}.  
 
+Scientific software is often complicated and requires specialized domain knowledge for its development \citep{wilson2014best}. Due to this, increasing number of scientists are developing a software as part of their research work or directly taking part in the development process of a research software \citep{jimenez2017four, kanewala2014testing}. This fact is clearly reinforced by a  survey results  from 2008 and 2017  in the \ac{UK} and \ac{USA} respectively. Participants of the survey, in UK, were around 2000 researchers working in various areas of science in roles ranging from student to senior academic staff whereas participants of the survey, in \ac{USA}, were members of the US National Postdoctoral Association \citep{merali2010computational, hettrick2014uk, nangia2017track}.  
 
-
-Scientific software is often complicated and requires specialized domain knowledge for its development \citep{wilson2014best}. Due to this, increasing number of scientists are developing a software as part of their research work or directly taking part in the development process of a research software \citep{jimenez2017four, kanewala2014testing}. This fact is clearly reinforced by a  survey results  from 2008, 2014, and 2017  in the \ac{UK} and \ac{USA}. Participants of the survey were ….. around 2000 academic staff, postdocs, Tas… \citep{merali2010computational, hettrick2014uk, nangia2017track}.  The results indicate that:
-
-
+The results from of \ac{UK} survey indicate that \citep{merali2010computational, nangia2017track}:
 \begin{itemize}%[noitemsep,topsep=5pt, leftmargin=0.3in] % decrease the space between bullets
-	\item Almost half of scientists spend more time developing a software as part of their research work than five years ago.
 	\item 38\% of researchers spend at least 20\% of their time developing a software.
+	\item Almost half of scientists spend more time creating software as part of their research work than five years ago .
+	\item Over 50\% of survey respondents reported that they develop their own software. 
 	\item Over 90\% of scientists say software is important for their research \&
-	\item Nearly 70\% claim that their research directly depends on a use of a software.  
+	\item Nearly 70\% claim that their research-work directly depends on use of a software.  
+	
 
 \end{itemize}
 
+The results from of \ac{USA} survey indicate that\citep{nangia2017track}:
+\begin{itemize}%[noitemsep,topsep=5pt, leftmargin=0.3in] % decrease the space between bullets
+	\item over 90\% of scientists use software 
+	\item 63\% of respondents state that their research is impossible with out the use of software.
+	\item 31\% of scientists say that they could do their work without using a software but more effort would require.
+	\item Only 6\% of survey respondents say that there is would be no significant difference in their task if they do not have to use software. 
+	
+\end{itemize}
 
-
+Overall, results from the two surveys almost agree with each other and clearly indicate the role software tools play in a research. The next section presents details for the general role of software tools, their domain specific use cases and, finally, some examples of research breakthroughs which were possible because of the use of software. 
 
 %-----------------------------
 \section{General roles}
@@ -56,7 +63,7 @@ Software is playing various crucial roles in a research and making a shift in a 
 A software is being extensively used for a research in various areas of science such as physics, chemistry, space science, life science and so on.
 
 The physics research facility, the \ac{LHC}\ at \ac{CERN}, for instance uses a software with more than 5 million lines of code which is used for processing of terabytes of data generated from experiments \citep{storer2017bridging}.
-In a nuclear research, a software is being developed increasingly to be used for experiments \citep{yan2017case}. For example, testing a modification in a nuclear weapon can not be field tested, but instead a software that simulate the impact of modification is usually used \citep{kanewala2014testing}. This is because of regulations like nuclear test ban treaties and the potential disaster, to the environment and life, associated with nuclear weapons \citep{enwiki:1053274189}. 
+In a nuclear research, a software is being developed increasingly to be used for experiments \citep{yan2017case}. For example, testing a modification in a nuclear weapon can not be field tested, but instead a software that simulate the impact of modification is usually used \citep{kanewala2014testing}. Simulations are preferred over field testing because of regulations like nuclear test ban treaties and the potential disaster, to the environment and life, associated with nuclear weapons \citep{enwiki:1053274189}. 
 
 In chemistry research, a software can be used to model and simulate chemical processes that are challenging, too complex or expensive to conduct in reality. Karplus and Levitt used computer simulations for their joint-research “the development of multi-scale models for complex chemical systems”  and won a Nobel prize in 2013 for their work \citep{storer2017bridging, andre2014nobel}. 
 
@@ -75,7 +82,9 @@ Software plays an important role in power system planning and operation. One of 
 \section{The Role in Research Breakthroughs  }
 %-----------------------------
 \label{sec:background:second_section}
-A use of software also allowed to produce better scientific discoveries and several research breakthroughs has been made possible\citep{goble2014better}. 
+A use of software also allowed to produce better scientific discoveries and several research breakthroughs has been made possible\citep{goble2014better}. In this section, some examples of research breakthroughs are presented.
+
+\subsection{Research Breakthrough - Visual Representation of a black hole  }
 
 One of the research breakthroughs is creation of the very first visual representation of a black hole using an open source software NumFOCUS\footnote{numfocus.org}. To observe a black hole that is 55 million light years away, it would have required to build a huge telescope of size of planet earth. But instead of building one giant telescope, hundreds of scientists spent decades of years creating a global network of telescopes, known as \ac{EHT} \citep{enwiki:1052167868}, synchronized precisely using atomic clocks. The \ac{EHT} gathered a huge amount of data for years. However there was a lot of noise in the collected data because :
 
@@ -87,12 +96,11 @@ One of the research breakthroughs is creation of the very first visual represent
 	\end{itemize}
 Therefore the scientists had to use various algorithms and data analysis pipelines. The resulting image from various data processing was compared to ensure the integrity of the result. This huge scientific breakthrough in a space research, can be attributed to mainly the use of powerful data processing software. 
 
-Other scientific breakthroughs that can be attributed to software use in a research include:
+\subsection{Research Breakthrough - Visualization of gravitational waves }
+The detection and visualization of gravitational waves for the first time, using a \ac{LIGO} software \citep{enwiki:1047100294, mukherji2017report}. 
 
-	\vspace{-1mm}   %make sapce on the top
-	\begin{itemize}%[noitemsep,topsep=5pt, leftmargin=0.5in] % decrease the space between bullets
-		\item The detection and visualization of gravitational waves for the first time, using a \ac{LIGO} software \citep{enwiki:1047100294, mukherji2017report}. 
-		\item Software accelerates drug discovery\citep{bhati2021pandemic}.
-	\end{itemize}
+\subsection{Research Breakthrough - accelerated drug discovery }
+Software accelerates drug discovery\citep{bhati2021pandemic}.
+
 
 
