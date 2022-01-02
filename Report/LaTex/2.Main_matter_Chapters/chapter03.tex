@@ -16,7 +16,7 @@ To enumerate possible software purposes, mainly two things have been done in thi
 This section presents how various software usage purposes has been identified, enumerated and consolidated into a more general groups for annotation of the datasets which will be used for fitting a model that will automatically identify purpose of a software use. 
 
 %-----------------------------
-\section{Software purposes in the literature }
+\section{Software purposes in the literature}
 %-----------------------------
 
 In a research, scientists follow scientific method to discover knowledge. Typically, scientists begin with a question and attempt to answer questions through a research and propose hypothetical answers for their questions. Then, they test the proposed hypothesis by conducting various experiments. Although all scientists do not follow the exact same step, the over all idea remains the same \citep{enwiki:1061107378}. This is where a software use comes into play, aid scientists during their experimentation. Therefore, the analysis of literatures when looking for software usage purpose is aimed at answering \emph{“for what purpose scientists are using a software ?”} in their experiments. 
@@ -59,7 +59,7 @@ Accordingly, some key words that reflect potential software usage purposes have 
 The list of key words in the above table is used to delineate possible software usage purposes, however, it is cumbersome to enumerate all possible software purposes manually. To supplement results obtained from the analysis of literature, software ontologies have been analyzed. 
 
 %-----------------------------
-\section{Software purpose in Sci-Crunch knowledge graph  }
+\section{Software purpose in Sci-Crunch knowledge graph}
 %-----------------------------
 
 One of the resources that is analyzed to identify possible software usage purposes is Sci-crunch repository. Sci-crunch\footnote{https://scicrunch.org/} is a data portal that searches through hundreds of community databases, aggregates information resources to create a large collection of data and tools available for access at a single spot \citep{grethe2016scicrunch}. Therefore, in an attempt to identify possible software usage purposes, the Sci-crunch repository has been analyzed as follows. 
@@ -105,13 +105,13 @@ After a manual analysis of the 200 of software types, generated from the word cl
 	\end{center}
 \end{table}
 %-----------------------------
-\section{Software purposes in ontologies   }
+\section{Software purposes in Ontologies}
 %-----------------------------
 
 Ontologies are controlled vocabularies that provide formal naming and definition of properties and relation between concepts, entities, data etc.  Ontologies  are specialized  to a specific subject matter and every academic discipline creates ontologies to organize data into useful knowledge \citep{enwiki:1060388948}. 
 Effective knowledge representation begins with analysis of ontologies with in the domain of interest \citep{chandrasekaran1999ontologies}. Accordingly, analysis of software ontologies have been done to find out possible software usage purposes. The software ontologies, that has been analyzed on this project are: WikiData, DBpedia, SWO (the software ontology), OntoSoft and codemeta.  
 %-----------------------------
-\subsection{Wikidata   }
+\subsection{Wikidata}
 %-----------------------------
 Wikidata is a multilingual knowledge graph that is curated collaboratively by a Wikimedia community and serves as a freely available common source of structured data for everyone \citep{enwiki:1060114687, enwiki:1060408581}. 
 Wikidata was created by Wikimedia foundation mainly to store meta data that can be used for other Wikimedia projects such as Wikipedia. Interestingly, wikidata is allowed to contain inconsistent and contradicting facts in order to embrace the diversity of knowledge about a given entity \citep{vrandevcic2012wikidata}. 
@@ -205,7 +205,7 @@ A simplified version of relation between software catefories is depicted on the 
 
 
 %-----------------------------
-\subsubsection{Identifying software purpose    }
+\subsubsection{Identifying software purpose}
 %-----------------------------
 
 The main aim of software category analysis of wikidata was to find possible software usage purposes from each software category. It is simple to define a software purpose when the software is used to carry out a specific task. 
@@ -215,6 +215,63 @@ However it is worth mentioning that, there are two types of application software
 
 Sub categories of application software with their respective purpose from Wikipedia and internet resources are have been gathered and summarized on the following table. 
 
+
+From the analysis of software categories of wikidata ontology, the following list of software usage purposes have been identified:
+
+\begin{itemize}
+	\item Data recording or collection 
+	\item Data Analysis 
+	\item Visualization
+	\item Simulation
+	\item Modelling
+	\item Programming
+	
+\end{itemize}
+
+%-----------------------------
+\subsection{The software ontology (SWO)}
+%-----------------------------
+
+The \ac{SWO}, particularly describes software used, for preparation and maintenance of data, within fields of computational biology and bioinformatics.  The \ac{SWO} was primarily developed to improve reproducibility by providing detailed description about software used for biomedical investigations \cite{malone2014software}. 
+
+\ac{SWO} was found on \ac{OLS} website and was examined for possible software purposes. Unlike wikidata, a list of possible software purpose were found directly in “browse terms” section.  To navigate to the software purpose list the following steps has been taken: “Browse terms”> “entity“>”occurrent”> “planned” >”planned process”.  The software usage purpose in the SWO has been presented in to two main groups as “data transformation” and “data visualization”.  Under data transformation, 40 sub -types of data transformation software purposes are listed. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{4.graphics/figures/SWO}
+	\caption{Software Purposes on the SWO Ontology}
+	\label{fig:chapter03:setup}
+\end{figure}
+
+Some examples of software usage purposes retrieved from SWO are shown on the table below:
+
+\begin{table}[h!]
+	\begin{center}
+		\caption{Sample software purposes in the SWO Ontology.}
+		\label{tab:table1}
+		\begin{tabular}{|l|l|} % <-- Changed to S here.
+			
+			%\textbf{Value 1} & \textbf{Value 2} \\
+			\hline
+			- Data transformation & - Calculation  \\
+			- Annotation          & - Analysis \\
+			- Text editing        & - Data visualization  \\
+			- Modelling           & - File rendering   \\
+			- Curve fitting       & - Matrix manipulation  \\
+			- Simulation          & - Data mining task   \\
+			- Query and retrieval & - Clustering task \\
+			
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+%-----------------------------
+\subsection{OntoSoft}
+%-----------------------------
+
+Onosoft is a software registry framework that stores important metadata about software to foster reuse and sharing of software among scientific community. The ontology provides descriptions about a software that would help scientists to identify, understand, execute, and do research with a software. Moreover, it helps scientists get information about update and support for the software. These descriptions are visualized in a 6-dimensional pie-chart, with each slice indicating the completeness of the description. Particularly, Ontosoft focuses on the geoscience because software resources are not being shared adequately in that field \cite{gil2015ontosoft}.
 
 Enumerate alpahbet
 
