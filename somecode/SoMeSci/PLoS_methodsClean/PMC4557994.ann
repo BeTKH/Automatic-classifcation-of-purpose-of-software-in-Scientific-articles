@@ -1,0 +1,13 @@
+T1	Application_Usage:Purpose_DataCollection	246	256	FreeSurfer
+T2	Application_Usage:Purpose_DataCollection	1009	1019	FreeSurfer
+T3	Application_Usage:Purpose_Analysis	1629	1639	FreeSurfer
+T5	Application_Usage:Purpose_DataPreProcss	1887	1891	AFNI
+T6	Application_Usage:Purpose_DataPreProcss	1896	1899	FSL
+T9	Application_Usage:Purpose_Analysis	2459	2530	Statistical Analysis of Minimum cost path based Structural Connectivity
+T10	Application_Usage:Purpose_DataPreProcss	3666	3670	ANFI
+T11	Application_Usage:Purpose_DataPreProcss	3675	3678	FSL
+T12	Application_Usage:Purpose_DataPreProcss	3761	3765	AFNI
+T13	Application_Usage:Purpose_DataPreProcss	4801	4811	FreeSurfer
+T14	Application_Usage:Purpose_DataPreProcss	13176	13186	FreeSurfer
+T15	Application_Usage:Purpose_DataPreProcss	13585	13595	FreeSurfer
+T18	Application_Usage:Purpose_DataPreProcss	3222	3228	SAMSCo

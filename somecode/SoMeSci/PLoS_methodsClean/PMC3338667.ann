@@ -1,0 +1,16 @@
+T1	Application_Usage:Purpose_Analysis	3588	3598	PyroTagger
+T3	Application_Usage:Purpose_Analysis	4676	4682	blastn
+T4	Application_Usage:Purpose_Modelling	5084	5090	blastn
+T5	Application_Usage:Purpose_Modelling	5466	5475	EstimateS
+T6	Application_Usage:Purpose_Analysis	6385	6391	blastn
+T8	Application_Usage:Purpose_Analysis	6823	6828	PCORD
+T9	Application_Usage:Purpose_DataPreProcss	10152	10166	RDP Classifier
+T10	Application_Usage:Purpose_DataPreProcss	10313	10321	Geneious
+T11	Application_Usage:Purpose_DataPreProcss	10567	10579	Bellerpheron
+T12	Application_Usage:Purpose_Analysis	10755	10761	MUSCLE
+T13	Application_Usage:Purpose_Analysis	10769	10777	Geneious
+T15	Application_Usage:Purpose_DataCollection	11474	11480	Blastn
+T17	Application_Usage:Purpose_Analysis	11801	11806	DNAsp
+T18	Application_Usage:Purpose_Modelling	12467	12471	MEGA
+T19	Application_Usage:Purpose_Analysis	14605	14611	Blastn
+T2	Application_Usage:Purpose_Analysis	3673	3679	blastn

@@ -1,0 +1,11 @@
+T1	Application_Usage:Purpose_Analysis	15525	15534	SigmaStat
+T5	Application_Usage:Purpose_DataCollection	23622	23636	Image-Pro Plus
+T10	Application_Usage:Purpose_DataCollection	23735	23744	Scope-Pro
+T14	Application_Usage:Purpose_DataPreProcss	24827	24830	IPP
+T15	Application_Usage:Purpose_Visualization	24913	24922	Photoshop
+T20	Application_Usage:Purpose_DataPreProcss	25136	25139	IPP
+T21	Application_Usage:Purpose_DataPreProcss	25842	25854	Office Excel
+T25	Application_Usage:Purpose_Visualization	25983	25992	SigmaPlot
+T29	Application_Usage:Purpose_Analysis	26915	26924	Photoshop
+T30	Application_Usage:Purpose_Analysis	26968	26971	IPP
+T31	Application_Usage:Purpose_Analysis	27608	27616	Satistix

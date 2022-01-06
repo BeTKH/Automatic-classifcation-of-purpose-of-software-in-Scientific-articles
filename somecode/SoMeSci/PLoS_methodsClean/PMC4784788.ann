@@ -1,0 +1,10 @@
+T1	Application_Usage:Purpose_Analysis	4169	4180	BD FACSDiva
+T2	Application_Usage:Purpose_Programming	5001	5007	FastQC
+T3	Application_Usage:Purpose_DataPreProcss	5259	5265	Tophat
+T4	Application_Usage:Purpose_Analysis	5480	5489	Cufflinks
+T8	Application_Usage:Purpose_Analysis	8313	8319	GSEA-P
+T9	Application_Usage:Purpose_Visualization	8797	8806	Cytoscape
+T16	Application_Usage:Purpose_Analysis	7508	7571	Database for Annotation, Visualization and Integrated Discovery
+T26	Application_Usage:Purpose_DataPreProcss	5300	5308	iGenomes
+T36	Application_Usage:Purpose_DataCollection	7671	7676	DAVID
+T14	Application_Usage:Purpose_Analysis	7787	7826	Expression Analysis Systematic Explorer
