@@ -15,6 +15,8 @@ T29	Application_Usage:Purpose_Analysis	37393	37400	ToppFun
 T31	Application_Usage:Purpose_Analysis	37515	37524	CIBERSORT
 T32	Application_Usage:Purpose_Analysis	37962	37980	immunoSEQ Analyzer
 T34	Application_Usage:Purpose_Analysis	38117	38122	PIVOT
+T38	ProgrammingEnvironment_Usage:Purpose_Analysis	38332	38333	R
+T39	PlugIn_Usage:Purpose_Analysis	38315	38320	Rtsne
 T40	Application_Usage:Purpose_Analysis	38381	38386	PIVOT
 T41	Application_Usage:Purpose_Analysis	38398	38405	Cluster
 T44	Application_Usage:Purpose_Visualization	38438	38446	TreeView

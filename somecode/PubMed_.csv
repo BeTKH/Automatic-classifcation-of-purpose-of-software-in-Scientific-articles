@@ -16,6 +16,12 @@ T1,Application_Usage:Purpose_DataCollection,2209,2221,CrystalClear
 T3,Application_Usage:Purpose_DataPreProcss,2257,2269,CrystalClear
 T4,Application_Usage:Purpose_DataPreProcss,2287,2299,CrystalClear
 T1,Application_Usage:Purpose_Analysis,10144,10159,SPSS statistics
+T1,ProgrammingEnvironment_Usage:Purpose_Programming,230,233,C++
+T2,ProgrammingEnvironment_Usage:Purpose_Programming,238,244,OpenCL
+T6,ProgrammingEnvironment_Usage:Purpose_Programming,1700,1703,C++
+T11,ProgrammingEnvironment_Usage:Purpose_Programming,3708,3709,R
+T13,ProgrammingEnvironment_Usage:Purpose_Programming,3777,3780,C++
+T18,ProgrammingEnvironment_Usage:Purpose_Programming,5986,5989,C++
 T7,Application_Usage:Purpose_Analysis,12327,12336,FlexArray
 T10,Application_Usage:Purpose_Analysis,12453,12479,Ingenuity Pathway Analysis
 T12,Application_Usage:Purpose_Analysis,12551,12556,STATA
@@ -28,20 +34,31 @@ T1,Application_Usage:Purpose_Analysis,5321,5329,ConoMass
 T1,Application_Usage:Purpose_Analysis,6938,6942,SPSS
 T2,Application_Usage:Purpose_Analysis,9079,9095,Luminex 100 ™ IS
 T3,Application_Usage:Purpose_Analysis,10089,10093,SPSS
+T1,ProgrammingEnvironment_Usage:Purpose_DataCollection,11170,11177,Fortran
 T2,Application_Usage:Purpose_DataPreProcss,12877,12880,FSL
+T5,PlugIn_Usage:Purpose_DataPreProcss,13068,13073,FLIRT
 T7,Application_Usage:Purpose_Modelling,13333,13336,FSL
+T9,PlugIn_Usage:Purpose_DataCollection,14343,14348,FLIRT
 T11,Application_Usage:Purpose_DataCollection,14376,14379,FSL
 T13,Application_Usage:Purpose_Modelling,14745,14748,FSL
 T14,Application_Usage:Purpose_Analysis,15537,15540,FSL
 T1,Application_Usage:Purpose_Analysis,11656,11663,Minitab
 T1,Application_Usage:Purpose_Analysis,8821,8825,SPSS
+T1,ProgrammingEnvironment_Usage:Purpose_DataCollection,21779,21785,Matlab
 T3,Application_Usage:Purpose_DataCollection,21802,21808,Cogent
 T5,Application_Usage:Purpose_DataPreProcss,23394,23398,AFNI
+T8,PlugIn_Usage:Purpose_Modelling,25509,25521,3dDeconvolve
+T9,PlugIn_Usage:Purpose_DataCollection,26621,26630,3dmaskave
 T11,Application_Usage:Purpose_Analysis,27985,27989,SPSS
 T14,Application_Usage:Purpose_Analysis,29178,29182,AFNI
+T15,PlugIn_Usage:Purpose_DataCollection,29734,29743,3dmaskave
+T16,PlugIn_Usage:Purpose_Analysis,29789,29798,3dDetrend
 T17,Application_Usage:Purpose_Analysis,30051,30055,AFNI
 T19,Application_Usage:Purpose_DataCollection,31095,31099,AFNI
 T20,Application_Usage:Purpose_DataPreProcss,31188,31216,Advanced Normalization Tools
+T23,PlugIn_Usage:Purpose_Analysis,31812,31822,3dttest+ +
+T25,PlugIn_Usage:Purpose_Analysis,32555,32562,3dFWHMx
+T26,PlugIn_Usage:Purpose_Analysis,32577,32587,3dClustsim
 T1,Application_Usage:Purpose_Analysis,12732,12736,SPSS
 T1,Application_Usage:Purpose_Analysis,16731,16739,CompuSyn
 T2,Application_Usage:Purpose_Analysis,27306,27311,Prism
@@ -68,9 +85,12 @@ T23,Application_Usage:Purpose_Analysis,28674,28680,ImageJ
 T25,Application_Usage:Purpose_Analysis,29165,29170,Prism
 T28,Application_Usage:Purpose_Analysis,30989,30995,ImageJ
 T10,Application_Usage:Purpose_Analysis,30867,30873,MASCOT
+T13,PlugIn_Usage:Purpose_Analysis,33808,33814,ClueGO
 T16,Application_Usage:Purpose_Analysis,33830,33839,Cytoscape
 T19,Application_Usage:Purpose_Analysis,34059,34066,FunRich
 T20,Application_Usage:Purpose_Visualization,34275,34284,Cytoscape
+T22,PlugIn_Usage:Purpose_Visualization,34448,34460,clusterMaker
+T24,PlugIn_Usage:Purpose_Analysis,34471,34476,BiNGO
 T26,Application_Usage:Purpose_Analysis,34484,34493,cytoscape
 T27,Application_Usage:Purpose_Analysis,38174,38179,Prism
 T30,Application_Usage:Purpose_Analysis,38206,38218,Office Excel
@@ -86,6 +106,7 @@ T1,Application_Usage:Purpose_Modelling,11383,11388,MLWin
 T3,Application_Usage:Purpose_Modelling,11446,11451,MLwiN
 T6,Application_Usage:Purpose_Analysis,11761,11766,MLwiN
 T1,Application_Usage:Purpose_Analysis,7607,7624,Open Meta-Analyst
+T4,ProgrammingEnvironment_Usage:Purpose_Programming,9123,9124,R
 T6,Application_Usage:Purpose_Analysis,9146,9163,Open Meta-Analyst
 T1,Application_Usage:Purpose_Analysis,8856,8862,IMARIS
 T4,Application_Usage:Purpose_DataCollection,10311,10322,Axio Vision
@@ -102,6 +123,9 @@ T18,Application_Usage:Purpose_DataCollection,14591,14602,Immunoratio
 T19,Application_Usage:Purpose_DataPreProcss,16102,16108,ImageJ
 T21,Application_Usage:Purpose_DataCollection,16235,16246,Immunoratio
 T22,Application_Usage:Purpose_Analysis,16375,16386,Immunoratio
+T23,ProgrammingEnvironment_Usage:Purpose_Analysis,17101,17102,R
+T28,PlugIn_Usage:Purpose_Analysis,17431,17435,ROCR
+T30,PlugIn_Usage:Purpose_Visualization,17570,17577,FigureJ
 T1,Application_Usage:Purpose_Analysis,6326,6351,Santa Cruz genome browser
 T1,Application_Usage:Purpose_Analysis,7770,7776,RevMan
 T3,Application_Usage:Purpose_Analysis,7807,7812,Stata
@@ -154,6 +178,8 @@ T29,Application_Usage:Purpose_Analysis,37393,37400,ToppFun
 T31,Application_Usage:Purpose_Analysis,37515,37524,CIBERSORT
 T32,Application_Usage:Purpose_Analysis,37962,37980,immunoSEQ Analyzer
 T34,Application_Usage:Purpose_Analysis,38117,38122,PIVOT
+T38,ProgrammingEnvironment_Usage:Purpose_Analysis,38332,38333,R
+T39,PlugIn_Usage:Purpose_Analysis,38315,38320,Rtsne
 T40,Application_Usage:Purpose_Analysis,38381,38386,PIVOT
 T41,Application_Usage:Purpose_Analysis,38398,38405,Cluster
 T44,Application_Usage:Purpose_Visualization,38438,38446,TreeView
@@ -178,8 +204,11 @@ T6,Application_Usage:Purpose_Analysis,15372,15382,Kubios HRV
 T9,Application_Usage:Purpose_DataCollection,15813,15816,Iox
 T12,Application_Usage:Purpose_Analysis,15974,15979,Prism
 T1,Application_Usage:Purpose_Analysis,15758,15763,Prism
+T5,ProgrammingEnvironment_Usage:Purpose_Analysis,15904,15905,R
+T1,ProgrammingEnvironment_Usage:Purpose_DataPreProcss,9330,9334,Perl
 T2,Application_Usage:Purpose_DataPreProcss,9509,9515,TopHat
 T5,Application_Usage:Purpose_Analysis,9527,9532,HTSeq
+T10,PlugIn_Usage:Purpose_Analysis,10366,10371,GOseq
 T12,Application_Usage:Purpose_Analysis,10394,10399,KOBAS
 T18,Application_Usage:Purpose_DataCollection,12005,12009,FIMO
 T20,Application_Usage:Purpose_DataPreProcss,13516,13522,skewer
@@ -197,6 +226,7 @@ T3,Application_Usage:Purpose_Modelling,5471,5481,TargetScan
 T5,Application_Usage:Purpose_Modelling,5515,5520,miRDB
 T7,Application_Usage:Purpose_Analysis,5577,5582,Venny
 T10,Application_Usage:Purpose_Analysis,5665,5676,PPI Network
+T12,PlugIn_Usage:Purpose_Analysis,5769,5774,MCODE
 T17,Application_Usage:Purpose_Analysis,6245,6249,Xena
 T18,Application_Usage:Purpose_Analysis,10649,10658,Image lab
 T21,Application_Usage:Purpose_Analysis,11807,11813,ModFit
@@ -204,8 +234,10 @@ T24,Application_Usage:Purpose_Analysis,11932,11936,SPSS
 T27,Application_Usage:Purpose_Modelling,12647,12657,TargetScan
 T28,Application_Usage:Purpose_Modelling,12662,12667,miRDB
 T29,Application_Usage:Purpose_Modelling,12637,12645,microRNA
+T30,PlugIn_Usage:Purpose_Analysis,13012,13017,MCODE
 T31,Application_Usage:Purpose_Analysis,14543,14554,PPI Network
 T1,Application_Usage:Purpose_DataPreProcss,7317,7326,J-Express
+T4,ProgrammingEnvironment_Usage:Purpose_Analysis,7420,7421,R
 T10,Application_Usage:Purpose_Analysis,7558,7562,GSEA
 T13,Application_Usage:Purpose_Analysis,8685,8692,Cluster
 T15,Application_Usage:Purpose_Analysis,8701,8709,TreeView
@@ -223,6 +255,7 @@ T6,Application_Usage:Purpose_DataCollection,14849,14854,LAS X
 T7,Application_Usage:Purpose_DataPreProcss,15155,15160,LAS X
 T8,Application_Usage:Purpose_DataPreProcss,15296,15302,Imaris
 T11,Application_Usage:Purpose_Visualization,15342,15348,Imaris
+T12,PlugIn_Usage:Purpose_Visualization,15478,15482,Fiji
 T14,Application_Usage:Purpose_Visualization,15509,15518,Photoshop
 T18,Application_Usage:Purpose_Visualization,15536,15545,Quicktime
 T22,Application_Usage:Purpose_Analysis,15868,15877,Photoshop
@@ -246,6 +279,11 @@ T21,Application_Usage:Purpose_Modelling,35383,35389,SnpEff
 T22,Application_Usage:Purpose_Analysis,35703,35713,Polysolver
 T24,Application_Usage:Purpose_DataPreProcss,35831,35837,MuPeXI
 T28,Application_Usage:Purpose_DataPreProcss,36406,36418,GenomeStudio
+T31,ProgrammingEnvironment_Usage:Purpose_DataPreProcss,36534,36535,R
+T32,PlugIn_Usage:Purpose_DataPreProcss,36544,36549,ASCAT
+T34,ProgrammingEnvironment_Usage:Purpose_Analysis,37334,37335,R
+T35,PlugIn_Usage:Purpose_Analysis,37345,37362,SomaticSignatures
+T37,PlugIn_Usage:Purpose_Analysis,37372,37390,MutationalPatterns
 T39,Application_Usage:Purpose_DataPreProcss,38475,38481,SnpEff
 T40,Application_Usage:Purpose_Analysis,39268,39277,MSIsensor
 T42,Application_Usage:Purpose_Analysis,39420,39428,Polyphen
@@ -256,12 +294,25 @@ T50,Application_Usage:Purpose_Analysis,39766,39772,MuTect
 T52,Application_Usage:Purpose_Analysis,34801,34807,MuTect
 T54,Application_Usage:Purpose_Analysis,40160,40173,bam-readcount
 T55,Application_Usage:Purpose_Analysis,40916,40922,Salmon
+T57,ProgrammingEnvironment_Usage:Purpose_Analysis,41049,41050,R
+T58,PlugIn_Usage:Purpose_Analysis,41061,41069,tximport
+T60,PlugIn_Usage:Purpose_Analysis,41079,41084,edgeR
+T62,ProgrammingEnvironment_Usage:Purpose_Modelling,41261,41262,R
+T65,ProgrammingEnvironment_Usage:Purpose_Analysis,41616,41617,R
+T66,PlugIn_Usage:Purpose_Analysis,41626,41629,RTN
 T68,Application_Usage:Purpose_Analysis,42240,42245,xCell
+T69,PlugIn_Usage:Purpose_DataPreProcss,43082,43087,ChAMP
 T72,Application_Usage:Purpose_Analysis,46935,46945,Visiopharm
 T74,Application_Usage:Purpose_DataPreProcss,47120,47130,Visiopharm
+T75,ProgrammingEnvironment_Usage:Purpose_Analysis,49366,49367,R
+T76,PlugIn_Usage:Purpose_Analysis,49377,49386,survminer
+T77,PlugIn_Usage:Purpose_Analysis,49391,49399,survival
 T79,Purpose_DataPreProcss:Application_Usage,34549,34560,Trim Galore
+T107,Purpose_Modelling:ProgrammingEnvironment_Usage,41261,41263,R-
 T1,Application_Usage:Purpose_DataPreProcss,9337,9367,Draeger EIT Data Analysis Tool
 T3,Application_Usage:Purpose_Analysis,11679,11683,SPSS
+T1,ProgrammingEnvironment_Usage:Purpose_Analysis,12455,12456,R
+T3,PlugIn_Usage:Purpose_Analysis,12485,12501,OptimalCutpoints
 T4,Application_Usage:Purpose_Modelling,11761,11766,Blast
 T1,Application_Usage:Purpose_DataPreProcss,11418,11429,Trimmomatic
 T3,Application_Usage:Purpose_DataCollection,11569,11575,Bowtie

@@ -1,2 +1,7 @@
 T1	Application_Usage:Purpose_Analysis	7585	7595	GeneMapper
 T2	Application_Usage:Purpose_DataPreProcss	7679	7682	FAP
+T3	ProgrammingEnvironment_Usage:Purpose_Analysis	14763	14764	R
+T4	PlugIn_Usage:Purpose_Modelling	15016	15020	lme4
+T5	PlugIn_Usage:Purpose_Analysis	15106	15109	car
+T6	PlugIn_Usage:Purpose_Modelling	15192	15200	MCMCglmm
+T7	PlugIn_Usage:Purpose_Analysis	15293	15297	lme4

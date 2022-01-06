@@ -2,3 +2,4 @@ T1	Application_Usage:Purpose_DataCollection	23927	23934	Epidata
 T2	Application_Usage:Purpose_Analysis	25947	25952	Stata
 T3	Application_Usage:Purpose_Modelling	29231	29236	Stata
 T4	Application_Usage:Purpose_Analysis	30845	30850	Stata
+T5	PlugIn_Usage:Purpose_Analysis	25938	25946	ZSCORE06

@@ -1,4 +1,5 @@
 T1	Application_Usage:Purpose_DataCollection	4934	4940	Access
 T2	Application_Usage:Purpose_DataCollection	4947	4954	EpiInfo
 T3	Application_Usage:Purpose_Analysis	4988	4992	SPSS
+T5	ProgrammingEnvironment_Usage:Purpose_Analysis	5076	5077	R
 T7	Application_Usage:Purpose_Analysis	4994	5009	SPSS Statistics

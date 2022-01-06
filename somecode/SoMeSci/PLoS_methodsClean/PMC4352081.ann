@@ -1,3 +1,4 @@
 T1	Application_Usage:Purpose_Analysis	2582	2612	Statistical Parametric Mapping
 T2	Application_Usage:Purpose_DataPreProcss	3568	3571	SPM
 T3	Application_Usage:Purpose_Analysis	2623	2626	SPM
+T7	PlugIn_Usage:Purpose_DataPreProcss	2995	3070	diffeomorphic anatomical registration through the exponentiated Lie algebra

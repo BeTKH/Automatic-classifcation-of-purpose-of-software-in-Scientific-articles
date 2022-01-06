@@ -4,3 +4,7 @@ T3	Application_Usage:Purpose_Analysis	5106	5112	BLASTp
 T4	Application_Usage:Purpose_Modelling	5273	5280	Skyline
 T5	Application_Usage:Purpose_Analysis	7115	7122	Analyst
 T6	Application_Usage:Purpose_Analysis	8841	8848	Skyline
+T7	PlugIn_Usage:Purpose_DataPreProcss	9178	9185	MSstats
+T8	ProgrammingEnvironment_Usage:Purpose_DataPreProcss	9186	9187	R
+T9	PlugIn_Usage:Purpose_Visualization	10133	10136	Epi
+T10	ProgrammingEnvironment_Usage:Purpose_Visualization	10137	10138	R

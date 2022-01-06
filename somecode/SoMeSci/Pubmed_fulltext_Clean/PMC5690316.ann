@@ -8,3 +8,6 @@ T18	Application_Usage:Purpose_DataCollection	14591	14602	Immunoratio
 T19	Application_Usage:Purpose_DataPreProcss	16102	16108	ImageJ
 T21	Application_Usage:Purpose_DataCollection	16235	16246	Immunoratio
 T22	Application_Usage:Purpose_Analysis	16375	16386	Immunoratio
+T23	ProgrammingEnvironment_Usage:Purpose_Analysis	17101	17102	R
+T28	PlugIn_Usage:Purpose_Analysis	17431	17435	ROCR
+T30	PlugIn_Usage:Purpose_Visualization	17570	17577	FigureJ

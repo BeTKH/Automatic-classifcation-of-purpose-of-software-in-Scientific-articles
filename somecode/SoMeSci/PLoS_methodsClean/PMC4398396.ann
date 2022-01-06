@@ -1,2 +1,4 @@
 T1	Application_Usage:Purpose_Simulation	8576	8594	Remote Proctor Now
 T2	Application_Usage:Purpose_Simulation	8647	8655	ProctorU
+T6	PlugIn_Usage:Purpose_Visualization	15408	15415	ggplot2
+T7	ProgrammingEnvironment_Usage:Purpose_Visualization	15397	15398	R

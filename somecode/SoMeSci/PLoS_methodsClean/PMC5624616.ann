@@ -1,3 +1,6 @@
 T1	Application_Usage:Purpose_Analysis	9666	9669	SPM
+T3	PlugIn_Usage:Purpose_DataPreProcss	9718	9724	DARTEL
+T4	PlugIn_Usage:Purpose_Modelling	9889	9895	DARTEL
+T5	PlugIn_Usage:Purpose_DataPreProcss	10134	10140	DARTEL
 T8	Application_Usage:Purpose_Analysis	15099	15114	SPSS Statistics
 T9	Application_Usage:Purpose_DataPreProcss	10288	10291	SPM

@@ -1,4 +1,12 @@
 T1	Application_Usage:Purpose_DataPreProcss	2235	2240	CALIB
 T2	Application_Usage:Purpose_DataPreProcss	2705	2710	Calib
+T3	PlugIn_Usage:Purpose_Modelling	4051	4055	clam
+T4	ProgrammingEnvironment_Usage:Purpose_Modelling	4068	4069	R
+T5	PlugIn_Usage:Purpose_Visualization	4997	5001	clam
+T6	ProgrammingEnvironment_Usage:Purpose_Visualization	5006	5007	R
+T7	PlugIn_Usage:Purpose_Analysis	6613	6618	rioja
+T8	ProgrammingEnvironment_Usage:Purpose_Analysis	6630	6631	R
+T9	ProgrammingEnvironment_Usage:Purpose_Modelling	7262	7263	R
+T10	PlugIn_Usage:Purpose_Modelling	7245	7249	clam
 T11	Application_Usage:Purpose_Visualization	6709	6711	C2
 T13	Application_Usage:Purpose_Visualization	6718	6720	C2
