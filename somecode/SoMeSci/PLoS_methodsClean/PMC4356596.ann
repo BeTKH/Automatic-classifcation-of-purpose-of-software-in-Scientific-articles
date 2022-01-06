@@ -1,0 +1,5 @@
+T1	Application_Usage:Purpose_Modelling	232	241	BioNetGen
+T2	Application_Usage:Purpose_Simulation	38291	38300	BioNetGen
+T4	Application_Usage:Purpose_Analysis	38884	38892	SUNDIALS
+T5	Application_Usage:Purpose_Analysis	38836	38845	BioNetGen
+T6	Application_Usage:Purpose_Analysis	39038	39047	BioNetGen

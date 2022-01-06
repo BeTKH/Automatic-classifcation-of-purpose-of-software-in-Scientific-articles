@@ -1,0 +1,20 @@
+T1	Application_Usage:Purpose_Analysis	8101	8108	GenCall
+T2	Application_Usage:Purpose_Analysis	8704	8709	PLINK
+T3	Application_Usage:Purpose_Analysis	8895	8903	SMARTPCA
+T4	Application_Usage:Purpose_DataPreProcss	11296	11304	SHAPEITv
+T5	Application_Usage:Purpose_DataPreProcss	11342	11348	IMPUTE
+T6	Application_Usage:Purpose_Analysis	12007	12014	SNPTEST
+T9	Application_Usage:Purpose_Analysis	14586	14592	Quanto
+T10	Application_Usage:Purpose_Analysis	14691	14698	SNPTEST
+T12	Application_Usage:Purpose_Simulation	15186	15193	DISSECT
+T17	Application_Usage:Purpose_Analysis	18495	18500	PLINK
+T18	Application_Usage:Purpose_Analysis	18790	18797	SNPTEST
+T19	Application_Usage:Purpose_Analysis	19114	19121	SNPTEST
+T20	Application_Usage:Purpose_Analysis	21200	21209	METACARPA
+T21	Application_Usage:Purpose_Analysis	21279	21284	METAL
+T22	Application_Usage:Purpose_Analysis	21366	21371	METAL
+T28	Application_Usage:Purpose_DataPreProcss	9592	9596	KING
+T30	Application_Usage:Purpose_Analysis	10187	10191	KING
+T35	Application_Usage:Purpose_Analysis	12183	12191	BOLT-LMM
+T54	Application_Usage:Purpose_DataPreProcss	4548	4578	Haplotype Reference Consortium
+T51	Purpose_DataPreProcss:Application_Usage	11296	11303	SHAPEIT

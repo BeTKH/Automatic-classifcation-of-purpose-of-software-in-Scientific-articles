@@ -1,0 +1,4 @@
+T13	Application_Usage:Purpose_DataPreProcss	6464	6468	READ
+T16	Application_Usage:Purpose_Modelling	8144	8148	READ
+T17	Application_Usage:Purpose_Analysis	8783	8791	samtools
+T18	Application_Usage:Purpose_Analysis	5293	5301	vcftools

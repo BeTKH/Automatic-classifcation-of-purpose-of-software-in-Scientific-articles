@@ -1,0 +1,9 @@
+T1	Application_Usage:Purpose_DataPreProcss	1522	1527	GREAT
+T2	Application_Usage:Purpose_DataPreProcss	1809	1814	GREAT
+T4	Application_Usage:Purpose_Analysis	2370	2375	GREAT
+T6	Application_Usage:Purpose_DataPreProcss	3113	3120	BioMart
+T7	Application_Usage:Purpose_Analysis	6044	6049	MAGMA
+T9	Application_Usage:Purpose_Analysis	7216	7221	MAGMA
+T12	Application_Usage:Purpose_Visualization	7572	7577	MAGMA
+T13	Application_Usage:Purpose_DataPreProcss	9948	9955	BioMart
+T16	Application_Usage:Purpose_DataPreProcss	3088	3095	Ensembl

@@ -1,0 +1,15 @@
+T1	Application_Usage:Purpose_DataCollection	3756	3762	FastQC
+T2	Application_Usage:Purpose_DataPreProcss	3828	3839	Trimmomatic
+T3	Application_Usage:Purpose_DataPreProcss	4181	4185	STAR
+T4	Application_Usage:Purpose_DataPreProcss	4274	4282	Samtools
+T5	Application_Usage:Purpose_Analysis	4737	4745	Mirdeep2
+T6	Application_Usage:Purpose_DataCollection	4994	4999	BLAST
+T7	Application_Usage:Purpose_DataCollection	5113	5121	Mirdeep2
+T14	Application_Usage:Purpose_Modelling	7248	7260	Primer-BLAST
+T15	Application_Usage:Purpose_Analysis	7658	7697	Statistical Package for Social Sciences
+T16	Application_Usage:Purpose_Analysis	8156	8182	Ingenuity Pathway Analysis
+T17	Application_Usage:Purpose_Analysis	9212	9217	miRDB
+T18	Application_Usage:Purpose_Analysis	9590	9600	TargetScan
+T19	Application_Usage:Purpose_Modelling	9791	9796	miRDB
+T35	Application_Usage:Purpose_Analysis	7708	7712	SPSS
+T38	Application_Usage:Purpose_Analysis	8184	8187	IPA

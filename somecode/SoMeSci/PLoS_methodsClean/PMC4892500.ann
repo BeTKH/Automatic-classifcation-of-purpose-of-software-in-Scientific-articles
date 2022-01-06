@@ -1,0 +1,8 @@
+T1	Application_Usage:Purpose_Analysis	3791	3798	Newbler
+T2	Application_Usage:Purpose_Analysis	3817	3838	CLC Genomic Workbench
+T3	Application_Usage:Purpose_Analysis	3850	3863	SMRT analysis
+T4	Application_Usage:Purpose_DataPreProcss	3982	4031	Prokaryotic Genomes Automatic Annotation Pipeline
+T5	Application_Usage:Purpose_Visualization	4294	4299	GARLI
+T10	Application_Usage:Purpose_Modelling	6126	6131	GARLI
+T11	Application_Usage:Purpose_Analysis	6198	6203	GARLI
+T15	Application_Usage:Purpose_Visualization	4402	4407	GARLI
