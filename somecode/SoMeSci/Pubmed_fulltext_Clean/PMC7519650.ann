@@ -11,6 +11,11 @@ T21	Application_Usage:Purpose_Modelling	35383	35389	SnpEff
 T22	Application_Usage:Purpose_Analysis	35703	35713	Polysolver
 T24	Application_Usage:Purpose_DataPreProcss	35831	35837	MuPeXI
 T28	Application_Usage:Purpose_DataPreProcss	36406	36418	GenomeStudio
+T31	ProgrammingEnvironment_Usage:Purpose_DataPreProcss	36534	36535	R
+T32	PlugIn_Usage:Purpose_DataPreProcss	36544	36549	ASCAT
+T34	ProgrammingEnvironment_Usage:Purpose_Analysis	37334	37335	R
+T35	PlugIn_Usage:Purpose_Analysis	37345	37362	SomaticSignatures
+T37	PlugIn_Usage:Purpose_Analysis	37372	37390	MutationalPatterns
 T39	Application_Usage:Purpose_DataPreProcss	38475	38481	SnpEff
 T40	Application_Usage:Purpose_Analysis	39268	39277	MSIsensor
 T42	Application_Usage:Purpose_Analysis	39420	39428	Polyphen
@@ -21,7 +26,18 @@ T50	Application_Usage:Purpose_Analysis	39766	39772	MuTect
 T52	Application_Usage:Purpose_Analysis	34801	34807	MuTect
 T54	Application_Usage:Purpose_Analysis	40160	40173	bam-readcount
 T55	Application_Usage:Purpose_Analysis	40916	40922	Salmon
+T57	ProgrammingEnvironment_Usage:Purpose_Analysis	41049	41050	R
+T58	PlugIn_Usage:Purpose_Analysis	41061	41069	tximport
+T60	PlugIn_Usage:Purpose_Analysis	41079	41084	edgeR
+T62	ProgrammingEnvironment_Usage:Purpose_Modelling	41261	41262	R
+T65	ProgrammingEnvironment_Usage:Purpose_Analysis	41616	41617	R
+T66	PlugIn_Usage:Purpose_Analysis	41626	41629	RTN
 T68	Application_Usage:Purpose_Analysis	42240	42245	xCell
+T69	PlugIn_Usage:Purpose_DataPreProcss	43082	43087	ChAMP
 T72	Application_Usage:Purpose_Analysis	46935	46945	Visiopharm
 T74	Application_Usage:Purpose_DataPreProcss	47120	47130	Visiopharm
+T75	ProgrammingEnvironment_Usage:Purpose_Analysis	49366	49367	R
+T76	PlugIn_Usage:Purpose_Analysis	49377	49386	survminer
+T77	PlugIn_Usage:Purpose_Analysis	49391	49399	survival
 T79	Purpose_DataPreProcss:Application_Usage	34549	34560	Trim Galore
+T107	Purpose_Modelling:ProgrammingEnvironment_Usage	41261	41263	R-

@@ -1,2 +1,4 @@
 T1	Application_Usage:Purpose_Modelling	12515	12519	Stan
 T2	Application_Usage:Purpose_Modelling	13265	13270	Rstan
+T3	ProgrammingEnvironment_Usage:Purpose_Analysis	13479	13480	R
+T6	PlugIn_Usage:Purpose_Modelling	13280	13288	map2stan

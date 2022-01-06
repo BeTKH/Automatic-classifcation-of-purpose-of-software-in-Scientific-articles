@@ -1,1 +1,4 @@
 T1	Application_Usage:Purpose_Visualization	746	752	ArcGIS
+T3	ProgrammingEnvironment_Usage:Purpose_Programming	8858	8864	Python
+T4	ProgrammingEnvironment_Usage:Purpose_Visualization	8926	8932	Python
+T5	PlugIn_Usage:Purpose_Visualization	8943	8953	Matplotlib

@@ -1,2 +1,4 @@
 T1	Application_Usage:Purpose_Analysis	5006	5016	Statistica
+T2	ProgrammingEnvironment_Usage:Purpose_Analysis	6012	6013	R
+T3	PlugIn_Usage:Purpose_Analysis	6022	6028	glmnet
 T4	Application_Usage:Purpose_Analysis	5988	5993	Stata

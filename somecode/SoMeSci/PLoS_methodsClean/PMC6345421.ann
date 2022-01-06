@@ -4,9 +4,16 @@ T3	Application_Usage:Purpose_Analysis	8895	8903	SMARTPCA
 T4	Application_Usage:Purpose_DataPreProcss	11296	11304	SHAPEITv
 T5	Application_Usage:Purpose_DataPreProcss	11342	11348	IMPUTE
 T6	Application_Usage:Purpose_Analysis	12007	12014	SNPTEST
+T7	ProgrammingEnvironment_Usage:Purpose_Analysis	14506	14507	R
+T8	PlugIn_Usage:Purpose_Analysis	14479	14482	rms
 T9	Application_Usage:Purpose_Analysis	14586	14592	Quanto
 T10	Application_Usage:Purpose_Analysis	14691	14698	SNPTEST
+T11	ProgrammingEnvironment_Usage:Purpose_Simulation	15118	15119	R
 T12	Application_Usage:Purpose_Simulation	15186	15193	DISSECT
+T13	ProgrammingEnvironment_Usage:Purpose_Analysis	15872	15873	R
+T14	PlugIn_Usage:Purpose_Analysis	15882	15885	GTX
+T15	ProgrammingEnvironment_Usage:Purpose_Analysis	16327	16328	R
+T16	PlugIn_Usage:Purpose_Analysis	16319	16326	ordinal
 T17	Application_Usage:Purpose_Analysis	18495	18500	PLINK
 T18	Application_Usage:Purpose_Analysis	18790	18797	SNPTEST
 T19	Application_Usage:Purpose_Analysis	19114	19121	SNPTEST

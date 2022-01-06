@@ -5,6 +5,12 @@ T4	Application_Usage:Purpose_DataPreProcss	4274	4282	Samtools
 T5	Application_Usage:Purpose_Analysis	4737	4745	Mirdeep2
 T6	Application_Usage:Purpose_DataCollection	4994	4999	BLAST
 T7	Application_Usage:Purpose_DataCollection	5113	5121	Mirdeep2
+T8	ProgrammingEnvironment_Usage:Purpose_Analysis	5429	5430	R
+T9	PlugIn_Usage:Purpose_Analysis	5456	5461	edgeR
+T10	PlugIn_Usage:Purpose_Analysis	5468	5473	vegan
+T11	PlugIn_Usage:Purpose_Analysis	5483	5489	gplots
+T12	ProgrammingEnvironment_Usage:Purpose_Modelling	5664	5665	R
+T13	PlugIn_Usage:Purpose_Modelling	5659	5663	edge
 T14	Application_Usage:Purpose_Modelling	7248	7260	Primer-BLAST
 T15	Application_Usage:Purpose_Analysis	7658	7697	Statistical Package for Social Sciences
 T16	Application_Usage:Purpose_Analysis	8156	8182	Ingenuity Pathway Analysis

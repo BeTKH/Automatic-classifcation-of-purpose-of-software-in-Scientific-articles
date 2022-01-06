@@ -2,6 +2,7 @@ T1	Application_Usage:Purpose_Analysis	2229	2240	Peakscanner
 T2	Application_Usage:Purpose_Analysis	2175	2183	Genescan
 T3	Application_Usage:Purpose_Analysis	2444	2451	GENEPOP
 T4	Application_Usage:Purpose_Analysis	2648	2660	MICROCHECKER
+T5	PlugIn_Usage:Purpose_Analysis	3009	3016	GenAlEx
 T6	Application_Usage:Purpose_Analysis	3093	3101	MLRELATE
 T7	Application_Usage:Purpose_Analysis	3108	3114	COLONY
 T8	Application_Usage:Purpose_Analysis	3124	3134	COANCESTRY

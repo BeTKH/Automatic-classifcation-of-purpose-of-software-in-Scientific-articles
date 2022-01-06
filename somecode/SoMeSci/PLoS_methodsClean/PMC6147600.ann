@@ -1,6 +1,10 @@
 T1	Application_Usage:Purpose_DataPreProcss	3554	3557	SPM
+T2	PlugIn_Usage:Purpose_DataPreProcss	4156	4163	Nilearn
+T3	ProgrammingEnvironment_Usage:Purpose_Programming	4178	4184	Python
 T4	Application_Usage:Purpose_Analysis	6468	6475	Mricron
 T5	Application_Usage:Purpose_Analysis	6479	6486	FSLView
+T6	PlugIn_Usage:Purpose_Analysis	8882	8894	Scikit-learn
+T7	PlugIn_Usage:Purpose_Visualization	9870	9882	Scikit-learn
 T10	Application_Usage:Purpose_Analysis	6682	6692	NeuroSynth
 T11	Application_Usage:Purpose_Analysis	6729	6739	NeuroSynth
 T12	Application_Usage:Purpose_DataCollection	8523	8533	NeuroSynth

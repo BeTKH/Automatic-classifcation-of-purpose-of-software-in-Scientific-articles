@@ -1,0 +1,6 @@
+T1	ProgrammingEnvironment_Usage:Purpose_Modelling	15200	15201	R
+T3	ProgrammingEnvironment_Usage:Purpose_Modelling	15645	15651	Matlab
+T5	ProgrammingEnvironment_Usage:Purpose_Analysis	16726	16727	R
+T6	ProgrammingEnvironment_Usage:Purpose_Modelling	16785	16786	R
+T11	PlugIn_Usage:Purpose_Analysis	16704	16721	adjustedRandIndex
+T14	PlugIn_Usage:Purpose_Modelling	16797	16801	lmer

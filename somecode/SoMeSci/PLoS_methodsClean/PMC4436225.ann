@@ -1,2 +1,7 @@
 T1	Application_Usage:Purpose_Modelling	3349	3381	Land Cover Classification System
+T2	ProgrammingEnvironment_Usage:Purpose_Programming	5406	5407	R
+T3	ProgrammingEnvironment_Usage:Purpose_Programming	5380	5381	R
+T4	PlugIn_Usage:Purpose_Programming	5426	5431	rgdal
+T5	PlugIn_Usage:Purpose_Programming	5433	5439	raster
+T6	PlugIn_Usage:Purpose_Programming	5444	5448	mgcv
 T7	Application_Usage:Purpose_Modelling	3473	3477	GDAL
