@@ -9,7 +9,7 @@ interest_list = ['Application_Usage', 'Purpose_Analysis', 'Purpose_Modelling', '
                  'Purpose_Programming']
 
 # file path
-path = 'SoMeSci/PLoS_methods/'
+path = '/home/beck/Desktop/Automatic-classifcation-of-purpose-of-software-in-Scientific-articles/somecode/SoMeSci/PLoS_methods/'
 
 # ---------------------------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------------------------------------------------
@@ -225,7 +225,7 @@ for key in list(fileAn_dict):
 # ---------------------------------------------------------------------------------------------------------------------------------------
 for file in list(merged_dict):
 
-    path2 = 'SoMeSci/PLoS_methodsClean/'
+    path2 = '/home/beck/Desktop/Automatic-classifcation-of-purpose-of-software-in-Scientific-articles/somecode/SoMeSci/PLoS_methodsClean/'
     file_path = path2 + file
 
     print(file_path)
