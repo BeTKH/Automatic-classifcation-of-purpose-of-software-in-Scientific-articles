@@ -1,9 +1,0 @@
-T1	ProgrammingEnvironment_Usage:Purpose_DataPreProcss	9330	9334	Perl
-T2	Application_Usage:Purpose_DataPreProcss	9509	9515	TopHat
-T5	Application_Usage:Purpose_Analysis	9527	9532	HTSeq
-T10	PlugIn_Usage:Purpose_Analysis	10366	10371	GOseq
-T12	Application_Usage:Purpose_Analysis	10394	10399	KOBAS
-T18	Application_Usage:Purpose_DataCollection	12005	12009	FIMO
-T20	Application_Usage:Purpose_DataPreProcss	13516	13522	skewer
-T22	Application_Usage:Purpose_DataPreProcss	13615	13618	BWA
-T24	Application_Usage:Purpose_Analysis	13719	13723	MACS
