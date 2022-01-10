@@ -1,8 +1,0 @@
-T1	ProgrammingEnvironment_Usage:Purpose_DataCollection	11170	11177	Fortran
-T2	Application_Usage:Purpose_DataPreProcss	12877	12880	FSL
-T5	PlugIn_Usage:Purpose_DataPreProcss	13068	13073	FLIRT
-T7	Application_Usage:Purpose_Modelling	13333	13336	FSL
-T9	PlugIn_Usage:Purpose_DataCollection	14343	14348	FLIRT
-T11	Application_Usage:Purpose_DataCollection	14376	14379	FSL
-T13	Application_Usage:Purpose_Modelling	14745	14748	FSL
-T14	Application_Usage:Purpose_Analysis	15537	15540	FSL
