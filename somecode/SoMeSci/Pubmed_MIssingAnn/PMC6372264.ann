@@ -48,3 +48,5 @@ T39	Purpose_DataCollection 28599 28609	Datamonkey
 T40	Purpose_Analysis 36545 36550	BLAST
 T41	Purpose_Visualization 12816 12823	MrBayes
 T42	Purpose_Analysis 9763 9770	Biomart
+T43	Purpose_DataCollection 10204 10211	BioMart
+T44	Purpose_Analysis 15613 15621	Geneious

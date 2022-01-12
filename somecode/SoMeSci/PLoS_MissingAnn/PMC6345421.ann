@@ -100,3 +100,4 @@ T49	Purpose_Analysis 12007 12014	SNPTEST
 T50	Purpose_DataPreProcss 11342 11348	IMPUTE
 T51	Purpose_DataPreProcss 11296 11303	SHAPEIT
 T52	Purpose_Analysis 10187 10191	KING
+T53	Purpose_DataPreProcss 6147 6150	HRC

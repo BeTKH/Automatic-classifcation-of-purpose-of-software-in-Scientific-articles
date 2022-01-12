@@ -38,3 +38,6 @@ T27	Purpose_Analysis 13023 13033	AMBERTOOLS
 T28	Purpose_DataPreProcss 23153 23158	SAINT
 T29	Purpose_DataPreProcss 23163 23169	SADABS
 T30	Purpose_Analysis 23298 23305	SHELXTL
+T31	Purpose_Visualization 23700 23705	ORTEP
+T32	Purpose_Analysis 13005 13012	CPPTRAJ
+T33	Purpose_DataCollection 12574 12577	MOE

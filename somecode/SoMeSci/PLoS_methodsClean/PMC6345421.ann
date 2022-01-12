@@ -24,4 +24,4 @@ T28	Application_Usage:Purpose_DataPreProcss	9592	9596	KING
 T30	Application_Usage:Purpose_Analysis	10187	10191	KING
 T35	Application_Usage:Purpose_Analysis	12183	12191	BOLT-LMM
 T54	Application_Usage:Purpose_DataPreProcss	4548	4578	Haplotype Reference Consortium
-T51	Purpose_DataPreProcss:Application_Usage	11296	11303	SHAPEIT
+T56	Application_Usage:Purpose_DataPreProcss	6147	6150	HRC

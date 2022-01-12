@@ -1,8 +1,4 @@
 T1	ProgrammingEnvironment_Usage:Purpose_Analysis	5478	5479	R
-T2	Application_Mention:Purpose_Analysis	5536	5544	ConQuest
-T3	Application_Mention:Purpose_Analysis	5584	5588	RUMM
-T4	PlugIn_Mention:Purpose_Analysis	5611	5614	ltm
-T5	PlugIn_Mention:Purpose_Analysis	5652	5655	eRM
 T6	ProgrammingEnvironment_Usage:Purpose_Analysis	5794	5795	R
 T7	ProgrammingEnvironment_Usage:Purpose_Programming	5825	5826	R
 T8	Application_Usage:Purpose_DataPreProcss	14224	14229	Plink

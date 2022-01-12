@@ -54,7 +54,9 @@ T38	Purpose_DataPreProcss 10313 10321	Geneious
 T39	Purpose_DataPreProcss 10567 10579	Bellerpheron
 T43	Purpose_Analysis 10755 10761	MUSCLE
 T44	Purpose_Analysis 10769 10777	Geneious
-T45	Purpose_DataCollection 11474 11480	Blastn
+T45	Purpose_DataPreProcss 11474 11480	Blastn
 T46	Purpose_Analysis 11801 11806	DNAsp
 T47	Purpose_Modelling 12467 12471	MEGA
 T48	Purpose_Analysis 14605 14611	Blastn
+T49	Purpose_DataPreProcss 11206 11212	blastn
+T50	Purpose_DataPreProcss 11754 11758	MEGA

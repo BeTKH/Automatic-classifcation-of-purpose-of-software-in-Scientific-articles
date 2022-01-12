@@ -5,7 +5,6 @@ T3	Application_Usage 32729 32735	REDCap
 T5	Citation 32794 32798	[38]
 R3	Citation_of Arg1:T5 Arg2:T3	
 T6	Application_Usage 34534 34544	bcl2fastq2
-T7	Application_Usage 34549 34561	Trim Galore!
 T8	Application_Mention 34607 34611	GATK
 T9	Application_Usage 34686 34692	Picard
 T10	Application_Usage 34719 34723	GATK
@@ -115,7 +114,6 @@ R39	PlugIn_of Arg1:T76 Arg2:T75
 R40	PlugIn_of Arg1:T77 Arg2:T75	
 T4	Purpose_DataCollection 32729 32735	REDCap
 T78	Purpose_DataPreProcss 34534 34544	bcl2fastq2
-T79	Purpose_DataPreProcss 34549 34560	Trim Galore
 T80	Purpose_DataPreProcss 34719 34723	GATK
 T81	Purpose_Analysis 34761 34767	Picard
 T82	Purpose_Analysis 34801 34807	MuTect
@@ -143,7 +141,6 @@ T103	Purpose_Analysis 40916 40922	Salmon
 T104	Purpose_Analysis 41049 41050	R
 T105	Purpose_Analysis 41061 41069	tximport
 T106	Purpose_Analysis 41079 41084	edgeR
-T107	Purpose_Modelling 41261 41263	R-
 T108	Purpose_Analysis 41616 41617	R
 T109	Purpose_Analysis 41626 41629	RTN
 T110	Purpose_Analysis 42240 42245	xCell
@@ -154,3 +151,11 @@ T114	Purpose_Analysis 49366 49367	R
 T115	Purpose_Analysis 49377 49386	survminer
 T116	Purpose_Analysis 49391 49399	survival
 T117	Purpose_Analysis 10254 10260	SnpEff
+T7	Application_Usage 34549 34560	Trim Galore
+T79	Purpose_DataPreProcss 34549 34560	Trim Galore
+T107	Purpose_Modelling 41261 41262	R
+T118	Purpose_DataCollection 34686 34692	Picard
+T119	Purpose_Modelling 35238 35246	samtools
+T120	Purpose_DataPreProcss 36074 36083	NetMHCpan
+T121	Purpose_DataPreProcss 43088 43089	R
+T122	Purpose_Modelling 41269 41283	consensus MIBC

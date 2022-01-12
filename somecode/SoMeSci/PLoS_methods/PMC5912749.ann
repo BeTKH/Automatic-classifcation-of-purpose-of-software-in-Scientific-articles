@@ -46,3 +46,5 @@ T30	Purpose_Analysis 5293 5301	vcftools
 T31	Purpose_DataPreProcss 6464 6468	READ
 T35	Purpose_Modelling 8144 8148	READ
 T36	Purpose_Analysis 8783 8791	samtools
+T37	Purpose_Analysis 7009 7013	READ
+T38	Purpose_Analysis 7283 7287	READ

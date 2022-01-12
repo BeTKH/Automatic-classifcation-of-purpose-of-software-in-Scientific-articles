@@ -5,6 +5,8 @@ T4	Application_Usage:Purpose_Modelling	18002	18005	SPM
 T5	PlugIn_Usage:Purpose_Analysis	19150	19169	SPM anatomy toolbox
 T6	Application_Usage:Purpose_Analysis	19183	19196	WFU-Pickatlas
 T7	Application_Usage:Purpose_Analysis	23602	23615	WFU-Pickatlas
+T8	Application_Usage:Purpose_Analysis	24297	24310	WFU-Pickatlas
+T9	Application_Usage:Purpose_Analysis	25096	25109	WFU-Pickatlas
 T10	Application_Usage:Purpose_Analysis	25602	25605	SPM
 T11	PlugIn_Usage:Purpose_Analysis	25607	25617	LI-toolbox
 T12	Application_Usage:Purpose_Analysis	27786	27789	SPM
@@ -12,3 +14,4 @@ T13	PlugIn_Usage:Purpose_Analysis	27757	27768	ICC toolbox
 T14	Application_Usage:Purpose_Analysis	28038	28042	SPSS
 T15	Application_Usage:Purpose_DataPreProcss	17573	17576	SPM
 T30	Application_Usage:Purpose_Analysis	28048	28063	SPSS Statistics
+T33	OperatingSystem_Usage:Purpose_Analysis	28068	28077	Macintosh

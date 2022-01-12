@@ -1,4 +1,5 @@
 T1	Application_Usage:Purpose_Analysis	2872	2875	SPM
+T2	PlugIn_Usage:Purpose_DataCollection	3292	3363	Diffeomorphic Anatomical Registration Through Exponentiated Lie Algebra
 T3	Application_Usage:Purpose_Analysis	3917	3920	SPM
 T4	Application_Usage:Purpose_DataPreProcss	4433	4437	REST
 T5	PlugIn_Usage:Purpose_DataPreProcss	4398	4406	AlphaSim

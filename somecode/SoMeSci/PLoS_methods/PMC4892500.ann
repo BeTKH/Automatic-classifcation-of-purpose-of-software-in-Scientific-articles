@@ -43,3 +43,5 @@ T18	Purpose_Analysis 3791 3798	Newbler
 T31	Purpose_DataPreProcss 3982 4031	Prokaryotic Genomes Automatic Annotation Pipeline
 T32	Purpose_Visualization 4294 4299	GARLI
 T33	Purpose_Visualization 4402 4407	GARLI
+T34	Purpose_DataCollection 4686 4695	Novoalign
+T35	Purpose_DataPreProcss 4768 4776	SAMtools

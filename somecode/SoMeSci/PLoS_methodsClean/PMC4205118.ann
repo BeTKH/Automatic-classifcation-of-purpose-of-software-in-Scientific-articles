@@ -1,3 +1,6 @@
 T1	Application_Usage:Purpose_DataCollection	8260	8263	SAS
 T2	Application_Usage:Purpose_Modelling	8533	8538	MLwiN
 T9	Application_Usage:Purpose_Programming	4582	4615	Clinical Classifications Software
+T10	Application_Usage:Purpose_Analysis	5317	5320	CCS
+T11	Application_Usage:Purpose_Analysis	5377	5380	CCS
+T12	Application_Usage:Purpose_Analysis	5412	5415	CCS

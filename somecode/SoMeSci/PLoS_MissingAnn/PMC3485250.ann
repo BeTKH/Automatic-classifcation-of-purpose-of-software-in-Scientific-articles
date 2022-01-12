@@ -169,7 +169,7 @@ T118	Purpose_Analysis 7206 7214	ARLEQUIN
 T119	Purpose_Modelling 7691 7696	BEAST
 T120	Purpose_Analysis 8765 8774	MODELTEST
 T121	Purpose_Analysis 9461 9467	TRACER
-T122	Purpose_Analysis 9546 9555	Bioportal
+T122	Purpose_Modelling 9546 9555	Bioportal
 T123	Purpose_Analysis 9714 9722	ARLEQUIN
 T124	Purpose_Analysis 9793 9800	GENEPOP
 T125	Purpose_Analysis 9957 9962	FSTAT
@@ -181,3 +181,6 @@ T130	Purpose_Analysis 10656 10662	CLUMPP
 T131	Purpose_Analysis 10733 10741	GENELAND
 T132	Purpose_Modelling 10369 10378	STRUCTURE
 T133	Purpose_Visualization 11201 11209	DISTRUCT
+T134	Purpose_Modelling 9482 9487	BEAST
+T135	Purpose_Modelling 11150 11159	STRUCTURE
+T136	Purpose_Analysis 11164 11172	GENELAND
