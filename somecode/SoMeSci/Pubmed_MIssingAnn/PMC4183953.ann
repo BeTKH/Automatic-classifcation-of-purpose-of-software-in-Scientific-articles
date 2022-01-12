@@ -50,3 +50,8 @@ T39	Purpose_DataPreProcss 31188 31216	Advanced Normalization Tools
 T40	Purpose_Analysis 31812 31822	3dttest+ +
 T41	Purpose_Analysis 32555 32562	3dFWHMx
 T42	Purpose_Analysis 32577 32587	3dClustsim
+T43	Purpose_Analysis 24328 24332	AFNI
+T44	Purpose_DataCollection 32431 32441	3dttest+ +
+T45	Purpose_Analysis 31805 31809	AFNI
+T46	Purpose_Analysis 30056 30061	waver
+T47	Purpose_DataCollection 26614 26618	AFNI

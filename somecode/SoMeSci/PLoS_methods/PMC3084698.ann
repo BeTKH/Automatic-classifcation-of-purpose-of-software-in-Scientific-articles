@@ -1,6 +1,6 @@
 T1	Application_Usage 93 98	Flash
 T2	ProgrammingEnvironment_Usage 126 138	Actionscript
-T3	Application_Usage 186 191	Flash
+T3	Application_Mention 186 191	Flash
 T4	Application_Usage 2755 2762	MacVide
 T5	ProgrammingEnvironment_Usage 3828 3834	Matlab
 T6	Developer 87 92	Adobe

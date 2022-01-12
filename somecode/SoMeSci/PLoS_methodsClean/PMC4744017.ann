@@ -3,7 +3,6 @@ T2	ProgrammingEnvironment_Usage:Purpose_Programming	8308	8314	Python
 T3	Application_Usage:Purpose_DataCollection	11400	11419	EyeLink Data Viewer
 T4	ProgrammingEnvironment_Usage:Purpose_Analysis	11546	11552	Matlab
 T5	Application_Usage:Purpose_Analysis	11623	11627	SPSS
-T6	ProgrammingEnvironment_Mention:Purpose_Analysis	19427	19433	Matlab
 T8	Application_Usage:Purpose_DataPreProcss	19825	19829	AFNI
-T7	PlugIn_Mention:Purpose_Analysis	19449	19453	iMap
 T9	PlugIn_Usage:Purpose_Modelling	19866	19871	3dFDR
+T10	PlugIn_Usage:Purpose_DataPreProcss	20244	20249	3dFDR

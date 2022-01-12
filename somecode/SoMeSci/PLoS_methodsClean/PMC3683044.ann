@@ -1,2 +1,3 @@
-T1	Application_Usage:Purpose_Analysis	3811	3821	GPS Sample
+T1	Application_Usage:Purpose_DataCollection	3811	3821	GPS Sample
+T2	OperatingSystem_Usage:Purpose_DataCollection	3826	3840	Windows Mobile
 T3	Application_Usage:Purpose_Analysis	7768	7773	STATA

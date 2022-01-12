@@ -3,6 +3,7 @@ T2	Application_Usage:Purpose_DataCollection	6497	6512	MassARRAY Typer
 T3	Application_Usage:Purpose_Analysis	6838	6845	GENEPOP
 T4	Application_Usage:Purpose_Simulation	6913	6918	CLUMP
 T5	Application_Usage:Purpose_Analysis	7230	7269	Statistical Package for Social Sciences
+T6	OperatingSystem_Usage:Purpose_Analysis	7288	7295	windows
 T7	Application_Usage:Purpose_Analysis	7409	7412	2LD
 T8	Application_Usage:Purpose_Modelling	7462	7474	GENECOUNTING
 T9	Application_Usage:Purpose_Analysis	8205	8208	PGA

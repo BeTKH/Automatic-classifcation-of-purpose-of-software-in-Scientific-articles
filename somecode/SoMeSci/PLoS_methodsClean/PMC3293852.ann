@@ -1,3 +1,4 @@
 T1	PlugIn_Usage:Purpose_Stimulation	693	701	STRAIGHT
 T2	Application_Usage:Purpose_DataPreProcss	1907	1912	Praat
-T4	Application_Usage:Purpose_Analysis	2975	2980	Praat
+T3	Application_Usage:Purpose_DataPreProcss	2779	2784	Praat
+T4	Application_Usage:Purpose_DataPreProcss	2975	2980	Praat

@@ -48,3 +48,7 @@ T38	Purpose_DataPreProcss 3761 3765	AFNI
 T39	Purpose_DataPreProcss 4801 4811	FreeSurfer
 T40	Purpose_DataPreProcss 13176 13186	FreeSurfer
 T41	Purpose_DataPreProcss 13585 13595	FreeSurfer
+T42	Purpose_Analysis 1829 1832	FSL
+T43	Purpose_Analysis 1835 1840	FLIRT
+T44	Purpose_Modelling 2349 2359	FreeSurfer
+T45	Purpose_Modelling 14654 14664	FreeSurfer

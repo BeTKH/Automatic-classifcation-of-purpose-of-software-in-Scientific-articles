@@ -18,6 +18,7 @@ T17	Application_Usage:Purpose_Analysis	7206	7214	ARLEQUIN
 T18	Application_Usage:Purpose_Modelling	7691	7696	BEAST
 T19	Application_Usage:Purpose_Analysis	8765	8774	MODELTEST
 T20	Application_Usage:Purpose_Analysis	9461	9467	TRACER
+T21	Application_Usage:Purpose_Modelling	9482	9487	BEAST
 T22	Application_Usage:Purpose_Analysis	9793	9800	GENEPOP
 T23	Application_Usage:Purpose_Analysis	9714	9722	ARLEQUIN
 T24	Application_Usage:Purpose_Analysis	9957	9962	FSTAT
@@ -35,6 +36,7 @@ T36	Application_Usage:Purpose_Modelling	12169	12177	LAGRANGE
 T37	Application_Usage:Purpose_Analysis	12542	12547	BEAST
 T38	Application_Usage:Purpose_Modelling	13144	13150	DIYABC
 T41	Application_Usage:Purpose_Analysis	10359	10366	GENEPOP
+T42	Application_Usage:Purpose_Modelling	11150	11159	STRUCTURE
+T43	Application_Usage:Purpose_Analysis	11164	11172	GENELAND
 T44	Application_Usage:Purpose_Analysis	11641	11644	VIP
-T45	Application_Mention:Purpose_Analysis	11758	11761	VIP
 T39	Application_Usage:Purpose_Analysis	9546	9555	Bioportal

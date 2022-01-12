@@ -3,3 +3,4 @@ T2	Application_Usage:Purpose_Visualization	836	847	Photofiltre
 T3	ProgrammingEnvironment_Usage:Purpose_Analysis	1438	1439	R
 T4	Application_Usage:Purpose_Modelling	4177	4186	EstimateS
 T5	ProgrammingEnvironment_Usage:Purpose_Modelling	5398	5399	R
+T6	PlugIn_Usage:Purpose_Modelling	5408	5412	lme4

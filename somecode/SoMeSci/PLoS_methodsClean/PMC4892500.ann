@@ -3,6 +3,8 @@ T2	Application_Usage:Purpose_Analysis	3817	3838	CLC Genomic Workbench
 T3	Application_Usage:Purpose_Analysis	3850	3863	SMRT analysis
 T4	Application_Usage:Purpose_DataPreProcss	3982	4031	Prokaryotic Genomes Automatic Annotation Pipeline
 T5	Application_Usage:Purpose_Visualization	4294	4299	GARLI
+T6	Application_Usage:Purpose_DataPreProcss	4768	4776	SAMtools
+T7	Application_Usage:Purpose_DataCollection	4686	4695	Novoalign
 T8	ProgrammingEnvironment_Usage:Purpose_Analysis	4817	4823	Python
 T10	Application_Usage:Purpose_Modelling	6126	6131	GARLI
 T11	Application_Usage:Purpose_Analysis	6198	6203	GARLI

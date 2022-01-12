@@ -7,8 +7,8 @@ T6	Application_Usage 3113 3120	BioMart
 T7	Application_Usage 6044 6049	MAGMA
 T8	Application_Mention 7022 7027	MAGMA
 T9	Application_Usage 7216 7221	MAGMA
-T10	Application_Usage 7294 7299	MAGMA
-T11	Application_Usage 7369 7374	MAGMA
+T10	Application_Mention 7294 7299	MAGMA
+T11	Application_Mention 7369 7374	MAGMA
 T12	Application_Usage 7572 7577	MAGMA
 T13	Application_Usage 9948 9955	BioMart
 T16	Application_Usage 3088 3095	Ensembl
@@ -29,3 +29,5 @@ T20	Purpose_Analysis 6044 6049	MAGMA
 T21	Purpose_Analysis 7216 7221	MAGMA
 T22	Purpose_Visualization 7572 7577	MAGMA
 T23	Purpose_DataPreProcss 9948 9955	BioMart
+T24	Purpose_DataPreProcss 2219 2224	GREAT
+T25	Purpose_Analysis 2576 2581	GREAT

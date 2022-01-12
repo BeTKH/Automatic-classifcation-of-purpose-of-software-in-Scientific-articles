@@ -5,5 +5,6 @@ T4	Application_Usage:Purpose_Visualization	23426	23433	SOCPROG
 T5	Application_Usage:Purpose_Programming	24373	24380	SOCPROG
 T7	PlugIn_Usage:Purpose_Modelling	25695	25699	boot
 T8	ProgrammingEnvironment_Usage:Purpose_Programming	25712	25713	R
+T9	PlugIn_Usage:Purpose_Analysis	9058	9065	T-LoCoH
 T10	PlugIn_Usage:Purpose_Analysis	14187	14194	T-LoCoH
 T11	PlugIn_Usage:Purpose_Simulation	15434	15441	T-LoCoH

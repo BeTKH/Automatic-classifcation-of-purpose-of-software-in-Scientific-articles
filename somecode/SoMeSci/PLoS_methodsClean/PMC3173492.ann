@@ -1,8 +1,5 @@
 T1	ProgrammingEnvironment_Usage:Purpose_Programming	2242	2248	Python
 T2	PlugIn_Usage:Purpose_DataPreProcss	2255	2259	NLTK
-T3	PlugIn_Mention:Purpose_DataCollection	2377	2381	NLTK
-T4	Application_Mention:Purpose_DataCollection	2558	2565	Attivio
-T5	Application_Mention:Purpose_DataCollection	2663	2670	Inxight
 T16	Application_Usage:Purpose_DataCollection	1615	1660	Entrez Utilities Entrez Programming Utilities
 T6	Application_Usage:Purpose_DataPreProcss	4479	4493	Yahoo-BOSS API
 T8	Application_Usage:Purpose_DataPreProcss	4813	4823	Yahoo-BOSS

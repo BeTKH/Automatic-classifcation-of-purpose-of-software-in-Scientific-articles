@@ -7,3 +7,4 @@ T7	Developer 6829 6838	SPSS Inc.
 R2	Developer_of Arg1:T7 Arg2:T1	
 R3	Version_of Arg1:T5 Arg2:T1	
 T3	Purpose_Analysis 6803 6807	SPSS
+T4	Purpose_Analysis 6817 6824	Windows
