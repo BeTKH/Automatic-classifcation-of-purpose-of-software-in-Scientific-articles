@@ -1,0 +1,19 @@
+T1	Application_Usage:Purpose_Analysis	1311	1317	ImageJ
+T8	Application_Usage:Purpose_DataPreProcss	10420	10426	ImageJ
+T9	Application_Usage:Purpose_Analysis	10677	10683	ImageJ
+T10	Application_Usage:Purpose_Simulation	11235	11241	ImageJ
+T14	Application_Usage:Purpose_DataPreProcss	11410	11417	Ki67 Vv
+T15	Application_Usage:Purpose_Programming	12324	12330	ImageJ
+T17	Application_Usage:Purpose_Analysis	13615	13626	Immunoratio
+T18	Application_Usage:Purpose_DataCollection	14591	14602	Immunoratio
+T19	Application_Usage:Purpose_DataPreProcss	16102	16108	ImageJ
+T21	Application_Usage:Purpose_DataCollection	16235	16246	Immunoratio
+T22	Application_Usage:Purpose_Analysis	16375	16386	Immunoratio
+T23	ProgrammingEnvironment_Usage:Purpose_Analysis	17101	17102	R
+T27	Application_Usage:Purpose_DataCollection	17395	17406	Immunoratio
+T28	PlugIn_Usage:Purpose_Analysis	17431	17435	ROCR
+T30	PlugIn_Usage:Purpose_Visualization	17570	17577	FigureJ
+T32	Application_Usage:Purpose_Analysis	19160	19171	Immunoratio
+T33	Application_Usage:Purpose_Visualization	19805	19816	Immunoratio
+T34	Application_Usage:Purpose_Visualization	20692	20703	Immunoratio
+T35	Application_Usage:Purpose_Visualization	20786	20797	Immunoratio

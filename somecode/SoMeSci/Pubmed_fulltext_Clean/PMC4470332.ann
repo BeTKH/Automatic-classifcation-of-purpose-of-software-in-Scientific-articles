@@ -1,0 +1,13 @@
+T1	Application_Usage:Purpose_DataPreProcss	19784	19793	Novoalign
+T2	Application_Usage:Purpose_Analysis	19886	19909	Genome Analysis Toolkit
+T5	Application_Usage:Purpose_DataPreProcss	19984	19988	GATK
+T7	Application_Usage:Purpose_DataPreProcss	20559	20562	VAX
+T9	Application_Usage:Purpose_Analysis	20628	20636	Polyphen
+T10	Application_Usage:Purpose_Analysis	20643	20647	Sift
+T11	Application_Usage:Purpose_Analysis	20654	20660	Condel
+T12	Application_Usage:Purpose_Analysis	20671	20675	CADD
+T17	Application_Usage:Purpose_Analysis	21129	21137	Geneious
+T21	Application_Usage:Purpose_DataCollection	27854	27860	ImageJ
+T23	Application_Usage:Purpose_Analysis	28674	28680	ImageJ
+T25	Application_Usage:Purpose_Analysis	29165	29170	Prism
+T28	Application_Usage:Purpose_Analysis	30989	30995	ImageJ
