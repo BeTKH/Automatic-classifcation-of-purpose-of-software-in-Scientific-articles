@@ -1,0 +1,11 @@
+T1	ProgrammingEnvironment_Usage:Purpose_Programming	230	233	C++
+T2	ProgrammingEnvironment_Usage:Purpose_Programming	238	244	OpenCL
+T6	ProgrammingEnvironment_Usage:Purpose_Programming	1700	1703	C++
+T9	PlugIn_Usage:Purpose_Analysis	3203	3209	glmnet
+T11	ProgrammingEnvironment_Usage:Purpose_Programming	3708	3709	R
+T12	PlugIn_Usage:Purpose_Analysis	3723	3729	glmnet
+T13	ProgrammingEnvironment_Usage:Purpose_Programming	3777	3780	C++
+T14	PlugIn_Usage:Purpose_Analysis	3879	3885	glmnet
+T15	Application_Usage:Purpose_Analysis	3890	3899	gpu-lasso
+T16	Application_Usage:Purpose_Analysis	3907	3916	gpu-lasso
+T18	ProgrammingEnvironment_Usage:Purpose_Programming	5986	5989	C++

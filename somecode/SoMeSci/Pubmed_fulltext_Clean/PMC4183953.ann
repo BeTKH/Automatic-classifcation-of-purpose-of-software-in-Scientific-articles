@@ -1,0 +1,20 @@
+T1	ProgrammingEnvironment_Usage:Purpose_DataCollection	21779	21785	Matlab
+T3	Application_Usage:Purpose_DataCollection	21802	21808	Cogent
+T5	Application_Usage:Purpose_DataPreProcss	23394	23398	AFNI
+T7	Application_Usage:Purpose_Analysis	24328	24332	AFNI
+T8	PlugIn_Usage:Purpose_Modelling	25509	25521	3dDeconvolve
+T9	PlugIn_Usage:Purpose_DataCollection	26621	26630	3dmaskave
+T10	Application_Usage:Purpose_DataCollection	26614	26618	AFNI
+T11	Application_Usage:Purpose_Analysis	27985	27989	SPSS
+T14	Application_Usage:Purpose_Analysis	29178	29182	AFNI
+T15	PlugIn_Usage:Purpose_DataCollection	29734	29743	3dmaskave
+T16	PlugIn_Usage:Purpose_Analysis	29789	29798	3dDetrend
+T17	Application_Usage:Purpose_Analysis	30051	30055	AFNI
+T18	PlugIn_Usage:Purpose_Analysis	30056	30061	waver
+T19	Application_Usage:Purpose_DataCollection	31095	31099	AFNI
+T20	Application_Usage:Purpose_DataPreProcss	31188	31216	Advanced Normalization Tools
+T22	Application_Usage:Purpose_Analysis	31805	31809	AFNI
+T23	PlugIn_Usage:Purpose_Analysis	31812	31822	3dttest+ +
+T24	PlugIn_Usage:Purpose_DataCollection	32431	32441	3dttest+ +
+T25	PlugIn_Usage:Purpose_Analysis	32555	32562	3dFWHMx
+T26	PlugIn_Usage:Purpose_Analysis	32577	32587	3dClustsim

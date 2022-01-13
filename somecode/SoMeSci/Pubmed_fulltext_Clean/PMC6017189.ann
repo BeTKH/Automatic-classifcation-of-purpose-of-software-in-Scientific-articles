@@ -1,0 +1,12 @@
+T1	Application_Usage:Purpose_Analysis	8311	8315	PASS
+T2	Application_Usage:Purpose_Analysis	11996	12041	Prediction of Activity Spectra for Substances
+T5	Application_Usage:Purpose_Simulation	12453	12456	MOE
+T7	Application_Usage:Purpose_DataCollection	12574	12577	MOE
+T8	Application_Usage:Purpose_Visualization	12788	12791	MOE
+T9	Application_Usage:Purpose_Visualization	12796	12803	Chimera
+T11	PlugIn_Usage:Purpose_Analysis	13005	13012	CPPTRAJ
+T12	Application_Usage:Purpose_Analysis	13023	13033	AMBERTOOLS
+T15	Application_Usage:Purpose_DataPreProcss	23153	23158	SAINT
+T16	Application_Usage:Purpose_DataPreProcss	23163	23169	SADABS
+T18	Application_Usage:Purpose_Analysis	23298	23305	SHELXTL
+T20	Application_Usage:Purpose_Visualization	23700	23705	ORTEP
