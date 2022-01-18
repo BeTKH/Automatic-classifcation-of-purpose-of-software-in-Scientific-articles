@@ -1,5 +1,5 @@
-T1	Application_Usage:Purpose_DataPreProcss 11418 11429	Trimmomatic
-T3	Application_Usage:Purpose_DataCollection 11569 11575	Bowtie
+T1	Application_Usage_DataPreProcss 11418 11429	Trimmomatic
+T3	Application_Usage_DataCollection 11569 11575	Bowtie
 T2	Citation 11446 11450	[52]
 R1	Citation_of Arg1:T2 Arg2:T1	
 T4	Version 11575 11576	2

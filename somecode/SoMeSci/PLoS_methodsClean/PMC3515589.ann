@@ -1,10 +1,10 @@
-T1	Application_Usage:Purpose_DataPreProcss 6897 6918	Brain Vision Analyzer
-T2	Application_Usage:Purpose_DataPreProcss 7632 7654	FMRIB Software Library
-T3	Application_Usage:Purpose_DataPreProcss 8187 8190	FSL
-T4	Application_Usage:Purpose_DataPreProcss 8103 8106	FSL
-T5	Application_Usage:Purpose_Analysis 12573 12576	FSL
-T6	Application_Usage:Purpose_DataPreProcss 13271 13274	FSL
-T10	Application_Usage:Purpose_DataPreProcss 7695 7698	FSL
+T1	Application_Usage_DataPreProcss 6897 6918	Brain Vision Analyzer
+T2	Application_Usage_DataPreProcss 7632 7654	FMRIB Software Library
+T3	Application_Usage_DataPreProcss 8187 8190	FSL
+T4	Application_Usage_DataPreProcss 8103 8106	FSL
+T5	Application_Usage_Analysis 12573 12576	FSL
+T6	Application_Usage_DataPreProcss 13271 13274	FSL
+T10	Application_Usage_DataPreProcss 7695 7698	FSL
 T7	Developer 6929 6943	Brain Products
 R1	Developer_of Arg1:T7 Arg2:T1	
 T8	Abbreviation 7656 7659	FSL

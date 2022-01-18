@@ -1,9 +1,9 @@
-T1	Application_Usage:Purpose_DataCollection 4934 4940	Access
-T2	Application_Usage:Purpose_DataCollection 4947 4954	EpiInfo
-T3	Application_Usage:Purpose_Analysis 4988 4992	SPSS
-T4	OperatingSystem_Usage:Purpose_Analysis 5014 5021	Windows
-T5	ProgrammingEnvironment_Usage:Purpose_Analysis 5076 5077	R
-T7	Application_Usage:Purpose_Analysis 4994 5009	SPSS Statistics
+T1	Application_Usage_DataCollection 4934 4940	Access
+T2	Application_Usage_DataCollection 4947 4954	EpiInfo
+T3	Application_Usage_Analysis 4988 4992	SPSS
+T4	OperatingSystem_Usage_Analysis 5014 5021	Windows
+T5	ProgrammingEnvironment_Usage_Analysis 5076 5077	R
+T7	Application_Usage_Analysis 4994 5009	SPSS Statistics
 T6	Developer 4924 4933	Microsoft
 R1	Developer_of Arg1:T6 Arg2:T1	
 R2	Specification_of Arg1:T7 Arg2:T3	

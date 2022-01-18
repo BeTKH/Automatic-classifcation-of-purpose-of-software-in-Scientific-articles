@@ -1,7 +1,7 @@
-T1	Application_Usage:Purpose_Analysis 4254 4258	SPSS
-T2	Application_Usage:Purpose_DataCollection 4333 4338	CSPRO
-T3	Application_Usage:Purpose_Analysis 7390 7395	Nvivo
-T5	Application_Usage:Purpose_Analysis 4275 4290	SPSS Statistics
+T1	Application_Usage_Analysis 4254 4258	SPSS
+T2	Application_Usage_DataCollection 4333 4338	CSPRO
+T3	Application_Usage_Analysis 7390 7395	Nvivo
+T5	Application_Usage_Analysis 4275 4290	SPSS Statistics
 T4	Version 4267 4269	23
 R1	Version_of Arg1:T4 Arg2:T1	
 R2	Specification_of Arg1:T5 Arg2:T1	

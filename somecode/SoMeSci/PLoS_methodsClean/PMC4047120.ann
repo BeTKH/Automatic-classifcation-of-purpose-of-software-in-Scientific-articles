@@ -1,10 +1,10 @@
-T1	PlugIn_Usage:Purpose_Analysis 1619 1628	DTV.II SR
-T2	Application_Usage:Purpose_Analysis 2197 2205	Virtuoso
-T3	Application_Usage:Purpose_Analysis 9305 9311	Primer
-T4	Application_Usage:Purpose_DataPreProcss 11872 11881	MetaMorph
-T5	Application_Usage:Purpose_Analysis 13971 14014	Statistical Package for the Social Sciences
-T11	Application_Usage:Purpose_Analysis 14016 14020	SPSS
-T14	Application_Usage:Purpose_Analysis 1772 1780	Volume 1
+T1	PlugIn_Usage_Analysis 1619 1628	DTV.II SR
+T2	Application_Usage_Analysis 2197 2205	Virtuoso
+T3	Application_Usage_Analysis 9305 9311	Primer
+T4	Application_Usage_DataPreProcss 11872 11881	MetaMorph
+T5	Application_Usage_Analysis 13971 14014	Statistical Package for the Social Sciences
+T11	Application_Usage_Analysis 14016 14020	SPSS
+T14	Application_Usage_Analysis 1772 1780	Volume 1
 T6	Developer 1647 1686	Image Computing and Analysis Laboratory
 R1	Developer_of Arg1:T6 Arg2:T1	
 T7	Abbreviation 1694 1698	ICAL

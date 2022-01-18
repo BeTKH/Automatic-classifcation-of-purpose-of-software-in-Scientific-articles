@@ -1,5 +1,5 @@
-T1	Application_Usage:Purpose_Analysis 15758 15763	Prism
-T5	ProgrammingEnvironment_Usage:Purpose_Analysis 15904 15905	R
+T1	Application_Usage_Analysis 15758 15763	Prism
+T5	ProgrammingEnvironment_Usage_Analysis 15904 15905	R
 T2	Developer 15749 15757	GraphPad
 R1	Developer_of Arg1:T2 Arg2:T1	
 T3	Version 15765 15768	7.0

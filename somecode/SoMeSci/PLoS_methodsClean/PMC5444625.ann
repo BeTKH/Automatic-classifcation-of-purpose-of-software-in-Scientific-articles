@@ -1,8 +1,8 @@
-T1	Application_Usage:Purpose_DataCollection 23927 23934	Epidata
-T2	Application_Usage:Purpose_Analysis 25947 25952	Stata
-T3	Application_Usage:Purpose_Modelling 29231 29236	Stata
-T4	Application_Usage:Purpose_Analysis 30845 30850	Stata
-T5	PlugIn_Usage:Purpose_Analysis 25938 25946	ZSCORE06
+T1	Application_Usage_DataCollection 23927 23934	Epidata
+T2	Application_Usage_Analysis 25947 25952	Stata
+T3	Application_Usage_Modelling 29231 29236	Stata
+T4	Application_Usage_Analysis 30845 30850	Stata
+T5	PlugIn_Usage_Analysis 25938 25946	ZSCORE06
 T6	Citation 23935 23939	[49]
 R1	Citation_of Arg1:T6 Arg2:T1	
 T7	Version 30851 30855	12.0

@@ -1,19 +1,19 @@
-T1	Application_Usage:Purpose_Analysis 15525 15534	SigmaStat
-T3	OperatingSystem_Usage:Purpose_Analysis 15544 15551	Windows
-T5	Application_Usage:Purpose_DataCollection 23622 23636	Image-Pro Plus
-T7	OperatingSystem_Usage:Purpose_DataCollection 23645 23652	Windows
-T10	Application_Usage:Purpose_DataCollection 23735 23744	Scope-Pro
-T11	OperatingSystem_Usage:Purpose_DataCollection 23753 23760	Windows
-T14	Application_Usage:Purpose_DataPreProcss 24827 24830	IPP
-T15	Application_Usage:Purpose_Visualization 24913 24922	Photoshop
-T20	Application_Usage:Purpose_DataPreProcss 25136 25139	IPP
-T21	Application_Usage:Purpose_DataPreProcss 25842 25854	Office Excel
-T25	Application_Usage:Purpose_Visualization 25983 25992	SigmaPlot
-T27	OperatingSystem_Usage:Purpose_Visualization 26001 26008	Windows
-T29	Application_Usage:Purpose_Analysis 26915 26924	Photoshop
-T30	Application_Usage:Purpose_Analysis 26968 26971	IPP
-T31	Application_Usage:Purpose_Analysis 27608 27616	Satistix
-T33	OperatingSystem_Usage:Purpose_Analysis 27627 27634	Windows
+T1	Application_Usage_Analysis 15525 15534	SigmaStat
+T3	OperatingSystem_Usage_Analysis 15544 15551	Windows
+T5	Application_Usage_DataCollection 23622 23636	Image-Pro Plus
+T7	OperatingSystem_Usage_DataCollection 23645 23652	Windows
+T10	Application_Usage_DataCollection 23735 23744	Scope-Pro
+T11	OperatingSystem_Usage_DataCollection 23753 23760	Windows
+T14	Application_Usage_DataPreProcss 24827 24830	IPP
+T15	Application_Usage_Visualization 24913 24922	Photoshop
+T20	Application_Usage_DataPreProcss 25136 25139	IPP
+T21	Application_Usage_DataPreProcss 25842 25854	Office Excel
+T25	Application_Usage_Visualization 25983 25992	SigmaPlot
+T27	OperatingSystem_Usage_Visualization 26001 26008	Windows
+T29	Application_Usage_Analysis 26915 26924	Photoshop
+T30	Application_Usage_Analysis 26968 26971	IPP
+T31	Application_Usage_Analysis 27608 27616	Satistix
+T33	OperatingSystem_Usage_Analysis 27627 27634	Windows
 T2	Version 15536 15539	3.1
 R1	Version_of Arg1:T2 Arg2:T1	
 T4	Developer 15554 15574	Systat Software Inc.

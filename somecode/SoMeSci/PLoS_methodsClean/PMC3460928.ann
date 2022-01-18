@@ -1,9 +1,9 @@
-T1	Application_Usage:Purpose_Analysis 5100 5108	Aninhado
-T2	Application_Usage:Purpose_Analysis 5490 5498	netcarto
-T3	Application_Usage:Purpose_Analysis 5508 5513	Pajek
-T4	Application_Usage:Purpose_Analysis 7174 7182	netcarto
-T5	ProgrammingEnvironment_Usage:Purpose_Analysis 8899 8900	R
-T9	PlugIn_Usage:Purpose_Analysis 8901 8910	bipartite
+T1	Application_Usage_Analysis 5100 5108	Aninhado
+T2	Application_Usage_Analysis 5490 5498	netcarto
+T3	Application_Usage_Analysis 5508 5513	Pajek
+T4	Application_Usage_Analysis 7174 7182	netcarto
+T5	ProgrammingEnvironment_Usage_Analysis 8899 8900	R
+T9	PlugIn_Usage_Analysis 8901 8910	bipartite
 T6	Citation 5109 5112	[3]
 R1	Citation_of Arg1:T6 Arg2:T1	
 T7	Citation 5500 5503	[5]

@@ -1,5 +1,5 @@
-T1	Application_Usage:Purpose_Analysis 7974 7978	SPSS
-T3	Application_Usage:Purpose_Visualization 8534 8539	Prism
+T1	Application_Usage_Analysis 7974 7978	SPSS
+T3	Application_Usage_Visualization 8534 8539	Prism
 T2	Version 7987 7991	23.0
 R1	Version_of Arg1:T2 Arg2:T1	
 T4	Developer 8525 8533	GraphPad

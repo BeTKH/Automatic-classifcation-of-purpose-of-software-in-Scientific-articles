@@ -1,7 +1,7 @@
-T1	Application_Usage:Purpose_Analysis 8856 8862	IMARIS
-T4	Application_Usage:Purpose_DataCollection 10311 10322	Axio Vision
-T7	Application_Usage:Purpose_Analysis 10401 10407	ImageJ
-T9	Application_Usage:Purpose_Analysis 10874 10882	GraphPad
+T1	Application_Usage_Analysis 8856 8862	IMARIS
+T4	Application_Usage_DataCollection 10311 10322	Axio Vision
+T7	Application_Usage_Analysis 10401 10407	ImageJ
+T9	Application_Usage_Analysis 10874 10882	GraphPad
 T2	Version 8863 8868	7.4.0
 R1	Version_of Arg1:T2 Arg2:T1	
 T3	Developer 8879 8907	Bitplane Scientific Software

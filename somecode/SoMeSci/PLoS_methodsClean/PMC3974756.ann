@@ -1,7 +1,7 @@
-T1	Application_Usage:Purpose_Analysis 4314 4352	Statistical Package for Social Science
-T2	Application_Usage:Purpose_Analysis 4410 4413	SAS
-T3	OperatingSystem_Usage:Purpose_Analysis 4440 4447	Windows
-T15	Application_Usage:Purpose_Analysis 4425 4428	SAS
+T1	Application_Usage_Analysis 4314 4352	Statistical Package for Social Science
+T2	Application_Usage_Analysis 4410 4413	SAS
+T3	OperatingSystem_Usage_Analysis 4440 4447	Windows
+T15	Application_Usage_Analysis 4425 4428	SAS
 T11	Abbreviation 4354 4358	SPSS
 R2	Abbreviation_of Arg1:T11 Arg2:T1	
 T12	Version 4376 4380	18.0

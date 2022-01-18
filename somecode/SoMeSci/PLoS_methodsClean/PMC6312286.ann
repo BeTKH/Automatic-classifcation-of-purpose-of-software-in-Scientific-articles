@@ -1,5 +1,5 @@
-T1	Application_Usage:Purpose_Analysis 4231 4236	Stata
-T13	Application_Usage:Purpose_Analysis 4253 4258	Stata
+T1	Application_Usage_Analysis 4231 4236	Stata
+T13	Application_Usage_Analysis 4253 4258	Stata
 T11	Version 4238 4240	13
 R2	Version_of Arg1:T11 Arg2:T1	
 T12	Developer 4242 4251	StataCorp

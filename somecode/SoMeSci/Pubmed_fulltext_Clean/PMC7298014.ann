@@ -1,17 +1,17 @@
-T6	Application_Usage:Purpose_DataCollection 14849 14854	LAS X
-T7	Application_Usage:Purpose_DataPreProcss 15155 15160	LAS X
-T8	Application_Usage:Purpose_DataPreProcss 15296 15302	Imaris
-T11	Application_Usage:Purpose_Visualization 15342 15348	Imaris
-T12	PlugIn_Usage:Purpose_Visualization 15478 15482	Fiji
-T14	Application_Usage:Purpose_Visualization 15509 15518	Photoshop
-T18	Application_Usage:Purpose_Visualization 15536 15545	Quicktime
-T22	Application_Usage:Purpose_Analysis 15868 15877	Photoshop
-T26	Application_Usage:Purpose_Analysis 15894 15905	Illustrator
-T29	PlugIn_Usage:Purpose_Analysis 16370 16374	Fiji
-T30	Application_Usage:Purpose_Visualization 17144 17149	Prism
-T33	Application_Usage:Purpose_Visualization 17196 17207	Illustrator
-T1	Application_Usage:Purpose_Simulation 1866 1869	CFD
-T4	Application_Usage:Purpose_Modelling 2031 2034	CAD
+T6	Application_Usage_DataCollection 14849 14854	LAS X
+T7	Application_Usage_DataPreProcss 15155 15160	LAS X
+T8	Application_Usage_DataPreProcss 15296 15302	Imaris
+T11	Application_Usage_Visualization 15342 15348	Imaris
+T12	PlugIn_Usage_Visualization 15478 15482	Fiji
+T14	Application_Usage_Visualization 15509 15518	Photoshop
+T18	Application_Usage_Visualization 15536 15545	Quicktime
+T22	Application_Usage_Analysis 15868 15877	Photoshop
+T26	Application_Usage_Analysis 15894 15905	Illustrator
+T29	PlugIn_Usage_Analysis 16370 16374	Fiji
+T30	Application_Usage_Visualization 17144 17149	Prism
+T33	Application_Usage_Visualization 17196 17207	Illustrator
+T1	Application_Usage_Simulation 1866 1869	CFD
+T4	Application_Usage_Modelling 2031 2034	CAD
 T9	Version 15303 15308	9.1.2
 R4	Version_of Arg1:T9 Arg2:T8	
 T10	Developer 15310 15318	Bitplane

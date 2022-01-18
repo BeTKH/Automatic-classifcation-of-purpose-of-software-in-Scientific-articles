@@ -1,6 +1,6 @@
-T1	Application_Usage:Purpose_Modelling 11383 11388	MLWin
-T3	Application_Usage:Purpose_Modelling 11446 11451	MLwiN
-T6	Application_Usage:Purpose_Analysis 11761 11766	MLwiN
+T1	Application_Usage_Modelling 11383 11388	MLWin
+T3	Application_Usage_Modelling 11446 11451	MLwiN
+T6	Application_Usage_Analysis 11761 11766	MLwiN
 T2	Version 11391 11395	2.31
 R1	Version_of Arg1:T2 Arg2:T1	
 R2	Specification_of Arg1:T3 Arg2:T1	

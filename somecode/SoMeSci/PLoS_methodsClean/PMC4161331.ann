@@ -1,6 +1,6 @@
-T1	Application_Usage:Purpose_Modelling 7634 7639	STATA
-T2	Application_Usage:Purpose_Modelling 7665 7670	MLWiN
-T6	PlugIn_Usage:Purpose_Modelling 7684 7692	runmlwin
+T1	Application_Usage_Modelling 7634 7639	STATA
+T2	Application_Usage_Modelling 7665 7670	MLWiN
+T6	PlugIn_Usage_Modelling 7684 7692	runmlwin
 T3	Version 7640 7642	12
 R1	Version_of Arg1:T3 Arg2:T1	
 T4	Developer 7647 7659	Stata, Corp.

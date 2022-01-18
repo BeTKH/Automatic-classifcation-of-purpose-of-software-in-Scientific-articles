@@ -1,8 +1,8 @@
-T1	Application_Usage:Purpose_DataCollection 7995 8004	ImagePro+
-T4	Application_Usage:Purpose_Analysis 8920 8924	MyIQ
-T7	Application_Usage:Purpose_Analysis 12327 12336	FlexArray
-T10	Application_Usage:Purpose_Analysis 12453 12479	Ingenuity Pathway Analysis
-T12	Application_Usage:Purpose_Analysis 12551 12556	STATA
+T1	Application_Usage_DataCollection 7995 8004	ImagePro+
+T4	Application_Usage_Analysis 8920 8924	MyIQ
+T7	Application_Usage_Analysis 12327 12336	FlexArray
+T10	Application_Usage_Analysis 12453 12479	Ingenuity Pathway Analysis
+T12	Application_Usage_Analysis 12551 12556	STATA
 T2	Version 8023 8028	5.0.1
 R1	Version_of Arg1:T2 Arg2:T1	
 T3	Developer 8030 8047	Media Cybernetics

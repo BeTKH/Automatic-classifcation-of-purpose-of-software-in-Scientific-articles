@@ -1,13 +1,13 @@
-T1	Application_Usage:Purpose_DataCollection 372 384	Google Earth
-T2	Application_Usage:Purpose_DataCollection 667 679	Google Earth
-T3	Application_Usage:Purpose_DataPreProcss 1169 1179	SDMtoolbox
-T4	Application_Usage:Purpose_Programming 2772 2778	MaxEnt
-T8	Application_Usage:Purpose_Analysis 4472 4482	SDMtoolbox
-T9	Application_Usage:Purpose_DataPreProcss 4946 4954	ENMtools
-T15	Application_Usage:Purpose_Analysis 7982 7988	MaxEnt
-T16	Application_Usage:Purpose_Analysis 8873 8881	ENMtools
-T17	Application_Usage:Purpose_Analysis 10182 10188	MaxEnt
-T18	Application_Usage:Purpose_Analysis 10599 10605	MaxEnt
+T1	Application_Usage_DataCollection 372 384	Google Earth
+T2	Application_Usage_DataCollection 667 679	Google Earth
+T3	Application_Usage_DataPreProcss 1169 1179	SDMtoolbox
+T4	Application_Usage_Programming 2772 2778	MaxEnt
+T8	Application_Usage_Analysis 4472 4482	SDMtoolbox
+T9	Application_Usage_DataPreProcss 4946 4954	ENMtools
+T15	Application_Usage_Analysis 7982 7988	MaxEnt
+T16	Application_Usage_Analysis 8873 8881	ENMtools
+T17	Application_Usage_Analysis 10182 10188	MaxEnt
+T18	Application_Usage_Analysis 10599 10605	MaxEnt
 T5	Application_Mention 2800 2806	MaxEnt
 T6	Application_Mention 3035 3041	MaxEnt
 T7	Application_Mention 4178 4184	MaxEnt

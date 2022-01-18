@@ -1,6 +1,6 @@
-T1	Application_Usage:Purpose_Analysis 955 959	SPSS
-T3	Application_Usage:Purpose_Analysis 7293 7308	SPSS Statistics
-T4	OperatingSystem_Usage:Purpose_Analysis 7313 7320	Windows
+T1	Application_Usage_Analysis 955 959	SPSS
+T3	Application_Usage_Analysis 7293 7308	SPSS Statistics
+T4	OperatingSystem_Usage_Analysis 7313 7320	Windows
 T2	Version 968 970	22
 R1	Version_of Arg1:T2 Arg2:T1	
 T5	Version 7329 7333	22.0

@@ -1,5 +1,5 @@
-T1	Application_Usage:Purpose_Analysis 8074 8079	STATA
-T8	Application_Usage:Purpose_Analysis 8122 8127	Stata
+T1	Application_Usage_Analysis 8074 8079	STATA
+T8	Application_Usage_Analysis 8122 8127	Stata
 T6	Version 8080 8082	11
 R4	Version_of Arg1:T6 Arg2:T1	
 T7	Developer 8105 8115	StataCorp.

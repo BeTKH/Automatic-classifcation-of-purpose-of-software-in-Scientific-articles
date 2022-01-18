@@ -1,17 +1,17 @@
-T1	Application_Usage:Purpose_Analysis 4169 4180	BD FACSDiva
-T2	Application_Usage:Purpose_Programming 5001 5007	FastQC
-T3	Application_Usage:Purpose_DataPreProcss 5259 5265	Tophat
-T4	Application_Usage:Purpose_Analysis 5480 5489	Cufflinks
-T5	PlugIn_Usage:Purpose_DataCollection 7677 7703	Functional Annotation Tool
-T8	Application_Usage:Purpose_Analysis 8313 8319	GSEA-P
-T9	Application_Usage:Purpose_Visualization 8797 8806	Cytoscape
-T10	PlugIn_Usage:Purpose_Visualization 8757 8766	BisoGenet
-T11	PlugIn_Usage:Purpose_Visualization 8828 8837	BisoGenet
-T16	Application_Usage:Purpose_Analysis 7508 7571	Database for Annotation, Visualization and Integrated Discovery
-T19	Application_Usage:Purpose_Analysis 8405 8410	DAVID
-T26	Application_Usage:Purpose_DataPreProcss 5300 5308	iGenomes
-T36	Application_Usage:Purpose_DataCollection 7671 7676	DAVID
-T14	Application_Usage:Purpose_Analysis 7787 7826	Expression Analysis Systematic Explorer
+T1	Application_Usage_Analysis 4169 4180	BD FACSDiva
+T2	Application_Usage_Programming 5001 5007	FastQC
+T3	Application_Usage_DataPreProcss 5259 5265	Tophat
+T4	Application_Usage_Analysis 5480 5489	Cufflinks
+T5	PlugIn_Usage_DataCollection 7677 7703	Functional Annotation Tool
+T8	Application_Usage_Analysis 8313 8319	GSEA-P
+T9	Application_Usage_Visualization 8797 8806	Cytoscape
+T10	PlugIn_Usage_Visualization 8757 8766	BisoGenet
+T11	PlugIn_Usage_Visualization 8828 8837	BisoGenet
+T16	Application_Usage_Analysis 7508 7571	Database for Annotation, Visualization and Integrated Discovery
+T19	Application_Usage_Analysis 8405 8410	DAVID
+T26	Application_Usage_DataPreProcss 5300 5308	iGenomes
+T36	Application_Usage_DataCollection 7671 7676	DAVID
+T14	Application_Usage_Analysis 7787 7826	Expression Analysis Systematic Explorer
 T22	Developer 4191 4205	BD Biosciences
 R1	Developer_of Arg1:T22 Arg2:T1	
 T23	Citation 5008 5014	[8,16]
