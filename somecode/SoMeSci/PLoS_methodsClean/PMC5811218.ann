@@ -1,7 +1,7 @@
-T1	Application_Usage:Purpose_Visualization 746 752	ArcGIS
-T3	ProgrammingEnvironment_Usage:Purpose_Programming 8858 8864	Python
-T4	ProgrammingEnvironment_Usage:Purpose_Visualization 8926 8932	Python
-T5	PlugIn_Usage:Purpose_Visualization 8943 8953	Matplotlib
+T1	Application_Usage_Visualization 746 752	ArcGIS
+T3	ProgrammingEnvironment_Usage_Programming 8858 8864	Python
+T4	ProgrammingEnvironment_Usage_Visualization 8926 8932	Python
+T5	PlugIn_Usage_Visualization 8943 8953	Matplotlib
 T11	Version 753 759	10.2.2
 R1	Version_of Arg1:T11 Arg2:T1	
 T12	URL 761 773	www.esri.com

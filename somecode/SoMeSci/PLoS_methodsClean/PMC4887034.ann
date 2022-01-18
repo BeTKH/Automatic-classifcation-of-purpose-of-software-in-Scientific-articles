@@ -1,10 +1,10 @@
-T1	ProgrammingEnvironment_Usage:Purpose_Analysis 5727 5733	MATLAB
-T2	Application_Usage:Purpose_Analysis 6388 6429	principal component analysis spike sorter
-T3	Application_Usage:Purpose_Analysis 6554 6565	Open sorter
-T4	Application_Usage:Purpose_Analysis 6797 6810	NeuroExplorer
-T6	ProgrammingEnvironment_Usage:Purpose_Analysis 16001 16007	MATLAB
-T7	Application_Usage:Purpose_Analysis 16049 16062	NeuroExplorer
-T8	Application_Usage:Purpose_Analysis 15948 15956	GraphPad
+T1	ProgrammingEnvironment_Usage_Analysis 5727 5733	MATLAB
+T2	Application_Usage_Analysis 6388 6429	principal component analysis spike sorter
+T3	Application_Usage_Analysis 6554 6565	Open sorter
+T4	Application_Usage_Analysis 6797 6810	NeuroExplorer
+T6	ProgrammingEnvironment_Usage_Analysis 16001 16007	MATLAB
+T7	Application_Usage_Analysis 16049 16062	NeuroExplorer
+T8	Application_Usage_Analysis 15948 15956	GraphPad
 T5	Application_Mention 12247 12260	NeuroExplorer
 T9	Release 5742 5748	R2010a
 T10	Developer 5750 5763	The MathWorks

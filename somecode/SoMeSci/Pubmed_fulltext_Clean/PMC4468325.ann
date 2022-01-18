@@ -1,19 +1,19 @@
-T1	Application_Usage:Purpose_Analysis 16731 16739	CompuSyn
-T2	Application_Usage:Purpose_Analysis 27306 27311	Prism
-T4	Application_Usage:Purpose_Analysis 27487 27495	CompuSin
-T6	Application_Usage:Purpose_Analysis 28066 28075	CellQuest
-T7	Application_Usage:Purpose_Analysis 28833 28842	CellQuest
-T8	Application_Usage:Purpose_Analysis 29646 29655	CellQuest
-T9	Application_Usage:Purpose_Analysis 29511 29520	CellQuest
-T10	Application_Usage:Purpose_Analysis 30270 30279	CellQuest
-T11	OperatingSystem_Usage:Purpose_Analysis 30439 30452	Linux Red Hat
-T12	Application_Usage:Purpose_Analysis 30485 30498	Autodock Vina
-T16	Application_Usage:Purpose_Analysis 30508 30517	InsightII
-T17	Application_Usage:Purpose_DataPreProcss 30858 30862	Vina
-T18	Application_Usage:Purpose_Modelling 31064 31073	InsightII
-T19	Application_Usage:Purpose_Visualization 31397 31402	PyMOL
-T21	Application_Usage:Purpose_Modelling 31500 31509	InsightII
-T23	Application_Usage:Purpose_Analysis 34594 34606	Quantity One
+T1	Application_Usage_Analysis 16731 16739	CompuSyn
+T2	Application_Usage_Analysis 27306 27311	Prism
+T4	Application_Usage_Analysis 27487 27495	CompuSin
+T6	Application_Usage_Analysis 28066 28075	CellQuest
+T7	Application_Usage_Analysis 28833 28842	CellQuest
+T8	Application_Usage_Analysis 29646 29655	CellQuest
+T9	Application_Usage_Analysis 29511 29520	CellQuest
+T10	Application_Usage_Analysis 30270 30279	CellQuest
+T11	OperatingSystem_Usage_Analysis 30439 30452	Linux Red Hat
+T12	Application_Usage_Analysis 30485 30498	Autodock Vina
+T16	Application_Usage_Analysis 30508 30517	InsightII
+T17	Application_Usage_DataPreProcss 30858 30862	Vina
+T18	Application_Usage_Modelling 31064 31073	InsightII
+T19	Application_Usage_Visualization 31397 31402	PyMOL
+T21	Application_Usage_Modelling 31500 31509	InsightII
+T23	Application_Usage_Analysis 34594 34606	Quantity One
 T3	Developer 27297 27305	GraphPad
 R1	Developer_of Arg1:T3 Arg2:T2	
 T5	Developer 27506 27520	ComboSyn, Inc.

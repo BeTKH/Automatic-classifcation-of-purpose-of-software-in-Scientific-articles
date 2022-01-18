@@ -1,9 +1,9 @@
-T1	Application_Usage:Purpose_Analysis 4960 4964	ENVI
-T2	Application_Usage:Purpose_Analysis 6227 6259	geo-spatial modeling environment
-T3	Application_Usage:Purpose_Analysis 6303 6312	Fragstats
-T4	Application_Usage:Purpose_Modelling 8255 8260	STATA
-T5	Application_Usage:Purpose_Analysis 10601 10607	ArcGIS
-T15	PlugIn_Usage:Purpose_Analysis 10608 10626	Spatial Statistics
+T1	Application_Usage_Analysis 4960 4964	ENVI
+T2	Application_Usage_Analysis 6227 6259	geo-spatial modeling environment
+T3	Application_Usage_Analysis 6303 6312	Fragstats
+T4	Application_Usage_Modelling 8255 8260	STATA
+T5	Application_Usage_Analysis 10601 10607	ArcGIS
+T15	PlugIn_Usage_Analysis 10608 10626	Spatial Statistics
 T6	AlternativeName 4966 5000	Environment for Visualizing Images
 R1	AlternativeName_of Arg1:T6 Arg2:T1	
 T7	Developer 5012 5015	ITT

@@ -1,6 +1,6 @@
-T1	OperatingSystem_Usage:Purpose_DataCollection 8503 8510	Windows
-T3	Application_Usage:Purpose_DataCollection 8775 8783	Imagelab
-T5	Application_Usage:Purpose_DataPreProcss 8997 9012	SPSS Statistics
+T1	OperatingSystem_Usage_DataCollection 8503 8510	Windows
+T3	Application_Usage_DataCollection 8775 8783	Imagelab
+T5	Application_Usage_DataPreProcss 8997 9012	SPSS Statistics
 T2	Version 8511 8513	XP
 R1	Version_of Arg1:T2 Arg2:T1	
 T4	Developer 8824 8848	SOFTIUM Informática LTDA

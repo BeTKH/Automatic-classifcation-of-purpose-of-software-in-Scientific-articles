@@ -1,7 +1,7 @@
-T1	Application_Usage:Purpose_Analysis 11381 11393	Quantity One
-T2	Application_Usage:Purpose_Analysis 12296 12300	SPSS
-T5	Application_Usage:Purpose_Analysis 12374 12379	Prism
-T9	Application_Usage:Purpose_Analysis 15239 15245	TANRIC
+T1	Application_Usage_Analysis 11381 11393	Quantity One
+T2	Application_Usage_Analysis 12296 12300	SPSS
+T5	Application_Usage_Analysis 12374 12379	Prism
+T9	Application_Usage_Analysis 15239 15245	TANRIC
 T3	Version 12327 12331	17.0
 R1	Version_of Arg1:T3 Arg2:T2	
 T4	Developer 12333 12342	SPSS Inc.

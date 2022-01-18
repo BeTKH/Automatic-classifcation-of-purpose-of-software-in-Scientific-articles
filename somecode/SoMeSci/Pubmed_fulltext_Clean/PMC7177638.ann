@@ -1,6 +1,6 @@
-T1	Application_Usage:Purpose_Simulation 17593 17599	Alogps
-T4	Application_Usage:Purpose_Analysis 29820 29825	iTeva
-T6	Application_Usage:Purpose_DataPreProcss 39422 39430	MultiPak
+T1	Application_Usage_Simulation 17593 17599	Alogps
+T4	Application_Usage_Analysis 29820 29825	iTeva
+T6	Application_Usage_DataPreProcss 39422 39430	MultiPak
 T2	Version 17600 17603	2.1
 T3	URL 17605 17619	www.vcclab.org
 R1	URL_of Arg1:T3 Arg2:T1	

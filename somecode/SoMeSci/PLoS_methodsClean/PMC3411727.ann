@@ -1,12 +1,12 @@
-T1	Application_Usage:Purpose_Stimulation 2707 2713	Med-PC
-T2	Application_Usage:Purpose_DataCollection 11717 11723	Med-PC
-T3	Application_Usage:Purpose_DataCollection 12952 12957	Excel
-T4	Application_Usage:Purpose_DataCollection 12870 12875	MedPC
-T5	Application_Usage:Purpose_Visualization 12990 12995	Prism
-T6	Application_Usage:Purpose_Visualization 12983 12988	Excel
-T7	Application_Usage:Purpose_Visualization 13034 13045	Illustrator
-T8	Application_Usage:Purpose_Modelling 13149 13164	SPSS Statistics
-T12	Application_Usage:Purpose_DataCollection 12969 12975	Office
+T1	Application_Usage_Stimulation 2707 2713	Med-PC
+T2	Application_Usage_DataCollection 11717 11723	Med-PC
+T3	Application_Usage_DataCollection 12952 12957	Excel
+T4	Application_Usage_DataCollection 12870 12875	MedPC
+T5	Application_Usage_Visualization 12990 12995	Prism
+T6	Application_Usage_Visualization 12983 12988	Excel
+T7	Application_Usage_Visualization 13034 13045	Illustrator
+T8	Application_Usage_Modelling 13149 13164	SPSS Statistics
+T12	Application_Usage_DataCollection 12969 12975	Office
 T9	Version 2714 2716	IV
 T10	Developer 2727 2746	MedAssociates, Inc.
 R1	Version_of Arg1:T9 Arg2:T1	

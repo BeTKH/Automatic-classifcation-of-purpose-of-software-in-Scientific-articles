@@ -1,6 +1,6 @@
-T2	Application_Usage:Purpose_Modelling 327 337	RabiesEcon
-T3	Application_Usage:Purpose_DataCollection 598 608	RabiesEcon
-T5	Application_Usage:Purpose_Analysis 1731 1741	RabiesEcon
+T2	Application_Usage_Modelling 327 337	RabiesEcon
+T3	Application_Usage_DataCollection 598 608	RabiesEcon
+T5	Application_Usage_Analysis 1731 1741	RabiesEcon
 T1	Application_Mention 0 10	RabiesEcon
 T4	Application_Creation 1091 1101	RabiesEcon
 T6	Application_Mention 3147 3157	RabiesEcon

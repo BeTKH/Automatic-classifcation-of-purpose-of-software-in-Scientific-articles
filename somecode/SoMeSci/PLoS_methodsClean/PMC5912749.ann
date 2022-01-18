@@ -1,11 +1,11 @@
-T9	ProgrammingEnvironment_Usage:Purpose_Programming 4837 4843	Python
-T10	ProgrammingEnvironment_Usage:Purpose_Programming 4857 4862	GNU R
-T13	Application_Usage:Purpose_DataPreProcss 6464 6468	READ
-T14	Application_Usage:Purpose_Analysis 7009 7013	READ
-T15	Application_Usage:Purpose_Analysis 7283 7287	READ
-T16	Application_Usage:Purpose_Modelling 8144 8148	READ
-T17	Application_Usage:Purpose_Analysis 8783 8791	samtools
-T18	Application_Usage:Purpose_Analysis 5293 5301	vcftools
+T9	ProgrammingEnvironment_Usage_Programming 4837 4843	Python
+T10	ProgrammingEnvironment_Usage_Programming 4857 4862	GNU R
+T13	Application_Usage_DataPreProcss 6464 6468	READ
+T14	Application_Usage_Analysis 7009 7013	READ
+T15	Application_Usage_Analysis 7283 7287	READ
+T16	Application_Usage_Modelling 8144 8148	READ
+T17	Application_Usage_Analysis 8783 8791	samtools
+T18	Application_Usage_Analysis 5293 5301	vcftools
 T1	Application_Mention 89 93	GRAB
 T2	Application_Mention 640 644	GRAB
 T3	Application_Mention 1378 1382	READ

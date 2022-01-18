@@ -1,7 +1,7 @@
-T1	Application_Usage:Purpose_Stimulation 5002 5006	Pong
-T6	Application_Usage:Purpose_Stimulation 6172 6176	Pong
-T8	Application_Usage:Purpose_Stimulation 9424 9428	Pong
-T9	Application_Usage:Purpose_Programming 9563 9569	Stella
+T1	Application_Usage_Stimulation 5002 5006	Pong
+T6	Application_Usage_Stimulation 6172 6176	Pong
+T8	Application_Usage_Stimulation 9424 9428	Pong
+T9	Application_Usage_Programming 9563 9569	Stella
 T2	Application_Mention 5142 5146	Pong
 T3	Application_Mention 5155 5159	Pong
 T4	Application_Mention 5219 5223	Pong

@@ -1,11 +1,11 @@
-T1	ProgrammingEnvironment_Usage:Purpose_DataCollection 11170 11177	Fortran
-T2	Application_Usage:Purpose_DataPreProcss 12877 12880	FSL
-T5	PlugIn_Usage:Purpose_DataPreProcss 13068 13073	FLIRT
-T7	Application_Usage:Purpose_Modelling 13333 13336	FSL
-T9	PlugIn_Usage:Purpose_DataCollection 14343 14348	FLIRT
-T11	Application_Usage:Purpose_DataCollection 14376 14379	FSL
-T13	Application_Usage:Purpose_Modelling 14745 14748	FSL
-T14	Application_Usage:Purpose_Analysis 15537 15540	FSL
+T1	ProgrammingEnvironment_Usage_DataCollection 11170 11177	Fortran
+T2	Application_Usage_DataPreProcss 12877 12880	FSL
+T5	PlugIn_Usage_DataPreProcss 13068 13073	FLIRT
+T7	Application_Usage_Modelling 13333 13336	FSL
+T9	PlugIn_Usage_DataCollection 14343 14348	FLIRT
+T11	Application_Usage_DataCollection 14376 14379	FSL
+T13	Application_Usage_Modelling 14745 14748	FSL
+T14	Application_Usage_Analysis 15537 15540	FSL
 T3	Version 12881 12886	4.1.4
 R1	Version_of Arg1:T3 Arg2:T2	
 T4	URL 12888 12910	www.fmrib.ox.ac.uk/fsl

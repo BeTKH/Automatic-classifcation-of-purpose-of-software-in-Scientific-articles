@@ -1,7 +1,7 @@
-T1	Application_Usage:Purpose_DataPreProcss 1801 1806	CALIB
-T2	Application_Usage:Purpose_DataCollection 3178 3184	Mimics
-T4	Application_Usage:Purpose_DataCollection 3714 3721	Strand7
-T7	Application_Usage:Purpose_Visualization 3794 3801	Strand7
+T1	Application_Usage_DataPreProcss 1801 1806	CALIB
+T2	Application_Usage_DataCollection 3178 3184	Mimics
+T4	Application_Usage_DataCollection 3714 3721	Strand7
+T7	Application_Usage_Visualization 3794 3801	Strand7
 T5	Version 1807 1811	6.02
 R1	Version_of Arg1:T5 Arg2:T1	
 T3	Version 3191 3196	13.02

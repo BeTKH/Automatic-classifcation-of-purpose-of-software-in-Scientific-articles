@@ -1,20 +1,20 @@
-T1	Application_Usage:Purpose_Analysis 1206 1213	FunRich
-T2	Application_Usage:Purpose_Analysis 7169 7176	FunRich
-T3	PlugIn_Usage:Purpose_Analysis 15628 15634	ClueGO
-T4	Application_Usage:Purpose_Analysis 15635 15644	cytoscape
-T5	PlugIn_Usage:Purpose_Analysis 16315 16323	Reactome
-T6	Application_Usage:Purpose_Analysis 16334 16343	Cytoscape
-T7	Application_Usage:Purpose_DataPreProcss 30360 30368	Bioworks
-T10	Application_Usage:Purpose_Analysis 30867 30873	MASCOT
-T13	PlugIn_Usage:Purpose_Analysis 33808 33814	ClueGO
-T16	Application_Usage:Purpose_Analysis 33830 33839	Cytoscape
-T19	Application_Usage:Purpose_Analysis 34059 34066	FunRich
-T20	Application_Usage:Purpose_Visualization 34275 34284	Cytoscape
-T22	PlugIn_Usage:Purpose_Visualization 34448 34460	clusterMaker
-T24	PlugIn_Usage:Purpose_Analysis 34471 34476	BiNGO
-T26	Application_Usage:Purpose_Analysis 34484 34493	cytoscape
-T27	Application_Usage:Purpose_Analysis 38174 38179	Prism
-T30	Application_Usage:Purpose_Analysis 38206 38218	Office Excel
+T1	Application_Usage_Analysis 1206 1213	FunRich
+T2	Application_Usage_Analysis 7169 7176	FunRich
+T3	PlugIn_Usage_Analysis 15628 15634	ClueGO
+T4	Application_Usage_Analysis 15635 15644	cytoscape
+T5	PlugIn_Usage_Analysis 16315 16323	Reactome
+T6	Application_Usage_Analysis 16334 16343	Cytoscape
+T7	Application_Usage_DataPreProcss 30360 30368	Bioworks
+T10	Application_Usage_Analysis 30867 30873	MASCOT
+T13	PlugIn_Usage_Analysis 33808 33814	ClueGO
+T16	Application_Usage_Analysis 33830 33839	Cytoscape
+T19	Application_Usage_Analysis 34059 34066	FunRich
+T20	Application_Usage_Visualization 34275 34284	Cytoscape
+T22	PlugIn_Usage_Visualization 34448 34460	clusterMaker
+T24	PlugIn_Usage_Analysis 34471 34476	BiNGO
+T26	Application_Usage_Analysis 34484 34493	cytoscape
+T27	Application_Usage_Analysis 38174 38179	Prism
+T30	Application_Usage_Analysis 38206 38218	Office Excel
 T8	Version 30369 30374	3.3.1
 T9	Developer 30376 30393	Thermo Scientific
 R1	Version_of Arg1:T8 Arg2:T7	

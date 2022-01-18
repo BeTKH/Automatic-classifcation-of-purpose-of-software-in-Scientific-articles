@@ -1,9 +1,9 @@
-T1	Application_Usage:Purpose_Analysis 19210 19216	Qbase+
-T3	Application_Usage:Purpose_Analysis 21229 21242	ImageQuant TL
-T6	Application_Usage:Purpose_DataPreProcss 22793 22799	ImageJ
-T10	Application_Usage:Purpose_Analysis 22931 22943	NIS-Elements
-T12	Application_Usage:Purpose_DataPreProcss 23275 23287	NIS-Elements
-T13	Application_Usage:Purpose_Analysis 23515 23520	prism
+T1	Application_Usage_Analysis 19210 19216	Qbase+
+T3	Application_Usage_Analysis 21229 21242	ImageQuant TL
+T6	Application_Usage_DataPreProcss 22793 22799	ImageJ
+T10	Application_Usage_Analysis 22931 22943	NIS-Elements
+T12	Application_Usage_DataPreProcss 23275 23287	NIS-Elements
+T13	Application_Usage_Analysis 23515 23520	prism
 T2	Developer 19227 19237	Biogazelle
 R1	Developer_of Arg1:T2 Arg2:T1	
 T4	Version 21251 21254	7.0
