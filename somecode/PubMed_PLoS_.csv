@@ -255,7 +255,7 @@ T3,Application_Usage:Purpose_Analysis,9543,9551,Arlequin
 T4,Application_Usage:Purpose_Visualization,9668,9672,SPSS
 T5,Application_Usage:Purpose_Visualization,9775,9782,Network
 T6,Application_Usage:Purpose_Visualization,10063,10069,Surfer
-T7,Application_Usage:Purpose_Modelling,9399,9407,Arlequín
+T7,Application_Usage:Purpose_Modelling,9399,9407,ArlequÃ­n
 T1,ProgrammingEnvironment_Usage:Purpose_Programming,4999,5005,MATLAB
 T2,Application_Usage:Purpose_Analysis,4886,4916,Statistical Parametric Mapping
 T3,Application_Usage:Purpose_Modelling,8835,8838,SPM
@@ -263,9 +263,9 @@ T4,PlugIn_Usage:Purpose_Modelling,8847,8860,Anatomy atlas
 T5,Application_Usage:Purpose_Analysis,4917,4920,SPM
 T1,Application_Usage:Purpose_DataPreProcss,703,707,MEGA
 T2,Application_Usage:Purpose_DataPreProcss,804,808,MEGA
-T2,Application_Usage:Purpose_Visualization,4713,4720,Protégé
+T2,Application_Usage:Purpose_Visualization,4713,4720,ProtÃ©gÃ©
 T3,Application_Usage:Purpose_Analysis,5178,5185,OntoFox
-T4,Application_Usage:Purpose_Visualization,5251,5258,Protégé
+T4,Application_Usage:Purpose_Visualization,5251,5258,ProtÃ©gÃ©
 T1,Application_Usage:Purpose_Analysis,3213,3216,JMP
 T1,Application_Usage:Purpose_DataPreProcss,6897,6918,Brain Vision Analyzer
 T2,Application_Usage:Purpose_DataPreProcss,7632,7654,FMRIB Software Library
@@ -1097,14 +1097,14 @@ T5,Application_Usage:Purpose_Analysis,21057,21060,SPM
 T1,Application_Usage:Purpose_DataPreProcss,5667,5689,FMRIB Software Library
 T2,PlugIn_Usage:Purpose_DataPreProcss,6128,6163,FMRIB's Automated Segmentation Tool
 T3,PlugIn_Usage:Purpose_Modelling,6847,6853,DTIFit
-T4,PlugIn_Usage:Purpose_Modelling,6863,6888,FMRIB’s Diffusion Toolbox
+T4,PlugIn_Usage:Purpose_Modelling,6863,6888,FMRIBâ€™s Diffusion Toolbox
 T5,Application_Usage:Purpose_DataPreProcss,7139,7142,FSL
 T6,PlugIn_Usage:Purpose_Analysis,7463,7493,FMRIB's ICA-based X-noiseifier
 T7,Application_Usage:Purpose_Analysis,7857,7860,FSL
 T8,PlugIn_Usage:Purpose_Analysis,8055,8062,FSL-VBM
-T9,PlugIn_Usage:Purpose_Analysis,8093,8146,FMRIB’s Integrated Registration and Segmentation Tool
+T9,PlugIn_Usage:Purpose_Analysis,8093,8146,FMRIBâ€™s Integrated Registration and Segmentation Tool
 T10,Application_Usage:Purpose_Analysis,8351,8355,SPSS
-T11,PlugIn_Usage:Purpose_Analysis,8452,8477,FMRIB’s Diffusion Toolbox
+T11,PlugIn_Usage:Purpose_Analysis,8452,8477,FMRIBâ€™s Diffusion Toolbox
 T12,Application_Usage:Purpose_Analysis,8636,8639,FSL
 T13,Application_Usage:Purpose_Analysis,10031,10035,SPSS
 T14,Application_Usage:Purpose_Analysis,10539,10544,CubeX
@@ -1508,7 +1508,7 @@ T1,Application_Usage:Purpose_Analysis,5321,5329,ConoMass
 T2,Application_Usage:Purpose_Analysis,5600,5608,ConoMass
 T1,Application_Usage:Purpose_Analysis,6938,6942,SPSS
 T2,OperatingSystem_Usage:Purpose_Analysis,6947,6954,Windows
-T2,Application_Usage:Purpose_Analysis,9079,9095,Luminex 100 ™ IS
+T2,Application_Usage:Purpose_Analysis,9079,9095,Luminex 100 â„¢ IS
 T3,Application_Usage:Purpose_Analysis,10089,10093,SPSS
 T5,OperatingSystem_Usage:Purpose_Analysis,10103,10110,Windows
 T1,ProgrammingEnvironment_Usage:Purpose_DataCollection,11170,11177,Fortran
