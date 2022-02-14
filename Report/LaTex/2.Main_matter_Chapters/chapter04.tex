@@ -35,5 +35,112 @@ The data set has been annotated using BRAT rapid annotation tool, v.1.3 , in a L
 \subsection{Annotation of SoMeSci with software purpose labels}
 \label{subsec:dataset:tool:Annotationprocess}
 
-SoMeSci corpus has been extended with annotations of eight classes of purpose of software usage labels identified in the earlier section. Since using software for a particular purpose only refers to the usage of a software, only usage labels has been further labelled with software purpose. The figure below shows SoMeSci data set before and after software purpose annotations. 
+SoMeSci corpus has been extended with annotations of eight classes of purpose of software usage labels identified in the earlier section. Since using software for a particular purpose only refers to the usage of a software, only usage labels has been further labelled with software purpose. The figure below shows SoMeSci data set before and after software purpose annotations. \\
+
+\subsection{Challenges during Annotation }
+\label{subsec:dataset:tool:Challenges}
+Annotations has been carried out in a such way by deciding on each context which software purpose annotation is more important or based on the general goal of the software usage. For example, FlexArray software on the figure below, has been annotated with software purpose analysis even though the same software was used for visualization purpose as well. This is because on this context analysis is more important than visualization and essentially visualization could also be interpreted as one kind of analysis. In addition, specific definition of each of software usage purposes has been also taken into account. \\
+
+However, annotation of software usage statements was not often straightforward. This is because, in some instances as shown in the figure below, purpose of software usage might not be clear from the context.\\
+
+In addition in some cases possibility of multiple candidate labels for a given software usage label was also observed. For example  
+
+The other challenge of annotation was difficulty arising from limited domain knowledge. 
+
+\section{Data Pre-processing}
+\label{sec:dataset:preprocessing}
+Pre-processing of the data set has been carried out to ensure the integrity of our data set before using it in the classifier. The data pre-processing tasks handled annotation errors, merging annotations , transforming and splitting of data set. 
+
+\subsection{Handling missing annotations and annotation errors }
+\label{subsec:dataset:preprocessing:handlingerrors}
+
+During the first phase  annotation of SoMeSci usage mentions, few instances where  the original software usage annotation seemed like just mention of software has been skipped. Hence, pre-processing of the data set has been carried out to ensure the integrity of the overall annotation by automatically identifying software usage instances that are not annotated and erroneous annotation of other types of software mentions other than software usage. \\
+
+After identifying the list of files and instances of annotations with an error or skipped annotations, all errors have been rectified and skipped annotations has been handled.
+
+
+\subsection{Merging annotations}
+\label{subsec:dataset:preprocessing:Merging}
+
+
+After handing all annotation errors and missing labels, annotations of software usage has been merged with annotations of software purpose. Merging of the annotations solves two problems. \\
+
+First it will fix annotation error message that is displayed on the BRAT tool. The error message is displayed because more than one annotation per a token is not supported by the annotation tool. \\
+
+The other reason for merging annotations is to take advantage of legacy code, ariclenizer, which will transform data from BRAT too in a stand-off format  into IOB format which is desirable for training purpose. 
+
+\subsection{Transformation to IOB format}
+\label{subsec:dataset:preprocessing:Transformation}
+After merging software usage and purpose labels, transformation of data into IOB format has been carried out using articlenizer (link to articlenizer). Picture below shows the data format before and after transformation. 
+
+\subsection{Data Splitting}
+\label{subsec:dataset:preprocessing:Splitting}
+After the data has been transformed into the IOB format, it has been further split into training, development and test set in 60:20:20 ratio.
+
+
+\section{Analysis of Annotated Data}
+\label{sec:dataset:Analysis}
+
+To find further insights about the data, analysis of cleaned SoMeSci data set that contains software usage purpose has been carried out. Analysis results has been discussed as follows. 
+
+
+
+\subsection{Top software by mention count}
+\label{subsec:dataset:Analysis:topsoftwareMention}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{4.graphics/figures/analysisresults/1.Top software mentions}
+	\caption{Top software mentions}
+	\label{fig:chapter03:setup}
+\end{figure}
+
+\subsection{Top software usage purposes}
+\label{subsec:dataset:Analysis:topsoftwareusage}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.65\textwidth]{4.graphics/figures/analysisresults/2.Software Usage Purpose pie}
+	\caption{Top software usage purposes}
+	\label{fig:chapter03:setup}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{4.graphics/figures/analysisresults/3.Software Purposes}
+	\caption{Top software usage purposes}
+	\label{fig:chapter03:setup}
+\end{figure}
+
+
+\subsection{Types of software}
+\label{subsec:dataset:Analysis:topsoftwareTypes}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.65\textwidth]{4.graphics/figures/analysisresults/4.Software Types pie}
+	\caption{Software types}
+	\label{fig:chapter03:setup}
+\end{figure}
+
+\subsection{Types of software and share of purpose of use}
+\label{subsec:dataset:Analysis:share}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1.1\textwidth]{4.graphics/figures/analysisresults/6.Types of Software and Purpose stacked bar}
+	\caption{Software types and purposes}
+	\label{fig:chapter03:setup}
+\end{figure}
+
+\subsection{Software purpose counts}
+\label{subsec:dataset:Analysis:counts}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1.1\textwidth]{4.graphics/figures/analysisresults/7.counts of software purpose}
+	\caption{Software purposes counts}
+	\label{fig:chapter03:setup}
+\end{figure}
+
 
