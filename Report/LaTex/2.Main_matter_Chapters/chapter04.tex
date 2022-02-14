@@ -1,10 +1,39 @@
-\chapter{Classification of Software Usage Purposes  }
-\label{ch:chapter04}
+\chapter{Data set}
+\label{ch:dataset}
  
 %
 % Section: 4 - Intro
 %
 \section{Introduction}
-\label{sec:chapter04:intro}
+\label{sec:dataset:intro}
 
+Training and evaluation of automatic information extraction approaches requires availability of reliable ground truth data of sufficient size. Following a growth of interest for extraction of information about software tools from scientific publications labeled data sets with limited scope such as BioNerDs, SoftCite, SoSciSoSci have came into existence. More recently, SoMeSci data set, a more comprehensive corpus that covers a wide range of information about software tools has also been introduced \citep{schindler2021somesci}. \\
+ 
+This section presents descriptions about the SoMeSci data set, the extension process of data set with software usage purpose annotations, issues observed during annotation, pre-processing of the data-set, analysis results of the data and transformation to a suitable format for training purpose.  
+
+
+\section{SoMeSci data set}
+\label{sec:dataset:SoMeSci}
+
+SoMeSci data set contains high quality, hand annotated articles collated from PubMed Central (PMC). The articles and annotations included in the data set are summarized below.  
+
+\subsection{ SoMeSci Articles }
+\label{subsec:dataset:SoMeSci:Articles}
+
+The corpus is composed four group of files, namely PLoS methods, PLoS sentences, PubMed full text and Creation sentences. Facts about the articles in the SoMeSci corpus is summarized in the table below:
+
+\subsection{SoMeSci Annotations  }
+\label{subsec:dataset:SoMeSci:Annotations }
+
+SoMeSci corpus has three main types of annotations that correspond to a type of information related with software tools. These annotations indicate the type of software, type of mention and additional information about the software as summarized on the table below:
+
+
+\section{Annotation tool}
+\label{sec:dataset:tool}
+The data set has been annotated using BRAT rapid annotation tool, v.1.3 , in a Linux 20.4 environment. The annotation tool has been run in a local machine as a CGI application using a browser. 
+
+\subsection{Annotation of SoMeSci with software purpose labels}
+\label{subsec:dataset:tool:Annotationprocess}
+
+SoMeSci corpus has been extended with annotations of eight classes of purpose of software usage labels identified in the earlier section. Since using software for a particular purpose only refers to the usage of a software, only usage labels has been further labelled with software purpose. The figure below shows SoMeSci data set before and after software purpose annotations. 
 
