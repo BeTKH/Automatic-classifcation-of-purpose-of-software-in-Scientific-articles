@@ -1,59 +1,43 @@
 %************************************************
-\chapter{Appendix - A : Wiki Data SPARQL Queries}\label{ch:classicthesis}
+\chapter{Appendix - A : Wiki Data SPARQL Queries}
+\label{ch:classicthesis}
 %************************************************
-
-\section{Software Category Query}
-
-\begin{verbatim}
------------------------------------------------------------------------------
-**************************************************
-Query of software category in a format that suits 
-network analysis (node and edge format)
-**************************************************
+\begin{lstlisting}[language=SPARQL,frame=tb,caption={SARQL Query for software categories},label=lst:useless]
 	
-SELECT 
-
-?Software_Category 
-?sc_parent 
-?Software_CategoryLabel 
-?sc_parentLabel 
-
-(COUNT(DISTINCT ?software) AS ?num_software) 
-
-WHERE {	
-	?Software_Category (wdt:P279*) wd:Q7397;
-	wdt:P31 wd:Q17155032;
-	wdt:P279 ?sc_parent.
+	SELECT 
 	
-	OPTIONAL { ?software wdt:P31 ?Software_Category. }
-	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-}
-GROUP BY ?Software_Category ?Software_CategoryLabel ?sc_parent ?sc_parentLabel
------------------------------------------------------------------------------
-\end{verbatim}
+	?Software_Category 
+	?sc_parent 
+	?Software_CategoryLabel 
+	?sc_parentLabel 
 	
-\section{Software counts in each Category}
+	(COUNT(DISTINCT ?software) AS ?num_software) 
+	
+	WHERE {	
+		?Software_Category (wdt:P279*) wd:Q7397;
+		wdt:P31 wd:Q17155032;
+		wdt:P279 ?sc_parent.
+		
+		OPTIONAL { ?software wdt:P31 ?Software_Category. }
+		SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+	}
+	GROUP BY ?Software_Category ?Software_CategoryLabel ?sc_parent ?sc_parentLabel
 
-\begin{verbatim}
------------------------------------------------------------------------------
-**************************************************
-Query of number of software in each software 
-category label 
-**************************************************
+\end{lstlisting}
 
-SELECT 
-
-?Software_Category 
-?Software_CategoryLabel 
-
-(COUNT(DISTINCT ?software) AS ?num_software) 
-
-WHERE {	
-	?Software_Category (wdt:P279*) wd:Q7397; wdt:P31 wd:Q17155032.
-	OPTIONAL { ?software wdt:P31 ?Software_Category. }
-	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-}
-GROUP BY ?Software_Category ?Software_CategoryLabel
-ORDER BY DESC (?num_software)
------------------------------------------------------------------------------
-\end{verbatim}
+\begin{lstlisting}[language=SPARQL,frame=tb,caption={SPARQL query of software counts in each category},label=lst:useless]
+	SELECT 
+	
+	?Software_Category 
+	?Software_CategoryLabel 
+	
+	(COUNT(DISTINCT ?software) AS ?num_software) 
+	
+	WHERE {	
+		?Software_Category (wdt:P279*) wd:Q7397; wdt:P31 wd:Q17155032.
+		OPTIONAL { ?software wdt:P31 ?Software_Category. }
+		SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+	}
+	GROUP BY ?Software_Category ?Software_CategoryLabel
+	ORDER BY DESC (?num_software)
+\end{lstlisting}
