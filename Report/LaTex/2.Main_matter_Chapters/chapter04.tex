@@ -134,20 +134,18 @@ Pre-processing of the data set has been carried out to ensure the integrity of o
 \subsection{Handling missing annotations and annotation errors }
 \label{subsec:dataset:preprocessing:handlingerrors}
 
-During the first phase  annotation of SoMeSci usage mentions, few instances where  the original software usage annotation seemed like just mention of software has been skipped. Hence, pre-processing of the data set has been carried out to ensure the integrity of the overall annotation by automatically identifying software usage instances that are not annotated and erroneous annotation of other types of software mentions other than software usage. \\
+As described in the above table, the four types of software mentions in the SoMeSci are mention, usage, creation and deposition. The main goal of annotating the data set was to assign corresponding purpose of software usage label to each instance of software usage but not for mention, creation and deposition. However, due to an error there were some instances of software mention that has been annotated with software purpose. In addition to this, there were also some instances of usage, that has not been annotated and intentionally skipped because of the purpose of software usage did not seem to be clear. \\
 
-After identifying the list of files and instances of annotations with an error or skipped annotations, all errors have been rectified and skipped annotations has been handled.
-
+Therefore, all instances of wrong or missing annotations have been identified automatically to ensure the integrity of training data set.The python code for automatic identification of annotation errors has been listed under \emph{Appendix B}.
 
 \subsection{Merging annotations}
 \label{subsec:dataset:preprocessing:Merging}
-
 
 After handing all annotation errors and missing labels, annotations of software usage has been merged with annotations of software purpose. Merging of the annotations solves two problems. \\
 
 First it will fix annotation error message that is displayed on the BRAT tool. The error message is displayed because more than one annotation per a token is not supported by the annotation tool. \\
 
-The other reason for merging annotations is to take advantage of legacy code, ariclenizer, which will transform data from BRAT too in a stand-off format  into IOB format which is desirable for training purpose. 
+The other reason for merging annotations is to take advantage of legacy code, ariclenizer, which will transform data from BRAT too in a stand-off format  into IOB format which is desirable for training purpose. The python code for merging annotations has been listed on the \emph{Appendix C}.
 
 \begin{figure}[htbp]
 	\centering
