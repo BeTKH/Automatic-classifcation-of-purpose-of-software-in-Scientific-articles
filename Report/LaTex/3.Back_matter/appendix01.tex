@@ -41,3 +41,297 @@
 	GROUP BY ?Software_Category ?Software_CategoryLabel
 	ORDER BY DESC (?num_software)
 \end{lstlisting}
+
+
+
+\chapter{Appendix - B : Finding files with annotation error}
+\label{ch:datasplit}
+
+\begin{lstlisting}[language=python,frame=tb,caption={Finding file names that have errors with software usage purpose labels in PLoS files},label=lst:useless]
+
+Usage_labels = ['Application_Usage','ProgrammingEnvironment_Usage', ...] 
+Purpose_lables = ['Analysis','Modelling','Stimulation','DataCollection', ...]
+
+path = 'SoMeSci/PLoS_methods/'
+for file_name in os.listdir(path):
+
+	if file_name.endswith('.ann'):
+		file_path = path + file_name
+		with open(file_path, "r") as a_file:
+			anno_usage_strstp, anno_purpose_strstp = [], []
+			for line in a_file:
+				annotataion = line.split()
+
+				if (annotataion[1] in Usage_):
+					startstop = annotataion[2:4]
+					strstp = '_'.join(startstop)
+					anno_usage_strstp.append(strstp)		
+				elif (annotataion[1] in Purpose_):
+					startstop = annotataion[2:4]
+					strstp = '_'.join(startstop)
+					anno_purpose_strstp.append(strstp)
+
+		Usage_ann_set = set(anno_usage_strstp)
+		Purpose_ann_set = set(anno_purpose_strstp)
+
+		# Usage_ann_set - Purpose_ann_set = Usage with no purpose ann
+		missingPurposeANN = Usage_ann_set.difference(Purpose_ann_set)
+		missingUsageANN = Purpose_ann_set.difference(Usage_ann_set)
+
+		# Error-1: lack PURPOSE ANNOTATION 
+		if(len(missingPurposeANN)!= 0):
+		print (file_name, missingPurposeANN) 
+		# Error-2: have undesired Purpose ANNOTATION 
+		if(len(missingUsageANN)!= 0):
+		print (file_name, missingUsageANN)    
+
+
+\end{lstlisting}
+
+
+
+\chapter{Appendix - C : Merging software usage and purpose labels}
+\label{ch:datasplit}
+
+\begin{lstlisting}[language=python,frame=tb,caption={Function that merges software usage and purpose labels},label=lst:useless]
+def mergeList(list_1, list_2):
+
+	#stores merged annotations
+	result_list = []
+	checked_list = []
+
+	for x, y in [(x,y) for x in list_1[1].split()[1:] for y in list_2[1].split()[1:]]:
+		if( x == y):
+			#  avoid duplicate merging 
+			if x not in checked_list:
+
+				#get id of the firt annotation 
+				result_list.append(list_1[0]
+					
+				# get annotation starting_number stop_number 
+				annotationStrStp = []				
+				#merge annotations by _
+				annotationStrStp.append(list_1[1].split()[0]+'_'+list_2[1].split()[0].split('_')[1])
+				
+				# start number
+				annotationStrStp.append(list_1[1].split()[1])
+				
+				#end number
+				annotationStrStp.append(list_1[1].split()[2])             
+				
+				# Join annotation , 
+				annStrStpJOin = ' '.join(annotationStrStp) 
+				result_list.append(annStrStpJOin)
+				
+				# get name of the software
+				software_name = list_1[2]
+				result_list.append(software_name)
+				checked_list.extend(list_1[1].split()[1:])    
+		else:
+			pass
+	return result_list
+
+
+\end{lstlisting}
+
+
+
+
+\chapter{Appendix - D : Data Split Optimization}
+\label{ch:datasplit}
+
+\begin{lstlisting}[language=python,frame=tb,caption={Function to retrieve counts of class labels in each data split},label=lst:useless]
+
+import os
+from os import listdir 
+from collections import Counter
+
+def purposeLabel_counter(path):
+
+	def list_file_names(path, file_ext='.labels.txt'):
+		file_names_list = []		
+		for file_name in os.listdir(path):
+			if not file_name.endswith(file_ext): continue
+			file_names_list.append(file_name) 
+		file_names_list.sort()
+		return file_names_list
+
+	file_name_list = list_file_names(path)
+
+	interest_list = ["Analysis", "Modelling", "Stimulation", "DataCollection", "DataPreProcss","Simulation", "Visualization", "Programming"]
+
+	all_purpose_labels = []
+
+	for file_name in file_name_list[:]:
+		file_path = path + file_name
+		
+		with open(file_path, 'r') as f:
+			list_lines = f.readlines()
+			list_of_tokens = ' '.join(list_lines).split()
+			
+			for tok in list_of_tokens:
+				if tok != 'O' and (len(tok.split('-')[1].split('_')) == 3 ):
+					if tok.split('-')[1].split('_')[2] in interest_list:
+						purpose = tok.split('-')[1].split('_')[2]
+							all_purpose_labels.append(purpose)
+	return  dict(Counter(all_purpose_labels))
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=python,frame=tb,caption={Function to retrieve software usage purpose class labels in whole-document, train, test, and development list},label=lst:useless]
+
+def train_test_dev(whole_path, train_path, test_path, dev_path):
+	
+	_whole_sorted = dict(sorted(purposeLabel_counter(whole_path).items()))
+	_train_sorted = dict(sorted(purposeLabel_counter(train_path).items()))
+	_test_sorted  = dict(sorted(purposeLabel_counter(test_path).items()))
+	_dev_sorted   = dict(sorted(purposeLabel_counter(dev_path).items()))
+
+	return _whole_sorted, _train_sorted, _test_sorted, _dev_sorted
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,frame=tb,caption={Function to determine the proportion of each class label in the split data sets of train, test and development},label=lst:useless]
+
+def __proportion_calculator(whole_dict, train_dict, test_dict, dev_dict ):
+
+	train_purpose_props = []
+	for (k,v), (k2,v2) in zip(whole_dict.items(), train_dict.items()):
+		if k2 == k: 
+			train_percentage = int(v2 / v * 100)
+			train_purpose_props.append(train_percentage)
+
+	dev_purpose_props = []
+	for (k,v), (k2,v2) in zip(whole_dict.items(), dev_dict.items()):
+		if k2 == k:
+			dev_percentage = int(v2 / v * 100)
+			dev_purpose_props.append(dev_percentage)
+
+	test_purpose_props = []       
+	for (k,v), (k2,v2) in zip(whole_dict.items(), test_dict.items()):
+		if k2 == k:
+			test_percentage = int(v2 / v * 100)
+			test_purpose_props.append(test_percentage)
+
+	return train_purpose_props, dev_purpose_props, test_purpose_props
+
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=python,frame=tb,caption={Check if the data split is within +/- 5\%  for training set},label=lst:useless]
+
+
+def _within_range(list_):
+
+	bool_list = []
+	for val in list_:
+		if val in range(55,65):
+			bool_list.append(True)
+		else:
+			bool_list.append(False)
+			
+	return all(bool_list), bool_list
+	
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,frame=tb,caption={Check if the data split is within +/- 5\%  for test and developments set},label=lst:useless]
+
+
+def _within_range_dev_test(list_):
+	bool_list = []
+	for val in list_:
+		if val in range(15,25):
+			bool_list.append(True)
+		else:
+			bool_list.append(False)
+		return all(bool_list), bool_list 
+
+\end{lstlisting}
+
+
+
+
+
+\chapter{Appendix - E : Context Reading}
+\label{ch:datasplit}
+
+\begin{lstlisting}[language=python,frame=tb,caption={Truncated python code for reading left and right  sentences for context limited within a paragrapgh},label=lst:useless]
+
+
+def _read_text_file(path, bef, aft, read_empty=False):
+
+	def add_neighbours(*sentcs):		
+		lis_sents = list(sentcs)
+		joined_tokens = []
+		for i in range(len(lis_sents)):
+			joined_tokens.extend(lis_sents[i].split())
+			joined_sent = ' '.join(joined_tokens)
+			
+	return joined_sent
+	
+	def contextWindow(text, bef, aft):
+	
+		if (bef >= len(text)-1) or (aft >= len(text)-1):
+			bef = len(text)- 1
+			aft = len(text)- 1
+			contxt_txt = []        
+			
+			for i in range(len(text)):  
+				contxt_txt.append( ' '.join(text))
+			return contxt_txt
+		
+		 elif (bef == 0) and (aft == 2):
+			contxt_txt = []
+			for i in range(len(text)):
+				#OB, 2A
+				if (i >= 0) and (i <len(text)-2):
+					contxt_txt.append( add_neighbours(text[i], text[i+1], text[i+2]))
+				
+				elif i == (len(text)-2):
+					contxt_txt.append( add_neighbours(text[i], text[i+1] ))
+			
+				elif i == (len(text)-1):
+					contxt_txt.append(text[i])
+		
+		return contxt_txt
+		
+		# context 2 sentences before and after	
+		elif (bef == 2) and (aft == 2):        
+			contxt_txt = []        
+			for i in range(len(text)):    
+				if i == 0: 
+					contxt_txt.append(add_neighbours(text[i] , text[i+1] , text[i+2]))  
+				elif i == 1:  
+					contxt_txt.append(add_neighbours(text[i-1] , text[i] , text[i+1] , text[i+2]))
+					
+				elif (i >=1) and (i < len(text)-2): 
+					contxt_txt.append(add_neighbours(text[i-2], text[i-1], text[i], text[i+1], text[i+2]))
+				
+				elif (i == len(text)-2):       
+					contxt_txt.append(add_neighbours(text[i-2], text[i-1], text[i], text[i+1]))
+				
+				elif i == len(text)-1:       
+					contxt_txt.append(add_neighbours(text[i-2], text[i-1], text[i]))
+	
+			return contxt_txt
+	
+	txt_with_context = []
+	with path.open(mode='r') as in_f:
+	
+	# each paragraphs separated by new line
+	cont = in_f.read()
+	
+	#list of paragraphs
+	par_list = cont.split('\n\n')  
+	
+	for par_ in par_list:
+		snt_lst_ = par_.split('\n')	
+		snt_lst_ = list(filter(None, snt_lst_))
+		
+		# sentence with context
+		sen_contkx = contextWindow(snt_lst_, bef, aft)	
+		txt_with_context.extend(sen_contkx)		
+		return txt_with_context
+
+\end{lstlisting}
