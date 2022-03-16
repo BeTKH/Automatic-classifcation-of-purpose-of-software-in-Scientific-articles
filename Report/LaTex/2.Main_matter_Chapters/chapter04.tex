@@ -12,9 +12,6 @@ Training and evaluation of automatic information extraction approaches requires 
 This section describes the data set used in this project – \ac{SoMeSci},  the extension process with software usage purpose annotations, issues observed during annotation, pre-processing of the data-set, analysis results of the data and transformation to a suitable format for training purpose.  
 
 
-
-
-
 \section{SoMeSci data set}
 \label{sec:dataset:SoMeSci}
 
@@ -86,7 +83,7 @@ The data set has been annotated using BRAT rapid annotation tool, v.1.3 , in a L
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.66\textwidth]{4.graphics/figures/models/pdf/BRAT_tool}
+	\includegraphics[width=.66\textwidth]{4.graphics/figures/ch_4/BRAT_tool}
 	\caption{Workflow for identifying software purposes}
 	\label{fig:chapter04:setup}
 \end{figure}
@@ -98,17 +95,25 @@ SoMeSci corpus has been extended with annotations of eight classes of purpose of
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.99\textwidth]{4.graphics/figures/chap4/before_annotation}
+	\includegraphics[width=.99\textwidth]{4.graphics/figures/ch_4/before_ann_hd_PMC3120364_FULLTEX_HD}
 	\caption{Original annotations of SoMeSci before extension with software usage purpose labels }
 	\label{fig:chapter04:setup}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.99\textwidth]{4.graphics/figures/chap4/after_annotation}
+	\includegraphics[width=.99\textwidth]{4.graphics/figures/ch_4/after_ann_hd}
 	\caption{SoMeSci annotations after extension with software usage purpose labels}
 	\label{fig:chapter04:setup}
 \end{figure}
+
+
+\subsection{Assumptions in the annotation}
+\label{subsec:dataset:tool:Assumptions}
+
+For the sake of simplicity, certain types of software usages have been assigned the same class of software purpose annotation. For example, modeling might refer to graphical modeling of an object using CAD software or it might also refer to mathematical representation of a given problem.  All such variants of modeling tasks have been assigned “modeling” as a label without differentiating specific variants. 
+
+
 
 \subsection{Challenges during Annotation }
 \label{subsec:dataset:tool:Challenges}
@@ -116,14 +121,12 @@ Annotations has been carried out in a such way by deciding on each context which
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.99\textwidth]{4.graphics/figures/chap4/annotation_confusions}
-	\caption{When there is more than one possible candidate for software usage purpose labeling, a label with more importance has been chosen as shown for FlexArry software}
+	\includegraphics[width=.99\textwidth]{4.graphics/figures/ch_4/Ann_confusion_HD}
+	\caption{Label importance}
 	\label{fig:chapter04:setup}
 \end{figure}
 
-However, annotation of software usage statements was not often straightforward. This is because, in some instances as shown in the figure below, purpose of software usage might not be clear from the context.\\
-
-In addition in some cases possibility of multiple candidate labels for a given software usage label was also observed. For example  
+However, annotation of software usage statements was not often straightforward. This is because, in some instances, purpose of software usage appears to be ambiguous. For example a software used for counting or quantification can be assigned a software purpose label of  data collection but it is also possible to treat those tasks like analysis. Therefore such cases annotation of purpose label might become subjective, might affect the Inter-rater-reliability agreements and the  over all annotation quality.\\
 
 The other challenge of annotation was difficulty arising from limited domain knowledge. 
 
@@ -149,7 +152,7 @@ The other reason for merging annotations is to take advantage of legacy code, ar
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.95\textwidth]{4.graphics/figures/chap4/merging/2002515_plm_unm}
+	\includegraphics[width=.95\textwidth]{4.graphics/figures/ch_4/2002515_plm_unm_HD}
 	\caption{Software usage annotations before merging with software purpose  annotation.}
 	
 	\label{fig:chapter04:setup}
@@ -157,30 +160,29 @@ The other reason for merging annotations is to take advantage of legacy code, ar
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.95\textwidth]{4.graphics/figures/chap4/merging/2002515_plm}
+	\includegraphics[width=.95\textwidth]{4.graphics/figures/ch_4/2002515_plm_HD}
 	\caption{Software usage annotations after merging with software purpose  annotation.}
 	\label{fig:chapter04:setup}
 \end{figure}
 
 
-
-
 \subsection{Transformation to IOB format}
 \label{subsec:dataset:preprocessing:Transformation}
-After merging software usage and purpose labels, transformation of data into IOB format has been carried out using articlenizer (link to articlenizer). Picture below shows the data format before and after transformation. 
+After merging software usage and purpose labels, transformation of data into IOB format has been carried out using articlenizer (link to articlenizer). Picture below shows the data format before and after transformation. \\
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.95\textwidth]{4.graphics/figures/chap4/merging/2002515_plm}
+\begin{figure}[h]
 	
-	\label{fig:chapter04:setup}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.95\textwidth]{4.graphics/figures/chap4/merging/BIo_2002515_plosmeth}
-	\caption{Merged software usage and purpose annotation \& its corresponding BIO representation.}
-	\label{fig:chapter04:setup}
+	\myfloatalign
+	
+	\subfloat{
+		\label{fig:chapter03:subfloat:grafik1}
+		\includegraphics[width=.98\linewidth]{4.graphics/figures/ch_4/2002515_plm_HD}
+	} \\
+	\subfloat{
+		\label{fig:chapter03:subfloat:grafik4}
+		\includegraphics[width=.98\linewidth]{4.graphics/figures/ch_4/BIo_2002515_plosmet_HD}
+	}\\
+	\caption[Subfloat - Figure]{Merged software usage and purpose annotation \& its corresponding BIO representation.}
 \end{figure}
 
 \subsection{Data Splitting}
@@ -196,11 +198,13 @@ Analysis of cleaned SoMeSci data set has been carried out to find a deeper insig
 \subsection{Co-reference resolution of software entities }
 \label{subsec:dataset:Analysis:resolution}
 
-The base line for the analysis of the data set was to carry out disambiguation of software names. This was particularly important because there is large degree of variation in software names. Using list of software name with corresponding URL, software mention instances have been disambiguated from each other and all software name variations that refer to the same entity have been given the same name. Figure below shows name variations for MATLAB software, in which all instances resolve to the same URL i.e. entities referring to the same software. All variations of names has been replaced by the first “Matlab” in this case.
+The base line for the analysis of the data set was to carry out disambiguation of software names. This was particularly important because there is large degree of variation in software names. Using list of software name with corresponding URL, software mention instances have been disambiguated from each other and all software name variations that refer to the same entity have been given the same name. \\
+
+Figure below shows name variations for MATLAB software, in which all instances resolve to the same URL i.e. entities referring to the same software. All variations of names has been replaced by the first “Matlab” in this case.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.95\textwidth]{4.graphics/figures/chap4/Corefresolution}
+	\includegraphics[width=1\textwidth]{4.graphics/figures/ch_4/pdf/Corefresolution}
 	\caption{Example of Co-reference resolution for Matlab software. All name variations have been given the same name.}
 	\label{fig:chapter04:setup}
 \end{figure}
@@ -213,55 +217,60 @@ According to the analysis results, the top 3 software by number of software name
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=1\textwidth]{4.graphics/figures/analysisresults/1.Top software mentions}
+	\includegraphics[width=1\textwidth]{4.graphics/figures/ch_4/analysisresults/1.Top software mentions}
 	\caption{Top software mentions}
 	\label{fig:chapter03:setup}
 \end{figure}
 
-Data set analysis result from the perspective of purpose of software usage indicates that, the most common purpose of software usage are: Analysis, Data pre-processing, Data collection and modelling where as the least common are simulation and stimulation. 
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.55\textwidth]{4.graphics/figures/analysisresults/2.Software Usage Purpose pie}
-	\caption{Top software usage purposes}
-	\label{fig:chapter03:setup}
-\end{figure}
-
+Data set analysis result from the perspective of purpose of software usage indicates that, the most common purpose of software usage are: Analysis, Data pre-processing, Data collection and modelling where as the least common are simulation and stimulation. The result is shown on figure 4.10 below. \\
 
 The other insight form from  the software-type perspective, is that the most commonly used type of software in the research articles in the data set is Application software as depicted on figure 4.11. \\
 
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.68\textwidth]{4.graphics/figures/analysisresults/4.Software Types pie}
-	\caption{The most common type of software mentioned in the \ac{SoMeSci} data set is application software }
-	\label{fig:chapter03:setup}
+\begin{figure}[h]
+	\myfloatalign
+	\subfloat[software purpose]{
+		\label{fig:chapter03:subfloat:grafik1}
+		\includegraphics[width=.46\linewidth]{4.graphics/figures/ch_4/analysisresults/2.Software Usage Purpose pie}
+	} \quad
+	\subfloat[Types of software] {
+		\label{fig:chapter03:subfloat:grafik2}
+		\includegraphics[width=.46\linewidth]{4.graphics/figures/ch_4/analysisresults/4.Software Types pie}
+	} \\
+	\caption[Subfloat - Figure]{}
+	
 \end{figure}
 
-When it comes to share of each purpose of software usage among the 4 types of software, the pattern once again clearly indicates most of the time a software has been used for the purpose of analysis and data collection in all of the four software types. 
+
+When it comes to share of each purpose of software usage among the 4 types of software, the pattern once again clearly indicates most of the time a software has been used for the purpose of analysis and data collection in all of the four software types. \\
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=1\textwidth]{4.graphics/figures/analysisresults/6.Types of Software and Purpose stacked bar}
+	\includegraphics[width=1\textwidth]{4.graphics/figures/ch_4/analysisresults/6.Types of Software and Purpose stacked bar}
 	\caption{Share of software usage purpose from each type of software in the \ac{SoMeSci} data set.}
 	\label{fig:chapter03:setup}
 \end{figure}
 
-Lastly, the most interesting insight that is important for the automatic classification task was determining: ” for how many different purposes a given software have been used for ?”.  The analysis result reveals that from 657 unique software lists, a little over 3 out of 4 software have been used only for a single purpose. Over all almost 98\% of software have been used for a purposes maximum of three. This indicates that most of the software have been used only for a specific purpose.  
+Lastly, the most interesting insight that is important for the automatic classification task was determining: ” for how many different purposes a given software have been used for ?”.  The analysis result reveals that from 657 unique software lists, a little over 3 out of 4 software have been used only for a single purpose. \\
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=1\textwidth]{4.graphics/figures/analysisresults/7.counts of software purpose}
-	\caption{chart indicates that most of software used for a single purpose.}
-	\label{fig:chapter03:setup}
+Over all almost 98\% of software have been used for a purposes maximum of three. This indicates that most of the software have been used only for a specific purpose.  
+
+
+\begin{figure}[h]
+	
+	\myfloatalign
+	
+	\subfloat{
+		\label{fig:chapter03:subfloat:grafik1}
+		\includegraphics[width=1\linewidth]{4.graphics/figures/ch_4/analysisresults/7.counts of software purpose}
+	} \\
+	\subfloat{
+		\label{fig:chapter03:subfloat:grafik4}
+		\includegraphics[width=.65\linewidth]{4.graphics/figures/ch_4/analysisresults/8.counts of software purpose pie}
+	}\\
+	\caption[Subfloat - Figure]{Merged software usage and purpose annotation \& its corresponding BIO representation.}
 \end{figure}
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.65\textwidth]{4.graphics/figures/analysisresults/8.counts of software purpose pie}
-	\caption{Pie chart indicates that almost 3 out of 4 software usage is for a single purpose.  }
-	\label{fig:chapter04:pie}
-\end{figure}
+
 
 \section{Summary }
 \label{subsec:dataset:Analysis:Summary}
