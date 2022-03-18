@@ -1,46 +1,37 @@
 \chapter{Introduction}
 \label{ch:intro}
 
-Today’s scientific research relies on a use as well as production of various types of research artifacts, a.k.a. research resources, ranging from digital to physical \citep{schindler2019annotation}. One of key digital research artifacts, broadly used in a scientific investigations, is software. Many scientists use already existing software for various purposes during their research as well as create a new software as part of their research work \citep{goble2014better,hannay2009scientists}. \\
-
-Almost every software has information associated with it which can be extracted. Version, name of developer, license, abbreviation, \ac{URL}, citation, release, extension, etc. are among the most obvious examples.  \\
-
-However there are also other kinds of information about a software that is non-obvious and challenging to extract. For  example, in a given line of text in a research paper a software can be mentioned to indicate weather a researcher is using a software for a particular purpose, introducing a novel software, providing repository information about the deposition of the software, or just mentioning the name of the software. In addition information about category of a software: such as application, plugin, programming environment, operating system, etc.  can also be concealed in a textual description in a scientific paper \citep{schindler2021somesci}. \\
-
-Extraction of all such variations of information about software from the scientific publications has critical importance. This is because, information about a software can be used to uniquely identify each software and avoid ambiguity regarding which software or version researchers have used in their literature. Being able to uniquely identify a software with its specification is also advantageous to guarantee re-producibility of research results as well as providing clear understanding how results of research have been produced \citep{kruger2019literature}. In addition, knowledge about a software’s purpose of use can help to determine which set of software artifacts can be suitable for a given study or to compare results obtained from various software in a given study. Furthermore, knowledge about software use and purpose of use in the literature, supports semantic analysis and retrieval of scientific publications based on use of particular software \citep{schindler2019annotation}.  \\
-
-Even though software citation principles have been already established by a scientific community \citep{callaghan2014joint, smith2016software}, software citation practice in reality  is still informal and incomplete \citep{schindler2021somesci}. This makes it difficult to extract information about software that would help to attribute credits to the creators of software, reproduce research results, unambiguously distinguish one software from another, etc. \\
-
-Various manual and rule based techniques has been attempted in the past to extract information about software. However, machine/deep learning based techniques have not been exploited to their potential until very recently. The main reason was lack of training data which can support training of a classifier for software information extraction \citep{schindler2021somesci}. Producing reliable ground truth data could be accomplished by crowd sourcing for general domains but it is expensive particularly for domain-specific and scientific publications as it requires expert domain knowledge \citep{beltagy2019scibert}. \\
-
-Fortunately, identification of software mentions from scientific articles has drawn more attention over the past years and now various labelled data sets, such as BioNerDs \citep{duck2013bionerds} , SoftCite \citep{du2021softcite}, are available. Recently a more comprehensive data set, \ac{SoMeSci}, has also been published.  \ac{SoMeSci} contains high quality manually annotated data sets that cover broader range of information about software paving a way for a use of machine learning based approach for the automatic extraction of information about software \citep{schindler2021somesci}. 
+Today’s scientific research relies on a use as well as production of various types of research artifacts, a.k.a. research resources, ranging from digital to physical \citep{schindler2019annotation}. One key digital research artifact, broadly used in a scientific investigations, is software. Many scientists use already existing software for various purposes during their research or create a new software as part of their research work \citep{goble2014better, hannay2009scientists}. \\
 
 
-\section{Scope}
-\label{sec:intro:Scope}
-
-This thesis work tries to apply machine learning technique using \ac{SoMeSci} data set to automatically extract information about software mentions, particularly, to identify for what purpose a software is used in a given context of text. \\
-
-To accomplish this, first possible list of software usage purposes have been identified via extensive analysis of literature and other sources like software ontologies and repositories. Then already existing annotations of software usage mentions in the \ac{SoMeSci} data set has been extended with software purpose labels. \\
-
-Once software usage mentions in the SoMeSci data set has been labelled with software purpose labels, the data set has been cleaned, analyzed, transformed, and used for classification purpose.
+Quality of a research result directly relies on quality of software which in turn depends on  how the software is developed as well as used in a research \citep{hannay2009scientists}. Typical problems associated with the development and use software in a research are inability to reproduce research results, lack of proper citation for software tools and most importantly the issue of reliability of research results from a software \citep{schindler2021somesci, baker2016reproducibility, soergel2014rampant}. \\
 
 
-\section{Objectives of the research}
-\label{sec:intro:Objectives}
-The main objectives to be accomplished in this thesis work are:
+Automatic extraction of detailed information about a software tools helps to solve these problems. For instance, information about a software such as \ac{URL}, name of developer, version, release, extension, etc. can be used to uniquely identify a software tool used in a given research. Uniquely identifying a software in turn helps to improve reproducibility and transparency of scientific work by avoiding ambiguity regarding what software, along with its specification,  has been used to produce a given result. In addition, such information can also be used for automatic citation of software which is also advantageous to attribute proper credits to the developers of a software \citep{kruger2019literature}. \\
 
 
-\begin{itemize}
-	\itemsep0em 
-    \item To perform literature review on the importance of software in a research.
-    \item To carry out analysis of literature and software ontologies to identify main types of purposes of software use in a research.
-    \item To extend \ac{SoMeSci} data set with software usage purpose annotations. 
-    \item To analyze \ac{SoMeSci} data set to drive interesting facts about the data set. 
-    \item To select and train a suitable classifier model.
-    \item To optimize and evaluate the model for improved performance.
-	
-\end{itemize}
+Unlike \ac{URL}, version, name of software, etc. which are often explicitly mentioned in scientific papers, information about software hidden in a textual description such as the purpose of use of a given software can also be extracted automatically using machine learning techniques. Purpose of a software is reason a software is created for. For example, purpose of system software such as operating systems is to manage hardware resources, to provide a platform to run application software, etc. \citep{enwiki:1076010620}. \\
+
+
+Extraction of purpose of use of  software can be used to discover a set of similar software tools which have been used for the same purpose in a specific context. This creates an opportunity to compare results obtained from different software tools to test reliability of a research result obtained from software tool and contributes to identification of any potential error hidden in a software.  \\
+
+In addition, knowledge about software use and purpose of use in the literature, supports semantic analysis and retrieval of scientific publications based on use of particular software \citep{schindler2019annotation}. On the other hand, the same knowledge can be used to suggest list of software tools that might suit for a given task in a research. \\
+
+
+Various manual and rule based techniques has been attempted in the past to extract information about software. However, machine/deep learning based techniques have not been exploited to their potential until very recently. The main reason was lack of training data which can support training of a classifier for software information extraction \citep{schindler2021somesci}. \\
+
+Producing reliable ground truth data could be accomplished by crowd sourcing for general domains but it is expensive particularly for domain-specific and scientific publications as it requires expert of the domain knowledge \citep{beltagy2019scibert}.\\
+
+
+Fortunately, identification of software mentions from scientific articles has drawn more attention over the past years and now various labelled data sets, such as BioNerDs \citep{duck2013bionerds} , SoftCite \citep{du2021softcite}, are available. Recently a more comprehensive data set, SoMeSci, has also been published.  SoMeSci contains high quality manually annotated data sets that cover broader range of information about software paving a way for a use of machine learning based approach for the automatic extraction of information about software \citep{schindler2021somesci}. 
+
+
+\section{Contributions }
+\label{sec:intro:Contributions}
+
+This thesis work applies \ac{Bi-LSTM-CRF} neural network based classifier to automatically identify the purpose of use of software from a text in scientific papers in the \ac{SoMeSci} data set. \\
+
+To accomplish this, first review of literature has been carried out about the role of software in a research. Second, possible list of software usage purposes have been identified via extensive analysis of literature and other sources like software ontologies and repositories like SciCrunch. Next, from already existing annotations about a software in the \ac{SoMeSci} data set, software usage mentions have been extended with software purpose labels using  BRAT annotation tool. After that, extended version of \ac{SoMeSci} data set has been cleaned, analyzed, transformed to IOB format, and used in the classifier model. Finally, the classifier model has been optimized and evaluated by training in different scenarios. 
 
 
 %
@@ -48,26 +39,15 @@ The main objectives to be accomplished in this thesis work are:
 %
 \section{ Overview of the report }
 \label{sec:intro:Overview}
-\noindent Chapter 1  makes a soft introduction about why it is important to extract information about software, specifies scope and objective of the thesis. \\
+\noindent Chapter 1 makes a soft introduction about why it is important to automatically extract information about a software such as purpose of use of software.  \\
 
-\noindent Chapter 2 focuses on highlighting the role of software in a research to indicate driving information about software from scientific publications is an important task. \\
+\noindent Chapter 2 focuses on highlighting the role of software in a research to indicate driving information about software from scientific publications is an important task.  \\
 
-\noindent Chapter 3 focuses to identify possible types of software usage purposes from literature and software ontology. This is an important step taken to extend software usage statements in the \ac{SoMeSci} data set with software purpose annotations. \\
+\noindent Chapter 3 focuses to identify possible types of software usage purposes from literature and software ontology. This is an important step taken to extend software usage statements in the \ac{SoMeSci} data set with software purpose annotations.  \\
 
-\noindent Chapter 4 is about the data set.  It explains how \ac{SoMeSci} data set has been extended with software purpose annotations, annotation tool used, and the annotation process. In addition explains about data pre-processing, transformation to suitable format and splitting for classification purpose. At the end, results of analysis of the extended \ac{SoMeSci} data set has been presented. \\
+\noindent Chapter 4  explains how \ac{SoMeSci} data set has been extended with software purpose annotations, annotation tool used, and the annotation process. In addition explains about data pre-processing, transformation to suitable format and splitting for classification purpose. At the end, results of analysis of the extended SoMeSci data set has also been presented.  \\
 
-\noindent Chapter 5 discusses and compares a various models suitable for  classification of software purpose from a text. 
-\noindent Chapter 6 focuses model training , optimization and evaluation of various scenarios. \\
 
-\noindent Chapter 7 discusses about classification and results  of the evaluation. \\
+\noindent Chapter 5 explores suitable approaches and models for software purpose classifications.  Then training, optimization and evaluation of the selected classifier model has been presented in chapter 6. Finally, results and observations are presented in chapter 7.  \\
 
-\noindent Chapter 8 summarizes results and provides conclusion.
 
-\section{Summary}
-\label{sec:intro:Summary}
-
-\indent This chapter has presented a gentle introduction into types of information associated with software artifacts, extraction approaches and why it is important to extract information about software. The data set to be used, scope and goal of the work has also been discussed. \\
-
-The next chapter presents the role of software in a modern research to give more elaborate understanding about the impact of software in a scientific investigations indicating why it is worth to extract knowledge about software.  
-
-\clearpage
