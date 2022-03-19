@@ -4,10 +4,12 @@
 %
 % Section: intro
 %
-In scientific investigations broad range of software is being employed for various purposes. In terms of size, software ranges from simple script to extremely complex one with millions of lines of code. In terms task, a software can be used for execution of rudimentary tasks to computation of extremely complex ones. Typical examples of purpose of software use for scientific investigation are simulation, modeling, data analysis, etc. \citep{goble2014better}. \\
+In scientific investigations broad range of software is being employed for various purposes. In terms of size, software ranges from simple script to extremely complex with millions of lines of code. In terms of task, a software can be used for execution of rudimentary tasks to computation of extremely complex ones. Typical examples of purpose of software use for scientific investigation are simulation, modeling, data analysis, etc. \citep{goble2014better}. \\
 
 
-To be able to automatically identify, from context, for what purpose a software is used in a scientific paper, a classifier algorithm has to be trained on a manually annotated dateset that indicate software usage purpose. The \ac{SoMeSci} data set already has annotations about type of software, type of software mentions, etc. and only require extension with software purpose annotation so that it can be used for training a software usage purpose classifier. However, a comprehensive list of potential software usage purposes has to be identified before hand. To enumerate possible software purposes of usage, three things have been done in this thesis. These are:
+To be able to automatically identify, from context, for what purpose a software is used in a scientific paper, a classifier algorithm has to be trained on a manually annotated dateset that indicate software usage purpose. The \ac{SoMeSci} data set already has annotations about type of software, type of software mentions, etc. and only require extension with software purpose annotation so that it can be used for training a software usage purpose classifier. However, a comprehensive list of potential software usage purposes have to be identified beforehand. \\
+
+To enumerate possible software purposes of usage, three things have been done in this thesis. These are:
 analysis of literature,  software ontologies and Sci-Crunch repository. The process work flow is shown on the figure 3.1. as follows.  
 
 \begin{figure}[htbp]
@@ -28,7 +30,7 @@ This section elaborates the analysis procedure of a list of resources mentioned 
 \label{sec:purpose:literatures}
 %-----------------------------
 
-In a research, scientists follow scientific method to discover knowledge. Typically, scientists begin with a question and attempt to answer questions through a research and propose hypothetical answers for their questions. Then, they test the proposed hypothesis by conducting various experiments. Although all scientists do not follow the exact same procedure, the over all idea remains the same {enwiki:1061107378- Scientific method}. This is where a software use comes into play, aid scientists during their experiment. \\
+In a research, scientists follow scientific method to discover knowledge. Typically, scientists begin with a question and attempt to answer questions through a research and propose hypothetical answers for their questions. Then, they test the proposed hypothesis by conducting various experiments. Although all scientists do not follow the exact same procedure, the over all idea remains the same \citep{enwiki:1061107378}. This is where a software use comes into play, aid scientists during their experiment. \\
 
 Therefore, the analysis of literature when looking for software usage purpose is aimed at answering, from a given context, \emph{“for what purpose scientists are using a software ?”} in their experiments.\\
 
@@ -69,7 +71,7 @@ Accordingly, some key words that reflect potential software usage purposes have 
 	\end{center}
 \end{table}
 
-The list of key words in the above table is used to delineate possible software usage purposes, however, it is intractable to enumerate all possible software purposes by manually reading through unlimited number of publications. To augment results obtained from the analysis of literature, various software ontologies and repositories like, Sci-Crunch, have been analyzed as presented in the following section. 
+The list of key words in the above table is used to delineate possible software usage purposes, however, it is intractable to enumerate all possible software purposes by manually reading through large number of publications. To augment results obtained from the analysis of literature, various software ontologies and repositories like, Sci-Crunch, have been analyzed as presented in the following section. 
 
 
 %-----------------------------
@@ -89,13 +91,13 @@ Effective knowledge representation begins with analysis of ontologies with in th
 
 Wikidata is a multilingual knowledge graph that is curated collaboratively by a Wikimedia community and serves as a freely available common source of structured data for everyone \citep{enwiki:1060114687, enwiki:1060408581}. \\
 
-Wikidata was created by Wikimedia foundation mainly to store meta data that can be used for other Wikimedia projects such as Wikipedia. Interestingly, wikidata is allowed to contain inconsistent and contradicting facts in order to embrace the diversity of knowledge about a given entity \citep{vrandevcic2012wikidata}. \\
+Wikidata was created by Wikimedia foundation mainly to store metadata that can be used for other Wikimedia projects such as Wikipedia. Interestingly, wikidata is allowed to contain inconsistent and contradicting facts in order to embrace the diversity of knowledge about a given entity \citep{vrandevcic2012wikidata}. \\
 
 Although wikidata has a tremendous amount of data in it, there was no information that would indicate software usage purposes, rather information about software categories was found. Therefore, an indirect approach has been taken to list down possible software purposes from software categories by assuming each software category has essentially a software purpose associated to it. \\
 
-Wikidata has a bunch of tools like, SPARQL end point, query builder, data visualization tools, etc. Thus a SPARQL end point has been utilized  to query a list software and their potential categories in a format that supports network analysis, with edge and node. As a result, over 400 software categories have been found from the Query. The SPARQL query used to retrieve software categories have been listed under \emph{Appendix A}.\\
+Wikidata has a bunch of tools like, \ac{SPARQL}, query builder, data visualization tools, etc. Thus a \ac{SPARQL} end point has been utilized  to query a list software and their potential categories in a format that supports network analysis, with edge and node. As a result, over 400 software categories have been identified from wikidata. The \ac{SPARQL} query used to retrieve software categories have been listed under \emph{Appendix A}.\\
 
-To find out potential relation between these categories and to select more general software categories, a network analysis has been done using Gephi software (version 0.9.2) \footnote{\url{http://gephi.org/}}. Using Gephi, clustering of related software categories and filtering has been made to identify a more generalized software categories. \\
+To find out potential relation between these categories and to select more general software categories, a network analysis has been done using Gephi software  \href{https://scicrunch.org/resolver/SCR_004293}{RRID:SCR\_004293} (version 0.9.2) \footnote{\url{http://gephi.org/}}. Using Gephi, clustering of related software categories and filtering has been made to identify a more generalized software categories. \\
 
 \noindent The procedure for network analysis has been described as follows:
 
@@ -113,21 +115,21 @@ To find out potential relation between these categories and to select more gener
 	\myfloatalign
 	\subfloat[Degree \{1-60\}]{
 		\label{fig:chapter03:subfloat:grafik1}
-		\includegraphics[width=.25\linewidth]{4.graphics/figures/ch_3/Network1}
+		\includegraphics[width=.3\linewidth]{4.graphics/figures/ch_3/Network1}
 	} \quad
 	\subfloat[Degree \{3-60\}.] {
 		\label{fig:chapter03:subfloat:grafik2}
-		\includegraphics[width=.25\linewidth]{4.graphics/figures/ch_3/Network2}
+		\includegraphics[width=.3\linewidth]{4.graphics/figures/ch_3/Network2}
 	} \\
 	\subfloat[Degree \{5-60\}]{
 		\label{fig:chapter03:subfloat:grafik3}
-		\includegraphics[width=.25\linewidth]{4.graphics/figures/ch_3/Network3}
+		\includegraphics[width=.3\linewidth]{4.graphics/figures/ch_3/Network3}
 	}
 	\subfloat[Degree \{7-60\}]{
 	\label{fig:chapter03:subfloat:grafik4}
-	\includegraphics[width=.25\linewidth]{4.graphics/figures/ch_3/Network4}
+	\includegraphics[width=.3\linewidth]{4.graphics/figures/ch_3/Network4}
 	}\\
-	\caption[Subfloat - Figure]{The result of network analysis from Gephi software - indicates the relation between each software category. The Degree filter with a range of 1 to 60 indicates prominence of a node in the network. Large value correspondences to a more general parent node (more general software category).}
+	\caption[Subfloat - Figure]{The result of network analysis from Gephi software - indicates the relation between each software category. The Degree filter with a range of 1 to 60 indicates prominence of a node in the network. Large value correspondences to a parent node (more general software category).}
 
 \end{figure}
 
@@ -161,7 +163,7 @@ By further analyzing the relation between the software categories in the table a
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.73\textwidth]{4.graphics/figures/ch_3/chart}
+	\includegraphics[width=.70\textwidth]{4.graphics/figures/ch_3/chart_hd}
 	\caption{Relation between the three main software categories identified from WikiData.}
 	\label{fig:chapter03:setup}
 \end{figure}
@@ -219,13 +221,9 @@ Some examples of software usage purposes retrieved from SWO are shown on the tab
 \subsection{OntoSoft}
 \label{subsec:purpose:ontologies:OntoSoft}
 %-----------------------------
-Onosoft is a software registry framework that stores important metadata about software to foster reuse and sharing of software among scientific community. The ontology provides descriptions about a software that would help scientists to identify, understand, execute, and do research with a software. Moreover, it helps scientists get information about update and support for the software. \\
+Onosoft\footnote{\url{https://www.ontosoft.org/portal/}} is a software registry framework that stores important metadata about software to foster reuse and sharing of software among scientific community. The ontology provides descriptions about a software that would help scientists to identify, understand, execute, and do research with a software. Moreover, it helps scientists get information about update and support for the software. \\
 
-These descriptions are visualized in a 6 dimensional pie-chart, with each slice indicating the completeness of the description. Particularly, Ontosoft focuses on the geo-science because software resources are not being shared adequately in that field \citep{gil2015ontosoft}.
-
-The type of information provided in each dimension of description entries are  summarized in the table below:
-
-
+These descriptions are visualized in a 6 dimensional pie-chart, with each slice indicating the completeness of the description. Particularly, Ontosoft focuses on the geo-science because software resources are not being shared adequately in that field \citep{gil2015ontosoft}. The type of information provided in each dimension of description entries are  summarized in the table 3.4 below. \\
 
 \begin{table}
 	\caption{The six dimensions of information description in the Ontosoft software ontology}
@@ -248,14 +246,17 @@ The type of information provided in each dimension of description entries are  s
 		\hline
 		Update      & - Version, developer community, maintenance, etc.  \\
 		\hline
-	
+		
 		
 	\end{tabularx}
 \end{table}
 
+
 From the set of information provided among the 6 dimensions of the Ontosoft, particularly the “understand” dimension has nearly 400 domain specific key words that would potentially indicate software usage purposes. Therefore, those domain specific key words has been retrieved, analyzed and condensed into a more general software purposes. \\
 
-Sample list of domain specific key-words that would potentially indicate a software usage purpose is listed on the following table. 
+
+
+Sample list of domain specific key-words that would potentially indicate a software usage purpose is listed in the table 3.5. 
 
 \begin{table}[h!]
 	\begin{center}
@@ -289,7 +290,7 @@ Sample list of domain specific key-words that would potentially indicate a softw
 \label{sec:purpose:Sci}
 %-----------------------------
 
-The other resource analyzed in addition to software ontologies is to list down software usage purposes is Sci-crunch \footnote{\url{https://scicrunch.org/}} repository. Sci-crunch is a data portal that searches through hundreds of community databases, aggregates information resources to create a large collection of data and tools available for access at a single spot \citep{grethe2016scicrunch}. \\
+The other resource analyzed in addition to software ontologies, to list down software usage purposes, is Sci-crunch \footnote{\url{https://scicrunch.org/}} repository. Sci-crunch is a data portal that searches through hundreds of community databases, aggregates information resources to create a large collection of data and tools available for access at a single spot \citep{grethe2016scicrunch}. \\
 
 To identify possible software usage purposes, the Sci-crunch repository has been analyzed as follows. On the registry section of the sci-crunch home page, there is a pie chart indicating different types of resources. A software resource, with  7,155 different types of software resources has been selected from the pie chart. From there, top 200 types of software resources have been identified using the site’s built in word-cloud generator. \\
  
@@ -301,11 +302,11 @@ To identify possible software usage purposes, the Sci-crunch repository has been
 	\label{fig:chapter03:setup}
 \end{figure}
 
-After a manual analysis of the 200 of software types, generated from the word cloud, important software types that indicate possible software usage purpose has been identified. Sample of software types and their corresponding usage purpose is summarized on table 3.4.
+After a manual analysis of the 200 of software types, generated from the word cloud, important software types that indicate possible software usage purpose has been identified. Sample of software types and their corresponding usage purpose is summarized on table 3.6 below.
 
 \begin{table}[h!]
 	\begin{center}
-		\caption{software types and potential purpose.}
+		\caption{Software types in Sci-Crunch repository that suggest potential software usage purposes.}
 		\label{tab:table1}
 		\begin{tabular}{|l|l|} % <-- Changed to S here.
 			\hline
@@ -339,19 +340,7 @@ After a manual analysis of the 200 of software types, generated from the word cl
 \label{sec:purpose:Types}
 %-----------------------------
 
-Based on a through analysis of scientific literature in \ac{SoMeSci} dataset, software ontologies and the sci-crunch repository, overall 8 main types of software usage purpose have been identified. These are: 
-
-\begin{itemize}
-	\itemsep0em
-	\item Data collection / recording  
-	\item Data pre-processing
-	\item Analysis 
-	\item Visualization
-	\item Simulation
-	\item stimulation 
-	\item Modelling
-	\item Programming
-\end{itemize}
+Based on a through analysis of scientific literature in \ac{SoMeSci} dataset, software ontologies and the sci-crunch repository, overall 8 main types of software usage purpose have been identified. These are Data collection,  Data pre-processing, Analysis, Visualization, Simulation, stimulation, Modelling, and Programming. \\
 
 To establish a clear boundary and avoid ambiguity during the annotation process of software usage statements, in \ac{SoMeSci} data set, each software usage purpose has been clearly defined based on literature in the next section as follows. 
 
@@ -370,12 +359,12 @@ Often times data pre-processing involves several steps such as data cleaning, in
 \subsection{Data Analysis}
 \label{sec:purpose:Types:Analysis}
 
-Data analysis refers to processing, transforming, modeling, etc. of data with a goal of discovering a new insight that would support conclusions or decision making. Data analysis involves diverse techniques with different names in various domains. \citep{enwiki:1061024140}. In their research, scientists employ various software to carry out various tasks of data analysis such as  curve fitting, spectral smoothing using a software \citep{proctor1982data}. 
+Data analysis refers to processing, transforming, modeling, etc. of data with a goal of discovering a new insight that would support conclusions or decision making. Data analysis involves diverse techniques with different names in various domains \citep{enwiki:1061024140}. In their research, scientists employ wide variety of software tools to carry out tasks of data analysis such as  curve fitting, spectral smoothing using a software \citep{proctor1982data}. 
 
 \subsection{Data visualization}
 \label{sec:purpose:Types:visualization}
 
-Data visualization refers to techniques that are used to communicate data or information effectively in the form of visual objects such as points, lines, bars, etc. in a graphic representation \citep{enwiki:1059912747}.  
+Data visualization refers to techniques that are used to communicate data or information effectively in the form of visual objects such as points, lines, bars, etc. in a graphic representation \citep{enwiki:1059912747}. Many types of data visualization software such as MatLab, Tableau, etc. and programming libraries such as Plotly, Matplotlib, Seaborn, are commonly used in research as well as business analytics. 
 
 \subsection{Simulation}
 \label{sec:purpose:Types:Simulation}
@@ -397,17 +386,14 @@ In the scientific investigations, scientists use various mechanisms to provide a
 
 Modeling refers to scientific activities that aim to facilitate understanding of a particular feature or phenomena in the world. It is a process of identifying and selecting relevant aspects of a situation or phenomenon under consideration. Different types of models with more specific aim exist.  For instance, conceptual modeling provide better understanding, mathematical models help to quantify, computational models are used for simulation, etc. \citep{enwiki:1051627717}.\\
 
-Modeling is a broad term that refers to a wide range of activities. It might refer to 3D modeling and graphical representation of a real world physical objects like vehicles, buildings, …etc.  using Computer Aided Design (CAD) software. For instance, some scientists use graphical modeling software, for instance for digitally documenting historical sites such as castles \citep{el2007detailed}. On the other hand modeling can also refer to mathematical representation of a non physical abstract entity. In one research paper, for instance, the researchers were trying to model the occurrence of letters and word’s initials mathematically \citep{pande2010mathematical}. 
+Modeling is a broad term that refers to a wide range of activities. It might also refer to 3D modeling and graphical representation of a real world physical objects like vehicles, buildings, …etc.  using \ac{CAD} software. For instance, some scientists use graphical modeling software, for instance for digitally documenting historical sites such as castles \citep{el2007detailed}. On the other hand modeling can also refer to mathematical representation of a non physical abstract entity. In one research paper, for instance, the researchers were trying to model the occurrence of letters and word’s initials mathematically \citep{pande2010mathematical}. \\
 
 Regardless of the wide meaning and techniques of modeling, inherently all models serve to represent an object or a system to facilitate the representation, or understanding of particular feature or phenomena \citep{enwiki:1058944086, enwiki:1051627717}.  
 
 
 \subsection{Programing}
 \label{sec:purpose:Types:Programing}
-Programming refers to the process of designing and building executable computer programs that performs a specific task. Computer programs are written in a human readable format mainly to automate execution of complex tasks and for solving problems \citep{enwiki:1062649903}. \\
-\\
-
-Summary of software usage purposes and corresponding examples are summarized in the table below:
+Programming refers to the process of designing and building executable computer programs that performs a specific task. Computer programs are written in a human readable format mainly to automate execution of complex tasks and for solving problems \citep{enwiki:1062649903}. Summary of software usage purposes and corresponding examples are summarized in the following table.
 
 \begin{table}
 	\caption{Brief summary of software usage purposes and examples.}

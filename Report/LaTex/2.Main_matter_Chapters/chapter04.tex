@@ -13,12 +13,12 @@ This section describes the data set used in this project – \ac{SoMeSci},  the 
 \section{SoMeSci data set}
 \label{sec:dataset:SoMeSci}
 
-SoMeSci data set contains high quality, hand annotated articles collated from PubMed Central (PMC). The articles and annotations included in the data set are summarized below.  
+\ac{SoMeSci} data set contains high quality, hand annotated articles collated from  \ac{PMC}. The articles and annotations included in the data set are summarized below.  
 
 \subsection{ SoMeSci Articles }
 \label{subsec:dataset:SoMeSci:Articles}
 
-The corpus is composed four group of files, namely\emph{ PLoS methods, PLoS sentences, PubMed full text} and \emph{Creation sentences}. Facts about the articles in the \ac{SoMeSci} corpus is summarized in the table 4.1 below.
+The corpus is composed of four group of files, namely\emph{PLoS methods, PLoS sentences, PubMed full text} and \emph{Creation sentences}. Facts about the articles in the \ac{SoMeSci} corpus is summarized in the table 4.1 below.
 
 \begin{table}
 	\caption{Article composition of  \ac{SoMeSci} dataset.}
@@ -77,31 +77,31 @@ SoMeSci corpus has three main types of annotations that correspond to a type of 
 
 \section{Annotation tool}
 \label{sec:dataset:tool}
-The data set has been annotated using BRAT rapid annotation tool, v.1.3 , in a Linux 20.4 environment. The annotation tool has been run in a local machine as a CGI application using a browser. 
+The data set has been annotated using BRAT rapid annotation tool \href{https://scicrunch.org/resolver/SCR_008769}{RRID:SCR\_008769}, v.1.3 , in a Linux 20.4 environment. The annotation tool has been run in a local machine as a CGI application using a browser. 
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.66\textwidth]{4.graphics/figures/ch_4/BRAT_tool}
-	\caption{Workflow for identifying software purposes}
+	\includegraphics[width=.75\textwidth]{4.graphics/figures/ch_4/BRAT_tool}
+	\caption{BRAT annotation tool}
 	\label{fig:chapter04:setup}
 \end{figure}
 
 \subsection{Annotation of SoMeSci with software purpose labels}
 \label{subsec:dataset:tool:Annotationprocess}
 
-SoMeSci corpus has been extended with annotations of eight classes of purpose of software usage labels identified in the earlier section. Since using software for a particular purpose only refers to the usage of a software, only usage labels has been further labelled with software purpose. The figure below shows SoMeSci data set before and after software purpose annotations. \\
+\ac{SoMeSci} corpus has been extended with annotations of eight classes of purpose of software usage labels identified in the earlier section. Since using software for a particular purpose only refers to the usage of a software, only usage labels has been further labelled with software purpose. The figures below show \ac{SoMeSci} data set before and after software purpose annotations. \\
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.99\textwidth]{4.graphics/figures/ch_4/before_ann_hd_PMC3120364_FULLTEX_HD}
-	\caption{Original annotations of SoMeSci before extension with software usage purpose labels }
+	\caption{Original annotations in \ac{SoMeSci} dataset before extension with software usage purpose annotations }
 	\label{fig:chapter04:setup}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.99\textwidth]{4.graphics/figures/ch_4/after_ann_hd}
-	\caption{SoMeSci annotations after extension with software usage purpose labels}
+	\caption{\ac{SoMeSci} annotations after extension with software usage purpose labels}
 	\label{fig:chapter04:setup}
 \end{figure}
 
@@ -109,7 +109,7 @@ SoMeSci corpus has been extended with annotations of eight classes of purpose of
 \subsection{Assumptions in the annotation}
 \label{subsec:dataset:tool:Assumptions}
 
-For the sake of simplicity, certain types of software usages have been assigned the same class of software purpose annotation. For example, modeling might refer to graphical modeling of an object using CAD software or it might also refer to mathematical representation of a given problem.  All such variants of modeling tasks have been assigned “modeling” as a label without differentiating specific variants. 
+For the sake of simplicity, certain types of software usages have been assigned the same class of software purpose annotation. For example, modeling might refer to graphical modeling of an object using \ac{CAD} software or it might also refer to mathematical representation of a given problem.  All such variants of modeling tasks have been assigned “modeling” as a label without differentiating specific variants. 
 
 
 
