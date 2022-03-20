@@ -9,34 +9,33 @@ Software is a real world entity and its mentions in a scientific publications us
 
 Extraction of information about a software can be done following various approaches. In the past, rudimentary approaches such as searching for a term in paper, manual content analysis using human readers as well as rule based approaches have been employed \citep{kruger2019literature}.  More recently a deep learning model have also been employed for extraction of  information about software such as mention types, software type, etc. \citep{schindler2022role}. \\
 
-Sequence labelling is a type of pattern recognition problem, one branch of Natural Language processing (NLP). Examples of classical tasks of sequence labelling are part-of-speech (POS) tagging, named entity recognition (NER), and text chunking \citep{akhundov2018sequence, he2020survey}.  \\
+Sequence labelling is a type of pattern recognition problem, one branch of \ac{NLP}. Examples of classical tasks of sequence labelling are \ac{POS} tagging, \ac{NER}, and text chunking \citep{akhundov2018sequence, he2020survey}.  \\
 
-Various types of models that implement sequence labeling can be broadly categorized as machine learning or deep learning based approaches \citep{he2020survey}. Machine learning based models are Hidden Markov Models (HMM) \citep{kupiec1992robust}, Maximum Entropy Markov Models (MEMM) \citep{mccallum2000maximum}, and Conditional Random Fields (CRF) \citep{lafferty2001conditional}.  State-of-the-art sequence labeling model is based on Bi-LSTM-CRF a deep learning neural network architecture. \\
+Various types of models that implement sequence labeling can be broadly categorized as machine learning or deep learning based approaches \citep{he2020survey}. Machine learning based models are \ac{HMM} \citep{kupiec1992robust}, \ac{MEMM} \citep{mccallum2000maximum}, and \ac{CRF} \citep{lafferty2001conditional}.  State-of-the-art sequence labeling model is based on a deep learning neural network architecture \ac{Bi-LSTM-CRF}. \\
 
 This section explores for models that are suitable for sequence labeling task of automatic classification of software usage purposes. 
 
 \section{Machine learning Models}
 \label{sec:chapter05:MLModels}
 
-\subsection{Hidden Markov models (HMMs)}
+\subsection{Hidden Markov models (\ac{HMM}s)}
 \label{sec:chapter05:MLModels:HMMS}
 
-One of machine learning models that are used for sequence labeling are Hidden Markov Models (HMMs). HMMs are based on Markov processes which describe a sequence of hidden finite states (Yi) in which a given state in a sequence depends only on the state prior it \citep{enwiki:1071684499, enwiki:1068802172}. \\
+One of machine learning models that are used for sequence labeling are Hidden Markov models. HMMs are based on Markov processes which describe a sequence of hidden finite states (Yi) in which a given state in a sequence depends only on the state prior it \citep{enwiki:1071684499, enwiki:1068802172}. \\
 
-As the model transitions through hidden states of Yi, it generates an observation Xi which corresponds to a token in a sentence \citep{aggarwal2018machine}.
+As the model transitions through hidden states of Yi, it generates an observation Xi which corresponds to a token in a sentence \citep{aggarwal2018machine}. The Markov chain of hidden states generate observations based on its current state using a joint probability distribution p(x,s), hence HMMs are also referred to as generative models. \\
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\textwidth]{4.graphics/figures/ch_5/HMM}
-	\caption{HMM Model}
+	\caption{\ac{HMM} Model: a directed graph indicates generation of tokens depends on exactly the state before.}
 	\label{fig:chapter03:setup}
 \end{figure}
 
-The Markov chain of hidden states generate observations based on its current state using a joint probability distribution p(x,s), hence HMMs are also referred to as generative models. \\
 
 The challenge with Hidden Markov Models is that, it is difficult to define the joint probability because it requires enumeration of all possible observation sequences which makes inference intractable for most applications. In addition, observation sequences in most real-world applications have long-range dependencies and multiple features interacting together \citep{bulla2006application, wallach2004conditional}.
  
-\subsection{Maximum Entropy Markov Models (MEMMs)}
+\subsection{Maximum Entropy Markov Models (\ac{MEMM}s)}
 \label{sec:chapter05:MLModels:MEMMs}
 
 Unlike hidden Markov models which generate sequences of tokens based on hidden states, maximum entropy models are discriminative models i.e., they model directly model the probability of each label Yi based on the current observation Xi and the prior hidden state Yi-1 \citep{mccallum2000maximum}. 
@@ -44,80 +43,82 @@ Unlike hidden Markov models which generate sequences of tokens based on hidden s
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\textwidth]{4.graphics/figures/ch_5/MEMM}
-	\caption{MEMM Model}
+	\caption{MEMMs classify each token based on current observation and previous label}
 	\label{fig:chapter03:setup}
 \end{figure}
 
 The biggest drawback with MEMMs and other discriminative directed graphical models based on Markov, tend to be biased in favor of states with fewer successor states {lafferty2001conditional}. 
 
-\subsection{Linear Conditional Random Fields (CRFs)}
+\subsection{(Linear) Conditional Random Fields (\ac{CRF}s)}
 \label{sec:chapter05:MLModels:CRFs}
 
-CRFs are similar with MEMMs in that both are probabilistic and discriminative models that can perform sequence labeling based on conditional probability p(Y|x) unlike joint probability of HMMs \citep{wallach2004conditional}. 
+Conditional Random Fields are similar with \ac{MEMM}s in that both are probabilistic and discriminative models that can perform sequence labeling based on conditional probability p(Y|x) unlike joint probability of \ac{HMM}s \citep{wallach2004conditional}. 
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\textwidth]{4.graphics/figures/ch_5/CRF}
-	\caption{CRF Model}
+	\caption{\ac{CRF} Model: un-directed graph indicates that classification at a given instance depends on labels occurring before and after.}
 	\label{fig:chapter03:setup}
 \end{figure}
 
-CRFs differ from MEMMs in that they are undirected graphs, i.e., the inference of Yi depends on all the labels occurring before it as well as after it. This makes training of CRFs computationally expensive especially when a wider window of tokens is chosen to handle long range dependencies \citep{aggarwal2018machine}. In addition to inability to capture long-range dependencies, CRFs have another problem, they capture context in a forward direction only \citep{lample2016neural}.
+\ac{CRF}s differ from \ac{MEMM}s in that they are undirected graphs, i.e., the inference of Yi depends on all the labels occurring before it as well as after it. This makes training of CRFs computationally expensive especially when a wider window of tokens is chosen to handle long range dependencies \citep{aggarwal2018machine}. In addition to inability to capture long-range dependencies, CRFs have another problem, they capture context in a forward direction only \citep{lample2016neural}.
 
 
 
 \section{Deep Learning Models }
 \label{sec:chapter05:MLModels:DLMs}
 
-Deep learning models yield a state-of-the-art performance for sequence labelling with out the need for manually crafting features because of their ability to automatically learn features from data \citep{he2020survey}. In addition, deep learning models are advantageous because certain variants like LSTMs have the capacity to handle long-term dependencies \citep{akhundov2018sequence}. 
+Deep learning models yield a state-of-the-art performance for sequence labelling with out the need for manually crafting features because of their ability to automatically learn features from data \citep{he2020survey}. In addition, deep learning models are advantageous because certain variants like \ac{LSTM}s have the capacity to handle long-term dependencies \citep{akhundov2018sequence}. 
 
 
 
-\subsection{Long Short-Term Memory (LSTM)}
+\subsection{Long Short-Term Memory (\ac{LSTM})}
 \label{sec:chapter05:DLModels:LSTM}
 
-Recurrent Neural Networks (RNNs) are specific type of neural network architectures that take a sequence of inputs Xi and yield another sequence Yi as output. Plain RNNs fail to capture long-range dependencies however a there are other variant of RNNs, such as LSTM networks that are capable of handling long-term dependencies \citep{akhundov2018sequence, lample2016neural}. This is because, unlike conventional feed forward neural networks, LSTMs have feedback mechanism that helps to capture entire sequence of tokens in a sentence enabling the network to remember tokens over arbitrary time intervals \citep{enwiki:1073570927}. \\
+\ac{RNN}s are specific type of neural network architectures that take a sequence of inputs Xi and yield another sequence Yi as output. Plain RNNs fail to capture long-range dependencies however a there are other variant of RNNs, such as LSTM networks that are capable of handling long-term dependencies \citep{akhundov2018sequence, lample2016neural}. This is because, unlike conventional feed forward neural networks, LSTMs have feedback mechanism that helps to capture entire sequence of tokens in a sentence enabling the network to remember tokens over arbitrary time intervals \citep{enwiki:1073570927}. \\
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.66\textwidth]{4.graphics/figures/ch_5/pdf/LSTM_cell}
-	\caption{LSTM Cell \citep{ma2016end}}
+	\includegraphics[width=.65\textwidth]{4.graphics/figures/ch_5/pdf/LSTM_cell}
+	\caption{\ac{LSTM} Cell \citep{ma2016end}}
 	\label{fig:chapter03:setup}
 \end{figure}
 
-A LSTM memory block has three multiplicative components, which determine what amount of information to remember as well as to retain to the next step \citep{ma2016end}. 
+A \ac{LSTM} memory block has three multiplicative components, which determine what amount of information to remember as well as to retain to the next step \citep{ma2016end}. 
 
 
-\subsection{Bi-Long Short-Term Memory (BLSTM)}
+\subsection{Bi-Long Short-Term Memory (\ac{Bi-LSTM})}
 \label{sec:chapter05:DLModels:BiLSTM}
 
-Though LSTM captures the past sequence of tokens (on the left), it is not capable to capture future sequence of tokens. For this reason, two LSTM networks are combined to form Bi-LSTM where one captures context information in a forward direction while the other captures information in the reverse direction. This enables Bi-LSTMs to become aware of both past as well as future contexts \citep{ma2016end}. 
+Though \ac{LSTM} captures the past sequence of tokens (on the left), it is not capable to capture future sequence of tokens. For this reason, two LSTM networks are combined to form \ac{Bi-LSTM} where one captures context information in a forward direction while the other captures information in the reverse direction. This enables \ac{Bi-LSTM}s to become aware of both past as well as future contexts \citep{ma2016end}. 
 
-\subsection{Bi-LSTM-CRF}
+\subsection{\ac{Bi-LSTM-CRF}}
 \label{sec:chapter05:DLModels:BiLSTMCRF}
 
-Bi-LSTM-CRF models are state-of-the-art, elegant solutions to sequence labeling tasks as they are capable of capturing context in both left and right directions due to their Bi-LSTM component. 
+Bi-directional Long Short Term Memory-Conditional Random Field models (\ac{Bi-LSTM-CRF}s) are state-of-the-art, elegant solutions to sequence labeling tasks as they are capable of capturing context in both left and right directions due to their \ac{Bi-LSTM} component. 
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.7\textwidth]{4.graphics/figures/ch_5/Bi-LSTM-CRF}
-	\caption{Bi-LSTM-CRF }
+	\includegraphics[width=.60\textwidth]{4.graphics/figures/ch_5/Bi-LSTM-CRF}
+	\caption{A \ac{Bi-LSTM-CRF} model: the \ac{Bi-LSTM} layer captures context information in two directions from left to right and vice versa. }
 	\label{fig:chapter03:setup}
 \end{figure}
 
-Due to its performance Bi-LSTM-CRF model has been employed for classifying software usage purpose from a sequence of tokens in a sentence. The classifier model implemented is a 4 layer network where each classifier layer is dedicated to classifying software, software-type, mention-type and software-purpose in respective order. Fully connected model is shown in the figure below. 
+Due to its performance \ac{Bi-LSTM-CRF} model has been employed for classifying software usage purpose from a sequence of tokens in a sentence. The classifier model implemented is a 4 layer network where each classifier layer is dedicated to classifying software, software-type, mention-type and software-purpose in respective order. \\
+
+The first 3 layers of the classifier(software, software-type and Mention-Type) are parts of the \ac{SoMeSci}\footnote{\url{https://github.com/dave-s477/SoMeNLP}} project and the last layer (software purpose classifier) is the extension added in this thesis work\footnote{\url{https://github.com/BeTKH/SoMeNLP}}. Fully connected model is shown in the figure below.
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\textwidth]{4.graphics/figures/ch_5/fully_connected_model}
-	\caption{Fully connected model }
+	\caption{Fully connected model: the first 3 layers of classifiers are from \ac{SoMeSci} project and the last layer is the extension added for software purpose classification.}
 	\label{fig:chapter05:setup}
 \end{figure}
 
-\subsection{Word embeddings}
+\subsection{Word Embeddings}
 \label{sec:chapter05:DLModels:wemb}
 
-To generate features for each word in a sentence, word embeddings like Sci-BERT and Bio-BERT have been used. Sci-BERT is pre-trained on multi-domain random collection, over 1.14M, of scientific publications and capable of generating contextualized embeddings for each token in a sequence. Most of the scientific papers used to train Sci-BERT are from biomedical domain (82\%) and the rest from computer science domain \citep{beltagy2019scibert}. \\
+To generate features for each word in a sentence, word embeddings like \ac{Sci-BERT} and \ac{Bio-BERT} have been used. Sci-BERT is pre-trained on multi-domain random collection, over 1.14M, of scientific publications and capable of generating contextualized embeddings for each token in a sequence. Most of the scientific papers used to train Sci-BERT are from biomedical domain (82\%) and the rest from computer science domain \citep{beltagy2019scibert}. \\
 
 Bio-BERT is as well a contextualized word embedding trained on biomedical corpora. The scientific publications in the Bio-BERT corpora are made of abstract section of PubMed journal and full text articles from Pub Med Central (PMC) \citep{li2019fine}. 
 
