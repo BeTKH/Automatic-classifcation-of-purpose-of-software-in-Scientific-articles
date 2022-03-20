@@ -97,14 +97,14 @@ Although wikidata has a tremendous amount of data in it, there was no informatio
 
 Wikidata has a bunch of tools like, \ac{SPARQL}, query builder, data visualization tools, etc. Thus a \ac{SPARQL} end point has been utilized  to query a list software and their potential categories in a format that supports network analysis, with edge and node. As a result, over 400 software categories have been identified from wikidata. The \ac{SPARQL} query used to retrieve software categories have been listed under \emph{Appendix A}.\\
 
-To find out potential relation between these categories and to select more general software categories, a network analysis has been done using Gephi software  \href{https://scicrunch.org/resolver/SCR_004293}{RRID:SCR\_004293} (version 0.9.2) \footnote{\url{http://gephi.org/}}. Using Gephi, clustering of related software categories and filtering has been made to identify a more generalized software categories. \\
+To find out potential relation between these categories and to select more general software categories, a network analysis has been done using Gephi software\footnote{\url{http://gephi.org/}} (version 0.9.2) (\href{https://scicrunch.org/resolver/SCR_004293}{RRID:SCR\_004293}) . Using Gephi, clustering of related software categories and filtering has been made to identify a more generalized software categories. \\
 
 \noindent The procedure for network analysis has been described as follows:
 
 \begin{itemize}
 	\itemsep1em
-	\item First query result from the SPARQL terminal of wikidata has been downloaded in a csv file format. 
-	\item Then, the csv file has been opened with Gephi software (version 0.9.2) as \emph{“undirected graph”}. This renders a network graph with overlapping nodes and edges. 
+	\item First query result from the \ac{SPARQL} terminal of wikidata has been downloaded in a \ac{CSV} file format. 
+	\item Then, the \ac{CSV} file has been opened with Gephi software as \emph{“undirected graph”}. This renders a network graph with overlapping nodes and edges. 
 	\item To unravel the overlapping nodes for visibility, the lay-out of the graph is then changed to \emph{“Fruchterman Reingold”}. 
 	\item To find out possible clusters from the network, from the list of statistical tools, \emph{“Modularity”} has been run. Then partition of nodes and edges has been done using \emph{“Modularity class”}. 
 	\item Then to adjust size of nodes based on importance, node size ranking has been done with a \emph{“Degree”} parameter with \{minimum, maximum\} size of  \{20, 80\} respectively. 
@@ -129,16 +129,16 @@ To find out potential relation between these categories and to select more gener
 	\label{fig:chapter03:subfloat:grafik4}
 	\includegraphics[width=.3\linewidth]{4.graphics/figures/ch_3/Network4}
 	}\\
-	\caption[Subfloat - Figure]{The result of network analysis from Gephi software - indicates the relation between each software category. The Degree filter with a range of 1 to 60 indicates prominence of a node in the network. Large value correspondences to a parent node (more general software category).}
+	\caption{Network analysis result indicates the relation between each software category. The Degree filter with a range of 1 to 60, Large value correspondences more general software category.}
 
 \end{figure}
 
 
-\noindent According to the network analysis, the major types of software categories identified are listed on the table below.
+\noindent According to the network analysis, major types of software categories identified are listed on the table below.
 \\
 \begin{table}[h!]
 	\begin{center}
-		\caption{Major software categories identified with network analysis of data retrieved from Wikidata with SPARQL Query.}
+		\caption{Major software categories identified with network analysis of data retrieved from Wikidata with \ac{SPARQL} Query.}
 		\label{tab:table1}
 		\begin{tabular}{|l|l|} % <-- Changed to S here.
 			
@@ -252,11 +252,7 @@ These descriptions are visualized in a 6 dimensional pie-chart, with each slice 
 \end{table}
 
 
-From the set of information provided among the 6 dimensions of the Ontosoft, particularly the “understand” dimension has nearly 400 domain specific key words that would potentially indicate software usage purposes. Therefore, those domain specific key words has been retrieved, analyzed and condensed into a more general software purposes. \\
-
-
-
-Sample list of domain specific key-words that would potentially indicate a software usage purpose is listed in the table 3.5. 
+From the set of information provided among the 6 dimensions of the Ontosoft, particularly the “understand” dimension has nearly 400 domain specific key words that would potentially indicate software usage purposes. Therefore, those domain specific key words has been retrieved, analyzed and condensed into a more general software purposes. Sample list of domain specific key-words that would potentially indicate a software usage purpose is listed in the table 3.5 below. \\
 
 \begin{table}[h!]
 	\begin{center}

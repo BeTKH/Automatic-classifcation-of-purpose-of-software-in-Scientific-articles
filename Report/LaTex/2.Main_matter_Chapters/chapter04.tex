@@ -1,4 +1,4 @@
-\chapter{Data set}
+\chapter{Dataset}
 \label{ch:dataset}
  
 %
@@ -10,7 +10,7 @@ Training and evaluation of automatic information extraction approaches requires 
 This section describes the data set used in this project – \ac{SoMeSci},  the extension process with software usage purpose annotations, issues observed during annotation, pre-processing of the data-set, analysis results of the data and transformation to a suitable format for training purpose.  
 
 
-\section{SoMeSci data set}
+\section{SoMeSci dataset}
 \label{sec:dataset:SoMeSci}
 
 \ac{SoMeSci} data set contains high quality, hand annotated articles collated from  \ac{PMC}. The articles and annotations included in the data set are summarized below.  
@@ -69,7 +69,7 @@ SoMeSci corpus has three main types of annotations that correspond to a type of 
 		- Mention, Usage, Creation, and Deposition\\
 		\hline
 		9 additional info.  &
-		- Developer, Version, URL, Extension, Release, License, Abbreviation, \& Alternative name.\\
+		- Developer, Version, \ac{URL}, Extension, Release, License, Abbreviation, \& Alternative name.\\
 		\hline
 		
 	\end{tabularx}
@@ -77,7 +77,7 @@ SoMeSci corpus has three main types of annotations that correspond to a type of 
 
 \section{Annotation tool}
 \label{sec:dataset:tool}
-The data set has been annotated using BRAT rapid annotation tool \href{https://scicrunch.org/resolver/SCR_008769}{RRID:SCR\_008769}, v.1.3 , in a Linux 20.4 environment. The annotation tool has been run in a local machine as a CGI application using a browser. 
+The data set has been annotated using BRAT rapid annotation tool (version 1.3) (\href{https://scicrunch.org/resolver/SCR_008769}{RRID:SCR\_008769})  in a Linux 20.4 environment. The annotation tool has been run in a local machine as a \ac{CGI} application using a browser. 
 
 \begin{figure}[htbp]
 	\centering
@@ -120,13 +120,13 @@ Annotations has been carried out in a such way by deciding on each context which
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.99\textwidth]{4.graphics/figures/ch_4/Ann_confusion_HD}
-	\caption{Label importance}
+	\caption{Selection of priority for annotations based on context: Visualization is one form of analysis hence label analysis is selected over visualization }
 	\label{fig:chapter04:setup}
 \end{figure}
 
-However, annotation of software usage statements was not often straightforward. This is because, in some instances, purpose of software usage appears to be ambiguous. For example a software used for counting or quantification can be assigned a software purpose label of  data collection but it is also possible to treat those tasks like analysis. Therefore such cases annotation of purpose label might become subjective, might affect the Inter-rater-reliability agreements and the  over all annotation quality.\\
+However, annotation of software usage statements was not often straightforward. This is because, in some instances, purpose of software usage appears to be ambiguous. For example a software used for counting or quantification can be assigned a software purpose label of  data collection but it is also possible to treat those tasks like analysis. Therefore such cases of annotation with software usage purpose might become subjective and can affect the over all annotation quality.\\
 
-The other challenge of annotation was difficulty arising from limited domain knowledge. 
+The other challenge of annotation was difficulty arising from limited domain knowledge. In some cases, labeling of purpose of use of a software was quite difficult because of lack of understanding what the scientists were trying to do using the software.
 
 \section{Data Pre-processing}
 \label{sec:dataset:preprocessing}
@@ -180,7 +180,7 @@ After merging software usage and purpose labels, transformation of data into IOB
 		\label{fig:chapter03:subfloat:grafik4}
 		\includegraphics[width=.98\linewidth]{4.graphics/figures/ch_4/BIo_2002515_plosmet_HD}
 	}\\
-	\caption[Subfloat - Figure]{Merged software usage and purpose annotation \& its corresponding BIO representation.}
+	\caption{Merged software usage and purpose annotation \& its corresponding BIO representation.}
 \end{figure}
 
 \subsection{Data Splitting}
@@ -215,7 +215,7 @@ According to the analysis results, the top 3 software by number of software name
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=1\textwidth]{4.graphics/figures/ch_4/analysisresults/1.Top software mentions}
+	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_4/analysisresults/1.Top software mentions}
 	\caption{Top software mentions}
 	\label{fig:chapter03:setup}
 \end{figure}
@@ -234,7 +234,7 @@ The other insight form from  the software-type perspective, is that the most com
 		\label{fig:chapter03:subfloat:grafik2}
 		\includegraphics[width=.46\linewidth]{4.graphics/figures/ch_4/analysisresults/4.Software Types pie}
 	} \\
-	\caption[Subfloat - Figure]{}
+	\caption{Software usage purposes and types of software in the SoMeSci data set.}
 	
 \end{figure}
 
@@ -250,7 +250,7 @@ When it comes to share of each purpose of software usage among the 4 types of so
 
 Lastly, the most interesting insight that is important for the automatic classification task was determining: ” for how many different purposes a given software have been used for ?”.  The analysis result reveals that from 657 unique software lists, a little over 3 out of 4 software have been used only for a single purpose. \\
 
-Over all almost 98\% of software have been used for a purposes maximum of three. This indicates that most of the software have been used only for a specific purpose.  
+Over all almost 98\% of software have been used for a purposes not more than three. This indicates that most of the software have been used only for a specific purpose.  
 
 
 \begin{figure}[h]
@@ -265,7 +265,7 @@ Over all almost 98\% of software have been used for a purposes maximum of three.
 		\label{fig:chapter03:subfloat:grafik4}
 		\includegraphics[width=.65\linewidth]{4.graphics/figures/ch_4/analysisresults/8.counts of software purpose pie}
 	}\\
-	\caption[Subfloat - Figure]{Merged software usage and purpose annotation \& its corresponding BIO representation.}
+	\caption{Number of purposes a software is used for, most software tools in SoMeSci are used for just a specific purpose.}
 \end{figure}
 
 

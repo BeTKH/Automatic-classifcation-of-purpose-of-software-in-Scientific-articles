@@ -5,7 +5,7 @@
 % Section: 6 - Intro
 %
 
-The Bi-LSTM-CRF multi-class classifier model has been trained and tested in a various training scenarios to determine conditions that leads to improved performance of classifier. 
+The \ac{Bi-LSTM-CRF} multi-class classifier model has been trained and tested in a various training scenarios to determine conditions that leads to improved performance of classifier. 
 The training scenarios considered include the impact of data-split, inclusion/exclusion of some parts of SoMeSci data sets, and context information. \\ 
 
 Furthermore, the model’s performance has also been investigated by truncating the 4-layred multi-level Bi-LSTM-CRF classifier into 2 layers after removing mention-type and software-type classifiers. 
@@ -83,7 +83,7 @@ Classifier’s performance evaluation indicate that there is a slight improvemen
 		\label{fig:chapter03:subfloat:grafik4}
 		\includegraphics[width=.90\linewidth]{4.graphics/figures/ch_6/2.left_context_vs_right/HD/2}
 	}\\
-	\caption[Subfloat - Figure]{The effect of context information on software purpose classifier's performance: right context gives improved performance over left context as well as left and right context.}
+	\caption{The effect of context information on software purpose classifier's performance: right context gives improved performance over left context as well as left and right context.}
 \end{figure}
 
 Theoretically consideration of broader context, is supposed to improve the classifier’s performance. However, the result of the analysis indicates that a context as big as the whole paragraph did not contribute to the model’s classification performance. Rather, a smaller window of context such as 2 sentences left and right has a better performance. 
@@ -112,7 +112,7 @@ The other scenario considered was evaluation of model’s performance when conte
 \subsection{Classification with 2-layers}
 \label{sec:chapter06:2lc}
 
-Overall the 4-layred \ac{Bi-LSTM-CRF} multi-class classifier’s performance has been poor regardless of consideration of various factors discussed above. Because of this, the model has been simplified into a two layered \ac{Bi-LSTM-CRF} model by removing software-type and mention-type classifiers. \\
+Overall the 4-layred \ac{Bi-LSTM-CRF} multi-class classifier’s performance has been poor regardless of consideration of various factors discussed above. Because of this, the model has been simplified into a two layered Bi-LSTM-CRF model by removing software-type and mention-type classifiers. \\
 
 Truncating the model into two layers helped to evaluate the software purpose classifiers performance exclusively by removing the effects of intermediate layers of mention-type and software-tape classifiers. \\
 
@@ -137,16 +137,16 @@ Evaluation of the 2-layered classifier model reveals that overall software purpo
 		\label{fig:chapter03:subfloat:grafik4}
 		\includegraphics[width=.90\linewidth]{4.graphics/figures/ch_6/5.2layerClassifier/HD/2}
 	}\\
-	\caption[Subfloat - Figure]{The Truncated 2-layer \ac{Bi-LSTM-CRF} classifier performed slightly better compared to the 4 layered model.}
+	\caption{The Truncated 2-layer \ac{Bi-LSTM-CRF} classifier performed slightly better compared to the 4 layered model.}
 \end{figure}
 
 
 \section{Model Training Bio-BERT vs Sci-BERT}
 \label{sec:chapter06:biosci}
 
-Even though both \ac{Bio-BERT} and \ac{Sci-BERT} give a contextualized representation of a word in a sentence, representations of a word would differ due to the inherent difference of corpora used for pre-trained models of \ac{Bio-BERT} and \ac{Sci-BERT} \citep{beltagy2019scibert,li2019fine}. For this reason, classifier’s performance has been evaluated for both \ac{Sci-BERT} and\ac{Bio-BERT} models. \\
+Even though both \ac{Bio-BERT} and \ac{Sci-BERT} give a contextualized representation of a word in a sentence, representations of a word would differ due to the inherent difference of corpora used for pre-trained models of Bio-BERT and Sci-BERT \citep{beltagy2019scibert,li2019fine}. For this reason, classifier’s performance has been evaluated for both Sci-BERT and Bio-BERT models. \\
 
-The results of evaluation indicate that the classifier models performed slightly better when using \ac{Bio-BERT} large embedding compared to \ac{Sci-BERT}. However, the model performed better with \ac{Sci-BERT} compared to the \ac{Bio-BERT} small embedding. 
+The results of evaluation indicate that the classifier models performed slightly better when using Bio-BERT large embedding compared to Sci-BERT. However, the model performed better with Sci-BERT compared to the Bio-BERT small embedding. 
 
 \begin{figure}[htbp]
 	\centering
