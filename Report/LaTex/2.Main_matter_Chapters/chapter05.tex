@@ -21,7 +21,7 @@ This section explores for models that are suitable for sequence labeling task of
 \subsection{Hidden Markov models (\ac{HMM}s)}
 \label{sec:chapter05:MLModels:HMMS}
 
-One of machine learning models that are used for sequence labeling are Hidden Markov models. HMMs are based on Markov processes which describe a sequence of hidden finite states (Yi) in which a given state in a sequence depends only on the state prior it \citep{enwiki:1071684499, enwiki:1068802172}. \\
+One of machine learning models that are used for sequence labeling are Hidden Markov models. HMMs are based on Markov processes which describe a sequence of hidden finite states (Yi) in which a given state in a sequence depends only on the state prior it \citep{aggarwal2018machine, gagniuc2017markov}. \\
 
 As the model transitions through hidden states of Yi, it generates an observation Xi which corresponds to a token in a sentence \citep{aggarwal2018machine}. The Markov chain of hidden states generate observations based on its current state using a joint probability distribution p(x,s), hence HMMs are also referred to as generative models. \\
 
@@ -75,7 +75,7 @@ Deep learning models yield a state-of-the-art performance for sequence labelling
 \subsection{Long Short-Term Memory (\ac{LSTM})}
 \label{sec:chapter05:DLModels:LSTM}
 
-\ac{RNN}s are specific type of neural network architectures that take a sequence of inputs Xi and yield another sequence Yi as output. Plain RNNs fail to capture long-range dependencies however a there are other variant of RNNs, such as LSTM networks that are capable of handling long-term dependencies \citep{akhundov2018sequence, lample2016neural}. This is because, unlike conventional feed forward neural networks, LSTMs have feedback mechanism that helps to capture entire sequence of tokens in a sentence enabling the network to remember tokens over arbitrary time intervals \citep{enwiki:1073570927}. \\
+\ac{RNN}s are specific type of neural network architectures that take a sequence of inputs Xi and yield another sequence Yi as output. Plain RNNs fail to capture long-range dependencies however a there are other variant of RNNs, such as LSTM networks that are capable of handling long-term dependencies \citep{akhundov2018sequence, lample2016neural}. This is because, unlike conventional feed forward neural networks, LSTMs have feedback mechanism that helps to capture entire sequence of tokens in a sentence enabling the network to remember tokens over arbitrary time intervals \citep{hochreiter1997long}. \\
 
 \begin{figure}[htbp]
 	\centering
