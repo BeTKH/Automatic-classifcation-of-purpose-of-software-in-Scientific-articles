@@ -18,7 +18,7 @@ This section describes the data set used in this project – \ac{SoMeSci},  the 
 \subsection{ SoMeSci Articles }
 \label{subsec:dataset:SoMeSci:Articles}
 
-The corpus is composed of four group of files, namely\emph{PLoS methods, PLoS sentences, PubMed full text} and \emph{Creation sentences}. Facts about the articles in the \ac{SoMeSci} corpus is summarized in the table 4.1 below.
+The corpus is composed of four group of files, namely\emph{PLoS methods, PLoS sentences, PubMed full text} and \emph{Creation sentences}. Facts about the articles in the \ac{SoMeSci} corpus is summarized in the table 4.1. \\
 
 \begin{table}
 	\caption{Article composition of  \ac{SoMeSci} dataset.}
@@ -51,7 +51,7 @@ The corpus is composed of four group of files, namely\emph{PLoS methods, PLoS se
 \subsection{SoMeSci Annotations  }
 \label{subsec:dataset:SoMeSci:Annotations }
 
-SoMeSci corpus has three main types of annotations that correspond to a type of information related with software tools. These annotations indicate the type of software, type of mention and additional information about the software as summarized on the table below:
+SoMeSci corpus has three main types of annotations that correspond to a type of information related with software tools. These annotations indicate the type of software, type of mention and additional information about the software as summarized on the table 4.2. \\ 
 
 
 \begin{table}
@@ -63,7 +63,7 @@ SoMeSci corpus has three main types of annotations that correspond to a type of 
 		Type of Annotation & Description  \\
 		\hline
 		4 software-types   &
-		- Application, Plugin, Operating System and Programming Environment\\
+		- Application , Plugin , Operating System and Programming Environment\\
 		\hline
 		4 mention types  &
 		- Mention, Usage, Creation, and Deposition\\
@@ -81,7 +81,7 @@ The data set has been annotated using BRAT rapid annotation tool (version 1.3) (
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.75\textwidth]{4.graphics/figures/ch_4/BRAT_tool}
+	\includegraphics[width=.66\textwidth]{4.graphics/figures/ch_4/BRAT_tool}
 	\caption{BRAT annotation tool}
 	\label{fig:chapter04:setup}
 \end{figure}
@@ -89,33 +89,35 @@ The data set has been annotated using BRAT rapid annotation tool (version 1.3) (
 \subsection{Annotation of SoMeSci with software purpose labels}
 \label{subsec:dataset:tool:Annotationprocess}
 
-\ac{SoMeSci} corpus has been extended with annotations of eight classes of purpose of software usage labels identified in the earlier section. Since using software for a particular purpose only refers to the usage of a software, only usage labels has been further labelled with software purpose. The figures below show \ac{SoMeSci} data set before and after software purpose annotations. \\
+\ac{SoMeSci} corpus has been extended with annotations of eight classes of purpose of software usage labels  identified in the earlier section (summarized in table 3.7). Since using software for a particular purpose only refers to the usage of a software, only usage annotations among the 4 types of annotations described in the table 4.2), have been further labeled with software purpose. The figures below show \ac{SoMeSci} data set before and after software purpose annotations. \\
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.99\textwidth]{4.graphics/figures/ch_4/before_ann_hd_PMC3120364_FULLTEX_HD}
+	\includegraphics[width=.85\textwidth]{4.graphics/figures/ch_4/before_ann_hd_PMC3120364_FULLTEX_HD}
 	\caption{Original annotations in \ac{SoMeSci} dataset before extension with software usage purpose annotations }
 	\label{fig:chapter04:setup}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.99\textwidth]{4.graphics/figures/ch_4/after_ann_hd}
+	\includegraphics[width=.85\textwidth]{4.graphics/figures/ch_4/after_ann_hd}
 	\caption{\ac{SoMeSci} annotations after extension with software usage purpose labels}
 	\label{fig:chapter04:setup}
 \end{figure}
 
 
-\subsection{Assumptions in the annotation}
+\subsection{Top-level annotation}
 \label{subsec:dataset:tool:Assumptions}
 
-For the sake of simplicity, certain types of software usages have been assigned the same class of software purpose annotation. For example, modeling might refer to graphical modeling of an object using \ac{CAD} software or it might also refer to mathematical representation of a given problem.  All such variants of modeling tasks have been assigned “modeling” as a label without differentiating specific variants. 
-
+For the sake of simplicity, certain types of software usages have been assigned the same class of software purpose annotation. For example, modeling might refer to graphical modeling of an object using \ac{CAD} software or it might also refer to mathematical representation of a given problem.  All such variants of modeling tasks have been assigned “modeling” , a top-level class, as a label without differentiating specific variants. 
 
 
 \subsection{Challenges during Annotation }
 \label{subsec:dataset:tool:Challenges}
-Annotations has been carried out in a such way by deciding on each context which software purpose annotation is more important or based on the general goal of the software usage. For example, FlexArray software on the figure below, has been annotated with software purpose analysis even though the same software was used for visualization purpose as well. This is because on this context analysis is more important than visualization and essentially visualization could also be interpreted as one kind of analysis. In addition, specific definition of each of software usage purposes has been also taken into account. \\
+
+There were cases where a given software had multiple types of software usage purpose where throughout the annotation process only a single software usage purpose was being assigned. In such cases,  annotations has been carried out in a such way by deciding on each context which software purpose annotation is more important or based on the general goal of the software usage. \\
+
+For example, FlexArray software on the figure below, has been annotated with software purpose analysis even though the same software was used for visualization purpose as well. This is because on this context analysis is more important than visualization and essentially visualization could also be interpreted as one kind of analysis. In addition, specific definition of each of software usage purposes has been also taken into account. \\
 
 \begin{figure}[htbp]
 	\centering
@@ -132,25 +134,21 @@ The other challenge of annotation was difficulty arising from limited domain kno
 \label{sec:dataset:preprocessing}
 Pre-processing of the data set has been carried out to ensure the integrity of our data set before using it in the classifier. The data pre-processing tasks handled annotation errors, merging annotations , transforming and splitting of data set. 
 
-\subsection{Handling missing annotations and annotation errors }
+\subsection{Automatic Integrity Testing }
 \label{subsec:dataset:preprocessing:handlingerrors}
 
 As described in the above table, the four types of software mentions in the SoMeSci are mention, usage, creation and deposition. The main goal of annotating the data set was to assign corresponding purpose of software usage label to each instance of software usage but not for mention, creation and deposition. However, due to an error there were some instances of software mention that has been annotated with software purpose. In addition to this, there were also some instances of usage, that has not been annotated and intentionally skipped because of the purpose of software usage did not seem to be clear. \\
 
 Therefore, all instances of wrong or missing annotations have been identified automatically to ensure the integrity of training data set.The python code for automatic identification of annotation errors has been listed under \emph{Appendix B}.
 
-\subsection{Merging annotations}
+\subsection{Merging Annotations}
 \label{subsec:dataset:preprocessing:Merging}
 
-After handing all annotation errors and missing labels, annotations of software usage has been merged with annotations of software purpose. Merging of the annotations solves two problems. \\
-
-First it will fix annotation error message that is displayed on the BRAT tool. The error message is displayed because more than one annotation per a token is not supported by the annotation tool. \\
-
-The other reason for merging annotations is to take advantage of legacy code, ariclenizer, which will transform data from BRAT too in a stand-off format  into IOB format which is desirable for training purpose. The python code for merging annotations has been listed on the \emph{Appendix C}.
+After handing all annotation errors and missing labels, annotations of software usage has been merged with annotations of software purpose. Merging of the annotations has been carried out to unify and integrate software usage purpose annotations with the original annotations. The python code for merging annotations has been listed on the \emph{Appendix C}. Figures 4.5 and 4.6 below shows, software purpose labels before and after integration into the original annotation respectively.  \\
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.95\textwidth]{4.graphics/figures/ch_4/2002515_plm_unm_HD}
+	\includegraphics[width=.75\textwidth]{4.graphics/figures/ch_4/2002515_plm_unm_HD}
 	\caption{Software usage annotations before merging with software purpose  annotation.}
 	
 	\label{fig:chapter04:setup}
@@ -158,7 +156,7 @@ The other reason for merging annotations is to take advantage of legacy code, ar
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.95\textwidth]{4.graphics/figures/ch_4/2002515_plm_HD}
+	\includegraphics[width=.75\textwidth]{4.graphics/figures/ch_4/2002515_plm_HD}
 	\caption{Software usage annotations after merging with software purpose  annotation.}
 	\label{fig:chapter04:setup}
 \end{figure}
@@ -166,7 +164,7 @@ The other reason for merging annotations is to take advantage of legacy code, ar
 
 \subsection{Transformation to IOB format}
 \label{subsec:dataset:preprocessing:Transformation}
-After merging software usage and purpose labels, transformation of data into IOB format has been carried out using articlenizer (link to articlenizer). Picture below shows the data format before and after transformation. \\
+After merging software usage and purpose labels, transformation of data into IOB format has been carried out using articlenizer (link to articlenizer). Figure 4.7 below shows the data format before and after transformation. \\
 
 \begin{figure}[h]
 	
@@ -178,14 +176,12 @@ After merging software usage and purpose labels, transformation of data into IOB
 	} \\
 	\subfloat{
 		\label{fig:chapter03:subfloat:grafik4}
-		\includegraphics[width=.98\linewidth]{4.graphics/figures/ch_4/BIo_2002515_plosmet_HD}
+		\includegraphics[width=1\linewidth]{4.graphics/figures/ch_4/BIo_2002515_plosmet_HD}
 	}\\
-	\caption{Merged software usage and purpose annotation \& its corresponding BIO representation.}
+	\caption{Merged software usage and purpose annotation \& its corresponding IOB representation.}
 \end{figure}
 
-\subsection{Data Splitting}
-\label{subsec:dataset:preprocessing:Splitting}
-After the data has been transformed into the IOB format, it has been further split into training, development and test set in 60:20:20 ratio.
+
 
 
 \section{Analysis of Annotated Data}
@@ -198,7 +194,7 @@ Analysis of cleaned SoMeSci data set has been carried out to find a deeper insig
 
 The base line for the analysis of the data set was to carry out disambiguation of software names. This was particularly important because there is large degree of variation in software names. Using list of software name with corresponding URL, software mention instances have been disambiguated from each other and all software name variations that refer to the same entity have been given the same name. \\
 
-Figure below shows name variations for MATLAB software, in which all instances resolve to the same URL i.e. entities referring to the same software. All variations of names has been replaced by the first “Matlab” in this case.
+Figure 4.8 below shows name variations for MATLAB software, in which all instances resolve to the same URL i.e. entities referring to the same software. All variations of names has been replaced by the first “Matlab” in this case.
 
 \begin{figure}[htbp]
 	\centering
@@ -211,16 +207,16 @@ Figure below shows name variations for MATLAB software, in which all instances r
 \subsection{Analysis results }
 \label{subsec:dataset:Analysis:results}
 
-According to the analysis results, the top 3 software by number of software name mention count through out the list of articles in PubMed and PLoS data set are: PASW, GNU-R and STATA.  
+According to the analysis results, the top 3 software by number of software name mention count through out the list of articles in PubMed and PLoS data set are: PASW, GNU-R and STATA as shown on the figure 4.9 below. 
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_4/analysisresults/1.Top software mentions}
+	\includegraphics[width=1\textwidth]{4.graphics/figures/ch_4/analysisresults/1.Top software mentions}
 	\caption{Top software mentions}
 	\label{fig:chapter03:setup}
 \end{figure}
 
-Data set analysis result from the perspective of purpose of software usage indicates that, the most common purpose of software usage are: Analysis, Data pre-processing, Data collection and modelling where as the least common are simulation and stimulation. The result is shown on figure 4.10 below. \\
+Data set analysis result from the perspective of purpose of software usage indicates that the most common purpose of software usage are: Analysis, Data pre-processing, Data collection and modeling where as the least common are simulation and stimulation. The result is shown on figure 4.10 below. \\
 
 The other insight form from  the software-type perspective, is that the most commonly used type of software in the research articles in the data set is Application software as depicted on figure 4.11. \\
 
@@ -248,24 +244,34 @@ When it comes to share of each purpose of software usage among the 4 types of so
 	\label{fig:chapter03:setup}
 \end{figure}
 
-Lastly, the most interesting insight that is important for the automatic classification task was determining: ” for how many different purposes a given software have been used for ?”.  The analysis result reveals that from 657 unique software lists, a little over 3 out of 4 software have been used only for a single purpose. \\
+Lastly, the most interesting insight that is important for the automatic classification task was determining: ” For how many different purposes has a given software been used ?”.  The analysis reveals that from 657 unique software, nearly 76\% software have been used only for a single purpose. \\
 
-Over all almost 98\% of software have been used for a purposes not more than three. This indicates that most of the software have been used only for a specific purpose.  
+Over all, almost 98\% of software have been used for specific purposes. This indicates that most of the software have been used only for a specific purpose.  
 
 
 \begin{figure}[h]
-	
-	\myfloatalign
-	
-	\subfloat{
-		\label{fig:chapter03:subfloat:grafik1}
-		\includegraphics[width=1\linewidth]{4.graphics/figures/ch_4/analysisresults/7.counts of software purpose}
-	} \\
-	\subfloat{
-		\label{fig:chapter03:subfloat:grafik4}
-		\includegraphics[width=.65\linewidth]{4.graphics/figures/ch_4/analysisresults/8.counts of software purpose pie}
-	}\\
+	\centering
+	\includegraphics[width=.75\linewidth]{4.graphics/figures/ch_4/analysisresults/7.counts of software purpose}
+	\label{fig:chapter03:subfloat:grafik1}
 	\caption{Number of purposes a software is used for, most software tools in SoMeSci are used for just a specific purpose.}
 \end{figure}
+
+
+\subsection{Data Splitting and optiization}
+\label{subsec:dataset:preprocessing:Splitting}
+After the data has been transformed into the IOB format, the data set, \ac{SoMeSci}, has been split into train, test and development set with  60, 20, 20 ratio respectively. To ensure the distribution  of enough samples of class labels, for all 8 types software usage purpose class labels, the data set has been iteratively split until each of software usage purpose class label lies within +/- 5\%  range for all train, test and development datasets. \\ 
+
+Initially the iterative data splitting was carried out separately for PLoS methods and PubMed-full text. However, due to lack of enough class labels in PubMed-full text, the iterative splitting did not converge. For this reason PLoS and PubMed articles have been combined to make the splitting converge. \\
+
+The most optimal data split obtained from the iterative splitting is shown on the figure below, where there is still class imbalance for stimulation in the development data set. Finally, few articles from the test set have been manually moved into the development set to make the data split comply 100\% within +/- 5\%. \\
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.54\textwidth]{4.graphics/figures/ch_6/optimal_split_sofar}
+	\caption{The best data split result before further manual balancing.}
+	\label{fig:chapter04:setup}
+\end{figure}
+
+Part of a python code for optimizing the data split has been listed on \emph{appendix D}. The notebook for data set splitting and optimization can be found on a git-hub repository  \footnote{\url{https://github.com/BeTKH/SoMeNLP/tree/contxt2Sentcs_wo/bin}}. 
 
 

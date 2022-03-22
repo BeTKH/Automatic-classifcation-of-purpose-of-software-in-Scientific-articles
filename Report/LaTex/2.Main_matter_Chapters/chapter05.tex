@@ -47,7 +47,7 @@ Unlike hidden Markov models which generate sequences of tokens based on hidden s
 	\label{fig:chapter03:setup}
 \end{figure}
 
-The biggest drawback with MEMMs and other discriminative directed graphical models based on Markov, tend to be biased in favor of states with fewer successor states {lafferty2001conditional}. 
+The biggest drawback with MEMMs and other discriminative directed graphical models based on Markov, tend to be biased in favor of states with fewer successor states \citep{lafferty2001conditional}. 
 
 \subsection{(Linear) Conditional Random Fields (\ac{CRF}s)}
 \label{sec:chapter05:MLModels:CRFs}
@@ -95,7 +95,7 @@ Though \ac{LSTM} captures the past sequence of tokens (on the left), it is not c
 \subsection{\ac{Bi-LSTM-CRF}}
 \label{sec:chapter05:DLModels:BiLSTMCRF}
 
-Bi-directional Long Short Term Memory-Conditional Random Field models (\ac{Bi-LSTM-CRF}s) are state-of-the-art, elegant solutions to sequence labeling tasks as they are capable of capturing context in both left and right directions due to their \ac{Bi-LSTM} component. 
+Bi-directional Long Short Term Memory-Conditional Random Field models (\ac{Bi-LSTM-CRF}s) are state-of-the-art, solutions to sequence labeling tasks as they are capable of capturing context in both left and right directions due to their \ac{Bi-LSTM} component. 
 
 \begin{figure}[htbp]
 	\centering
