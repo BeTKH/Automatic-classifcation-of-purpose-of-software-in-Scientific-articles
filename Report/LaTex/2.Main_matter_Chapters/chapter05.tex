@@ -5,13 +5,14 @@
 % Section: 5 - Intro
 %
 
-Software is a real world entity and its mentions in a scientific publications usually appear to be a sequence of tokens.  Therefore, automatic classification of software usage purpose can be modelled as a sequence labeling task in which a class label, from a fixed list of class labels, is assigned to each token in a sequence. \\
-
 Extraction of information about a software can be done following various approaches. In the past, rudimentary approaches such as searching for a term in paper, manual content analysis using human readers as well as rule based approaches have been employed \citep{kruger2019literature}.  More recently a deep learning model have also been employed for extraction of  information about software such as mention types, software type, etc. \citep{schindler2022role}. \\
+
+Software is a real world entity and its mentions in scientific publications usually appear to be a sequence of tokens.  Therefore, automatic classification of software usage purpose can be modelled as a sequence labeling task in which a class label, from a fixed list of class labels, is assigned to each token in a sequence. \\
+
 
 Sequence labelling is a type of pattern recognition problem, one branch of \ac{NLP}. Examples of classical tasks of sequence labelling are \ac{POS} tagging, \ac{NER}, and text chunking \citep{akhundov2018sequence, he2020survey}.  \\
 
-Various types of models that implement sequence labeling can be broadly categorized as machine learning or deep learning based approaches \citep{he2020survey}. Machine learning based models are \ac{HMM} \citep{kupiec1992robust}, \ac{MEMM} \citep{mccallum2000maximum}, and \ac{CRF} \citep{lafferty2001conditional}.  State-of-the-art sequence labeling model is based on a deep learning neural network architecture \ac{Bi-LSTM-CRF}. \\
+Various types of models that implement sequence labeling can be broadly categorized as machine learning or deep learning based approaches \citep{he2020survey}. Machine learning based models are \ac{HMM} \citep{kupiec1992robust}, \ac{MEMM} \citep{mccallum2000maximum}, and \ac{CRF} \citep{lafferty2001conditional}.  State-of-the-art sequence labeling model is based on a deep learning neural network architecture \ac{Bi-LSTM-CRF} \citep{huang2015bidirectional}. \\
 
 This section explores for models that are suitable for sequence labeling task of automatic classification of software usage purposes. 
 
@@ -21,9 +22,9 @@ This section explores for models that are suitable for sequence labeling task of
 \subsection{Hidden Markov models (\ac{HMM}s)}
 \label{sec:chapter05:MLModels:HMMS}
 
-One of machine learning models that are used for sequence labeling are Hidden Markov models. HMMs are based on Markov processes which describe a sequence of hidden finite states (Yi) in which a given state in a sequence depends only on the state prior it \citep{aggarwal2018machine, gagniuc2017markov}. \\
+One of machine learning models that are used for sequence labeling are Hidden Markov Models (HMMs). HMMs are based on Markov processes which describe a sequence of hidden finite states (Yi) in which a given state in a sequence depends only on the state prior to it \citep{aggarwal2018machine, gagniuc2017markov}. \\
 
-As the model transitions through hidden states of Yi, it generates an observation Xi which corresponds to a token in a sentence \citep{aggarwal2018machine}. The Markov chain of hidden states generate observations based on its current state using a joint probability distribution p(x,s), hence HMMs are also referred to as generative models. \\
+The Markov chain of hidden states Yi generate observations Xi based on its current state using a joint probability distribution P(Y,X). The joint probability P(Y, X) is a product of conditional probability  P(X|Y) and a prior probability P(Y) which specifies  the probability of the observation Yi  and the probability of state Yi.  \\
 
 \begin{figure}[htbp]
 	\centering
@@ -32,13 +33,15 @@ As the model transitions through hidden states of Yi, it generates an observatio
 	\label{fig:chapter03:setup}
 \end{figure}
 
+As the model transitions through hidden states of Yi, it generates an observation Xi which corresponds to a token in a sentence, hence HMMs are also referred to as generative models \citep{aggarwal2018machine}. \\
 
-The challenge with Hidden Markov Models is that, it is difficult to define the joint probability because it requires enumeration of all possible observation sequences which makes inference intractable for most applications. In addition, observation sequences in most real-world applications have long-range dependencies and multiple features interacting together \citep{bulla2006application, wallach2004conditional}.
+
+The challenge with Hidden Markov Models is that, it could be difficult to define the joint probability for some real world applications where the number of hidden states is infinite. In addition, Hidden Markov Models fail to capture long range dependencies because of their Markov assumption which considers only prior states \citep{bulla2006application, wallach2004conditional}.
  
 \subsection{Maximum Entropy Markov Models (\ac{MEMM}s)}
 \label{sec:chapter05:MLModels:MEMMs}
 
-Unlike hidden Markov models which generate sequences of tokens based on hidden states, maximum entropy models are discriminative models i.e., they model directly model the probability of each label Yi based on the current observation Xi and the prior hidden state Yi-1 \citep{mccallum2000maximum}. 
+Unlike hidden Markov models which generate sequences of tokens based on hidden states, maximum entropy models are discriminative models i.e., they directly model the probability of each label Yi based on the current observation Xi and the prior hidden state Yi-1 \citep{mccallum2000maximum}. 
 
 \begin{figure}[htbp]
 	\centering
@@ -47,12 +50,12 @@ Unlike hidden Markov models which generate sequences of tokens based on hidden s
 	\label{fig:chapter03:setup}
 \end{figure}
 
-The biggest drawback with MEMMs and other discriminative directed graphical models based on Markov, tend to be biased in favor of states with fewer successor states \citep{lafferty2001conditional}. 
+The biggest drawback with MEMMs and other discriminative directed graphical models based on Markov, tend to be biased in favor of states with fewer successor states i.e. \citep{lafferty2001conditional}. 
 
 \subsection{(Linear) Conditional Random Fields (\ac{CRF}s)}
 \label{sec:chapter05:MLModels:CRFs}
 
-Conditional Random Fields are similar with \ac{MEMM}s in that both are probabilistic and discriminative models that can perform sequence labeling based on conditional probability p(Y|x) unlike joint probability of \ac{HMM}s \citep{wallach2004conditional}. 
+Conditional Random Fields are similar with \ac{MEMM}s in that both are probabilistic and discriminative models that can perform sequence labeling based on conditional probability P(Y|X) unlike joint probability of \ac{HMM}s \citep{wallach2004conditional}. A sequence of tokens in a sentence corresponds to X and Y refers to a sequence of class labels \citep{lafferty2001conditional}. 
 
 \begin{figure}[htbp]
 	\centering
@@ -61,7 +64,7 @@ Conditional Random Fields are similar with \ac{MEMM}s in that both are probabili
 	\label{fig:chapter03:setup}
 \end{figure}
 
-\ac{CRF}s differ from \ac{MEMM}s in that they are undirected graphs, i.e., the inference of Yi depends on all the labels occurring before it as well as after it. This makes training of CRFs computationally expensive especially when a wider window of tokens is chosen to handle long range dependencies \citep{aggarwal2018machine}. In addition to inability to capture long-range dependencies, CRFs have another problem, they capture context in a forward direction only \citep{lample2016neural}.
+\ac{CRF}s differ from \ac{MEMM}s in that they are undirected graphs, i.e., the inference of Yi depends on all the labels occurring before it as well as after it. This makes training of CRFs computationally expensive especially when a wider window of tokens is chosen to handle long range dependencies \citep{aggarwal2018machine}. 
 
 
 
@@ -115,7 +118,7 @@ The first 3 layers of the classifier(software, software-type and Mention-Type) a
 	\label{fig:chapter05:setup}
 \end{figure}
 
-\subsection{Word Embeddings}
+\subsection{Language Models}
 \label{sec:chapter05:DLModels:wemb}
 
 To generate features for each word in a sentence, word embeddings like \ac{Sci-BERT} and \ac{Bio-BERT} have been used. Sci-BERT is pre-trained on multi-domain random collection, over 1.14M, of scientific publications and capable of generating contextualized embeddings for each token in a sequence. Most of the scientific papers used to train Sci-BERT are from biomedical domain (82\%) and the rest from computer science domain \citep{beltagy2019scibert}. \\

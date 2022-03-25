@@ -244,9 +244,7 @@ When it comes to share of each purpose of software usage among the 4 types of so
 	\label{fig:chapter03:setup}
 \end{figure}
 
-Lastly, the most interesting insight that is important for the automatic classification task was determining: ” For how many different purposes has a given software been used ?”.  The analysis reveals that from 657 unique software, nearly 76\% software have been used only for a single purpose. \\
-
-Over all, almost 98\% of software have been used for specific purposes. This indicates that most of the software have been used only for a specific purpose.  
+Lastly, the other interesting insight observed from analysis of the data set was determining: ” For how many different purposes has a given software been used ?”.  The analysis reveals that from 657 unique software, nearly 76\% have been used only for a single purpose as shown on the bar graph 4.12 below. Over all, this result indicates that most of the time software tools have been used only for a specific purposes.
 
 
 \begin{figure}[h]
@@ -257,20 +255,24 @@ Over all, almost 98\% of software have been used for specific purposes. This ind
 \end{figure}
 
 
-\subsection{Data Splitting and optiization}
+
+\section{Data Splitting and Optimization}
 \label{subsec:dataset:preprocessing:Splitting}
 After the data has been transformed into the IOB format, the data set, \ac{SoMeSci}, has been split into train, test and development set with  60, 20, 20 ratio respectively. To ensure the distribution  of enough samples of class labels, for all 8 types software usage purpose class labels, the data set has been iteratively split until each of software usage purpose class label lies within +/- 5\%  range for all train, test and development datasets. \\ 
 
-Initially the iterative data splitting was carried out separately for PLoS methods and PubMed-full text. However, due to lack of enough class labels in PubMed-full text, the iterative splitting did not converge. For this reason PLoS and PubMed articles have been combined to make the splitting converge. \\
+Initially the iterative data splitting was carried out separately for PLoS methods and PubMed-full text. However, due to lack of enough class labels in PubMed-full text, especially for stimulation class, the iterative splitting did not converge. For this reason PLoS and PubMed articles have been combined to make the splitting converge. \\
 
-The most optimal data split obtained from the iterative splitting is shown on the figure below, where there is still class imbalance for stimulation in the development data set. Finally, few articles from the test set have been manually moved into the development set to make the data split comply 100\% within +/- 5\%. \\
+The most optimal data split obtained from the iterative splitting is shown on the table 4.3 below, where there is still class imbalance for stimulation in the development data set. Finally, few articles from the test set have been manually moved into the development set to make the data split comply 100\% within +/- 5\%. \\
 
-\begin{figure}[htbp]
+\begin{table}[htbp]
 	\centering
-	\includegraphics[width=.54\textwidth]{4.graphics/figures/ch_6/optimal_split_sofar}
-	\caption{The best data split result before further manual balancing.}
+	\caption{The optimal data split result before further manual balancing.}
+	\includegraphics[width=.65\textwidth]{4.graphics/figures/ch_4/DataSplitTable}
 	\label{fig:chapter04:setup}
-\end{figure}
+\end{table}
+
+
+
 
 Part of a python code for optimizing the data split has been listed on \emph{appendix D}. The notebook for data set splitting and optimization can be found on a git-hub repository  \footnote{\url{https://github.com/BeTKH/SoMeNLP/tree/contxt2Sentcs_wo/bin}}. 
 
