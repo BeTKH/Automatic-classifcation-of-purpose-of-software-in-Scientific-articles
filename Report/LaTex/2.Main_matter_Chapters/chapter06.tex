@@ -5,39 +5,95 @@
 % Section: 6 - Intro
 %
 
-The \ac{Bi-LSTM-CRF} multi-class classifier model has been trained and tested in a various training scenarios to determine conditions that leads to improved performance of classifier. 
-The training scenarios considered include the impact of data-split, inclusion/exclusion of some parts of SoMeSci data sets, and context information. \\ 
-
-Furthermore, the model’s performance has also been investigated by truncating the 4-layred\footnote{\url{https://github.com/BeTKH/SoMeNLP/tree/contxt2Sentcs_wo/}} multi-level Bi-LSTM-CRF classifier into 2-layred\footnote{\url{https://github.com/BeTKH/SoMeNLP/tree/2layerClassfier/}} multi-level Bi-LSTM-CRF classifier after removing mention-type and software-type classifiers. 
-In addition, the impact of word embedding on classifier’s performance  has also been investigated using different variants of pre-trained models of embeddings. \\
+\ac{BERT}, specifically \ac{Sci-BERT}, multi-class classifier model has been trained and tested using \ac{SoMeSci} data set. The model has been trained in various training scenarios to determine conditions that leads to improved performance of classifier. The training scenarios considered, the effect of context information  and the impact of including or excluding parts of \ac{SoMeSci} data set on the classifier’s performance.\\
+ 
+Furthermore, software purpose classifier’s performance has also been investigated by removing mention-type and software-type classifiers from cascades of classifier modules.  In addition, the impact of using another variant of BERT model, \ac{Bio-BERT}, on classifier’s performance  has also been investigated. \\
 
 Finally, results from all training scenarios have been discussed and best performing model has been selected based on the results of investigation.
-
-
 
 \section{Model training with inclusion/exclusion part of data}
 \label{sec:chapter06:exclusion}
 
-As described in section 4.2.1 before, the SoMeSci dataset is composed of 4 different sets of articles: \emph{PLoS-methods}, \emph{PubMed-full text}, \emph{ PLoS-sentences} and \emph{creation-sentences}. Since only articles in the  \emph{PLoS-methods} and \emph{PubMed-full text} are annotated with software usage purpose labels, it was desired to evaluate weather including \emph{PLoS} and \emph{Creation} sentences would result in improved performance of the software usage purpose classifier.   \\
+As described in the table 4.1 before, the \ac{SoMeSci} dataset is composed of 4 different sets of articles: \emph{PLoS-methods, PubMed-full text,  PLoS-sentences} and \emph{creation-sentences}. Since only articles in the  \emph{PLoS-methods} and \emph{PubMed-full text} are annotated with software usage purpose labels, it was desired to evaluate weather including PLoS and creation would result in improved performance of the software usage purpose classifier.  \\
 
-The results of evaluation indicates that including \emph{PLoS-sentences} and \emph{Creation-sentences} in the training dataset, definitely improved model performance for classification of software. However, the software purpose classifier’s performance is not improved, rather deteriorated. This makes sense given articles in those sentences do not have software purpose labels. \\
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_6/1.with_sent_vs_without/HD/1}
-	\caption{Software purpose classifier's performance shows improved performance without Creation/PLoS data set.}
-	\label{fig:chapter06:without}
-\end{figure}
-
+The results of evaluation indicates that including \emph{ PLoS-sentences} and \emph{creation-sentences} in the training dataset, definitely improved the overall performance for classification of software. Figure 6.1 below shows total F-score for software classification over test and development data sets is increased with the inclusion of \emph{PLoS/Creation} sentences in the data set. \\
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.88\textwidth]{4.graphics/figures/ch_6/1.with_sent_vs_without/HD/2}
-	\caption{Software classifier performs better when trained including Creation/PLoS data set.}
+	\includegraphics[width=.86\textwidth]{4.graphics/figures/ch_6/1.with_sent_vs_without/HD/TotalFscoresoftware}
+	\caption{Software classification (Total) F1-score for devel (left) and test(right) shows improvement when \emph{Creation/PLoS} sentences are included in the training dataset.}
 	\label{fig:chapter06:with}
 \end{figure}
 
-Since the main goal of this project is to maximize software usage purpose classifer’s performance, for subsequent steps of analysis, the software usage purpose classifier has been trained only with datasets of PLoS-methods and PubMed-full text by excluding creation /PLoS sentences. 
+
+In contrast, the overall performance of the software purpose classifier is diminished when trained with \emph{ PLoS-sentences} and \emph{creation-sentences} in addition to \emph{ PLoS-methods}, \emph{PubMed-full text}. Figure 6.2 below depicts, Fscore for software purpose classifier is deteriorated when trained along with \emph{Creation/PLoS} sentences.  \\
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.86\textwidth]{4.graphics/figures/ch_6/1.with_sent_vs_without/HD/Total_Fscore_software_purpose}
+	\caption{Software purpose classification (Total) F1-score degrades for devel. set (left) and test set (right) when \emph{Creation/PLoS} sentences are included in the training dataset.}
+	\label{fig:chapter06:with}
+\end{figure}
+
+
+\begin{table}[ht]
+	\centering
+	\caption{Evaluation of software purpose classifier's performance with(+) and without(-) \emph{Creation/PLoS}sentences in the training data set.}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}}  l  l l  l l l } %l left align , c- center
+		\hline
+		Software Purpose & Metric & Dev+        & Dev-     & Test+  &Test- \\
+		\hline 
+		Analysis         & F     & 0.64        & 0.71     &0.65     &0.69   \\
+		                 & P     & 0.61        & 0.71     &0.60     &0.66   \\
+		                 & R     & 0.68        & 0.71     &0.72     &0.73   \\
+		\hline
+		Data-Collection  & F     & 0.26        &  0.32    & 0.26    & 0.34  \\
+					     & P     & 0.25        &  0.33    & 0.22    & 0.30  \\
+						 & R     & 0.28        &  0.31    & 0.30    & 0.31  \\		
+		
+		\hline
+		Pre-Processing   & F     & 0.41        &  0.45    & 0.49    & 0.57  \\
+						 & P     & 0.36        &  0.37    & 0.45    & 0.49  \\
+						 & R     & 0.48        &  0.56    & 0.58    & 0.67  \\
+		\hline
+		Modeling         & F     & 0.25        &  0.54    & 0.30    & 0.44  \\
+					     & P     & 0.27        &  0.54    & 0.28    & 0.42  \\
+						 & R     & 0.24        &  0.55    & 0.30    & 0.46  \\
+	
+		\hline
+		Programming      & F     & 0.27        &  0.42    & 0.23    & 0.42  \\
+						 & P     & 0.28        &  0.34    & 0.24    & 0.36  \\
+						 & R     & 0.27        &  0.55    & 0.23    & 0.51  \\
+		
+		\hline
+		Simulation      & F     & 0.00        &  0.38    & 0.00    & 0.00 \\
+						& P     & 0.00        &  0.88    & 0.00    & 0.00  \\
+						& R     & 0.00        &  0.25    & 0.00    & 0.00  \\
+		
+		\hline
+		Stimulation     & F     & 0.46        &  0.59    & 0.24    & 0.26 \\
+						& P     & 0.40        &  0.76    & 0.21    & 0.24  \\
+						& R     & 0.48        &  0.45    & 0.28    & 0.22  \\
+		
+		\hline
+		Visualization   & F     & 0.48        &  0.59    & 0.52    & 0.58  \\
+						& P     & 0.46        &  0.59    & 0.46    & 0.54  \\
+						& R     & 0.51        &  0.61    & 0.56    & 0.62  \\
+		\hline
+		Total (software Purpose)	& F     & 0.27        &  0.58*    & 0.30    & 0.54*  \\
+								& P     & 0.26        &  0.62*    & 0.26    & 0.56*  \\
+								& R     & 0.31        &  0.55*    & 0.32    & 0.65*  \\
+		\hline
+		Total (software) 	& F     &  0.86*       & 0.84     & 0.83    & 0.83  \\
+						& P     &  0.83*       & 0.82     & 0.77    & 0.79*  \\
+						& R     &  0.90*       & 0.86     & 0.90*    & 0.87  \\
+		\hline
+	\end{tabular*}
+\end{table}%
+
+Software purpose classifier's performance when trained with \emph{creation/PLoS} sentences versus  without is summarized on the table 6.1. \\
+
+Overall, as indicated in table 6.1, it is observed that including a data set that lacks software purpose annotation harms classifier model’s performance. Since the main goal of this project is to maximize software usage purpose classifer’s performance, for subsequent steps of analysis, the software usage purpose classifier has been trained only with datasets of \emph{PLoS-methods} and \emph{PubMed-full text} by excluding \emph{Creation/PLoS} sentences. 
 
 \section{The impact of context on classifier’s performance }
 \label{sec:chapter06:context}
