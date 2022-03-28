@@ -53,14 +53,13 @@ The corpus is composed of four group of files, namely\emph{PLoS methods, PLoS se
 
 SoMeSci corpus has three main types of annotations that correspond to a type of information related with software tools. These annotations indicate the type of software, type of mention and additional information about the software as summarized on the table 4.2. \\ 
 
-
 \begin{table}
 	\caption{Annotation composition of \ac{SoMeSci} dataset before its extension with software usage purpose labels.}
 	\begin{tabularx}{\textwidth}
 		{|>{\setlength\hsize{.6\hsize}\setlength\linewidth{\hsize}}X|>{\setlength\hsize{1.4\hsize}\setlength\linewidth{\hsize}}X|}
 		
 		\hline
-		Type of Annotation & Description  \\
+		Annotation category & Types of Annotations  \\
 		\hline
 		4 software-types   &
 		- Application , Plugin , Operating System and Programming Environment\\
@@ -224,11 +223,11 @@ The other insight form from  the software-type perspective, is that the most com
 	\myfloatalign
 	\subfloat[software purpose]{
 		\label{fig:chapter03:subfloat:grafik1}
-		\includegraphics[width=.46\linewidth]{4.graphics/figures/ch_4/analysisresults/2.Software Usage Purpose pie}
+		\includegraphics[width=.47\linewidth]{4.graphics/figures/ch_4/analysisresults/2.Software Usage Purpose pie}
 	} \quad
 	\subfloat[Types of software] {
 		\label{fig:chapter03:subfloat:grafik2}
-		\includegraphics[width=.46\linewidth]{4.graphics/figures/ch_4/analysisresults/4.Software Types pie}
+		\includegraphics[width=.47\linewidth]{4.graphics/figures/ch_4/analysisresults/4.Software Types pie}
 	} \\
 	\caption{Software usage purposes and types of software in the SoMeSci data set.}
 	
@@ -249,7 +248,7 @@ Lastly, the other interesting insight observed from analysis of the data set was
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=.75\linewidth]{4.graphics/figures/ch_4/analysisresults/7.counts of software purpose}
+	\includegraphics[width=.85\linewidth]{4.graphics/figures/ch_4/analysisresults/7.counts of software purpose}
 	\label{fig:chapter03:subfloat:grafik1}
 	\caption{Number of purposes a software is used for, most software tools in SoMeSci are used for just a specific purpose.}
 \end{figure}
@@ -264,16 +263,33 @@ Initially the iterative data splitting was carried out separately for PLoS metho
 
 The most optimal data split obtained from the iterative splitting is shown on the table 4.3 below, where there is still class imbalance for stimulation in the development data set. Finally, few articles from the test set have been manually moved into the development set to make the data split comply 100\% within +/- 5\%. \\
 
-\begin{table}[htbp]
+\begin{table}[ht]
 	\centering
-	\caption{The optimal data split result before further manual balancing.}
-	\includegraphics[width=.65\textwidth]{4.graphics/figures/ch_4/DataSplitTable}
-	\label{fig:chapter04:setup}
-\end{table}
+	\caption{The optimal data split for class labels before further manual balancing.}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}}  c  c c  c c  }
+		\hline
+		Software Purpose & Train (\%)       & Dev.(\%)    & Test (\%)   & Total \\
+		\hline 
+		Analysis         & 890 (62\%)  & 263 (18\%)  & 283 (20\%)    & 1436 \\
+		
+		Data Collection  & 150 (61\%)  & 48 (19\%)   &  48 (20\%)    &  246\\
+		
+		Pre-processing   & 205 (61\%)  & 64 (19\%)   &  66 (20\%)    & 335 \\
+		
+		Modeling         & 141 (62\%)  & 35 (15\%)   &  51 (23\%)    & 227\\
+		
+		Programming      & 51 (64\%)   & 14 (17\%)   &  15(19\%)     &   80\\
+		
+		Stimulation      & 16 (57\%)   & 6 (21.5\%)  &   6 (21.5\%)  & 28\\
+		
+		Simulation       & 45 (63\%)   & 9 (13\%)    &   17 (20\%)   & 71 \\
+		
+		Visualization    & 70 (60\%)   & 27 (23\%)   &   20 (17\%)   & 117\\
+		\hline
+	\end{tabular*}
+\end{table}%
 
 
-
-
-Part of a python code for optimizing the data split has been listed on \emph{appendix D}. The notebook for data set splitting and optimization can be found on a git-hub repository  \footnote{\url{https://github.com/BeTKH/SoMeNLP/tree/contxt2Sentcs_wo/bin}}. 
+Part of a python code for optimizing the data split has been listed on \emph{appendix D}. The notebook for data set splitting and optimization can be found on a git-hub repository\footnote{\url{https://github.com/BeTKH/SoMeNLP/tree/contxt2Sentcs_wo/bin}}. 
 
 
