@@ -29,7 +29,7 @@ Fortunately, identification of software mentions from scientific articles has dr
 \section{Contributions }
 \label{sec:intro:Contributions}
 
-This thesis work applies \ac{Bi-LSTM-CRF} neural network based classifier to automatically identify the purpose of use of software from a text in scientific papers in the \ac{SoMeSci} data set. \\
+This thesis applies \ac{Sci-BERT} model, a  transformer based neural network architecture, to automatically classify the purpose of software usage from a text in scientific papers using a labeled dataset, \ac{SoMeSci}. \\
 
 To accomplish this, first review of literature has been carried out about the role of software in a research. Second, possible list of software usage purposes have been identified via extensive analysis of literature and other sources like software ontologies and repositories like Sci-Crunch. Next, from already existing annotations about a software in the \ac{SoMeSci} data set, software usage mentions have been extended with software purpose labels using  BRAT annotation tool. After that, extended version of \ac{SoMeSci} data set has been cleaned, analyzed, transformed to \ac{IOB} format, and used in the classifier model. Finally, the classifier model has been optimized and evaluated by training in different scenarios. 
 

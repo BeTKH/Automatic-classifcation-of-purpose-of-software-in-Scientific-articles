@@ -11,12 +11,12 @@ Furthermore, software purpose classifier’s performance has also been investiga
 
 Finally, results from all training scenarios have been discussed and best performing model has been selected based on the results of investigation.
 
-\section{Model training with inclusion/exclusion part of data}
+\section{The impact of labeled data}
 \label{sec:chapter06:exclusion}
 
-As described in the table 4.1 before, the \ac{SoMeSci} dataset is composed of 4 different sets of articles: \emph{PLoS-methods, PubMed-full text,  PLoS-sentences} and \emph{creation-sentences}. Since only articles in the  \emph{PLoS-methods} and \emph{PubMed-full text} are annotated with software usage purpose labels, it was desired to evaluate weather including PLoS and creation would result in improved performance of the software usage purpose classifier.  \\
+As described in the table 4.1 before, the \ac{SoMeSci} dataset is composed of 4 different sets of articles: \emph{PLoS-methods, PubMed-full text,  PLoS-sentences} and \emph{creation-sentences}. Since only articles in the  \emph{PLoS-methods} and \emph{PubMed-full text} are annotated with software usage purpose labels, it was desired to evaluate weather including \emph{PLoS} and \emph{Creation}, which are not labeled with software usage purpose, would result in improved performance of the software usage purpose classifier.  \\
 
-The results of evaluation indicates that including \emph{ PLoS-sentences} and \emph{creation-sentences} in the training dataset, definitely improved the overall performance for classification of software. Figure 6.1 below shows total F-score for software classification over test and development data sets is increased with the inclusion of \emph{PLoS/Creation} sentences in the data set. \\
+The results of evaluation indicates that including \emph{ PLoS-sentences} and \emph{creation-sentences} in the training dataset, definitely improved the overall performance for classification of software, but not for software usage purpose. Figure 6.1 below shows total F-score for software classification over test and development data sets is increased with the inclusion of \emph{PLoS/Creation} sentences in the data set. \\
 
 \begin{figure}[htbp]
 	\centering
@@ -95,45 +95,51 @@ Software purpose classifier's performance when trained with \emph{creation/PLoS}
 
 Overall, as indicated in table 6.1, it is observed that including a data set that lacks software purpose annotation harms classifier model’s performance. Since the main goal of this project is to maximize software usage purpose classifer’s performance, for subsequent steps of analysis, the software usage purpose classifier has been trained only with datasets of \emph{PLoS-methods} and \emph{PubMed-full text} by excluding \emph{Creation/PLoS} sentences. 
 
-\section{The impact of context on classifier’s performance }
+
+\section{The impact of larger context}
 \label{sec:chapter06:context}
 
 Scientific papers like any other well written documents, have a sequential structure that form abstraction at various levels such as sentence, paragraphs, sections, chapters, etc. These levels of abstractions often determine the meaning of words because each level of abstraction or context conveys a valuable information \citep{ghosh2016contextual}. \\
 
 Likewise, contextual information helps to determine the correct purpose of use of a software. Therefore for each sentence in a text of scientific articles of training data set, various range of neighboring sentences have been incorporated to provide a contextual information. Typically 2 adjacent sentences before a sentence, after a sentence, and before \& after a sentence have been considered. Further more, a context as broad as the whole paragraph has also been considered. \\
 
-Excerpt of the python code for reading neighboring sentences for context has been listed on the \emph{appendix E}. The complete code has been listed on git-hub inside a methods that reads a file  \footnote{\url{https://github.com/BeTKH/SoMeNLP/blob/contxt2Sentcs_wo/somenlp/NER/data_handler.py}}. 
+Excerpt of the python code for reading neighboring sentences for context has been listed on the \emph{appendix E}. The complete code has been listed on git-hub inside a methods that reads a file\footnote{\url{https://github.com/BeTKH/SoMeNLP/blob/contxt2Sentcs_wo/somenlp/NER/data_handler.py}}. 
 
-\subsection{Left Context vs Right Context of Sentence}
-\label{sec:chapter06:leftvsright}
-
-Left context refers to sentences prior to a given sentence with in  a paragraph and right context refers to sentences that lie right after a given sentence. \\
-
-Classifier’s performance evaluation indicate that there is a slight improvement in model’s performance for right context as compared to the left context. However, when 2 sentences to left as well as right are taken into account for context, there is no significant gain on the model’s performance for both software and purpose of usage. \\
-
-However, due to the nature of randomness in the training of the classifier model, each instance of training round tends to give slightly different result. Because of this, both left and right context of two sentences have been considered for subsequent steps of analysis of the model despite the apparent significance of right context over the left. \\
-
-\begin{figure}[h]
-	
-	\myfloatalign
-	
-	\subfloat{
-		\label{fig:chapter03:subfloat:grafik1}
-		\includegraphics[width=.90\linewidth]{4.graphics/figures/ch_6/2.left_context_vs_right/HD/1}
-	} \\
-	\subfloat{
-		\label{fig:chapter03:subfloat:grafik4}
-		\includegraphics[width=.90\linewidth]{4.graphics/figures/ch_6/2.left_context_vs_right/HD/2}
-	}\\
-	\caption{The effect of context information on software purpose classifier's performance: right context gives improved performance over left context as well as left and right context.}
-\end{figure}
-
-Theoretically consideration of broader context, more than two adjacent sentences, is supposed to improve the classifier’s performance. However, the result of the analysis reveals that a context as big as the whole paragraph did not contribute to the model’s classification performance. Rather, a smaller window of context such as two sentences left and right appears to have a better performance. 
+Evaluation of a classifier model with a broader context of two adjacent sentences, improved software purpose classification F-score as shown on the figure 6.3 below. 
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_6/3.paragraph_context_vs_22/HD/1}
-	\caption{Consideration of broader context leads to loss of classifer's performance.}
+	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_6/2.left_context_vs_right/HD/braoderContextFscore}
+	\caption{Software purpose classification (Total) F1-score improves for devel. set (left) and test set (right) when trained with a broader context of two adjacent sentences compared to without context (blue).}
+	\label{fig:chapter06:with}
+\end{figure}
+
+\subsection{Left vs Right Context within a paragraph}
+\label{sec:chapter06:leftvsright}
+
+In addition to a broader context, it was also desired to determine which part of context, left versus right, information is more important for the software purpose classification. Left context refers to sentences prior to a given sentence with in  a paragraph and right context refers to sentences that lie right after a given sentence. To determine the impact of neighboring context on the classifier model's performance, two adjacent sentences from the left and right has been used to train the model separately.  \\
+
+According to the classifier's F1-Score performance, s sentences from the left context information is more important than the right side 2 sentences for context. In addition, the left context (2,0 - sentences) has more significance over both left-and-right context (2,2) sentences. This indicates that the classifier is not benefited any more by including the right context or both contexts as portrayed on the figure 6.4. below. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_6/2.left_context_vs_right/HD/left_both_right_hd}
+	\caption{Software purpose classification (Total) F1-score performance for devel. set (left) and test set (right) when trained with left-context (2,0) has superior performance over right-context (0,2) as well as combined left-and-right-context (2,2).}
+	\label{fig:chapter06:with}
+\end{figure}
+
+
+\subsection{Context as whole paragraph}
+\label{sec:chapter06:paragraph}
+
+In a common sense, consideration of broader context, such as more than two adjacent sentences, is supposed to improve the classifier’s performance. However, the result of the analysis as indicated on the figure 6.4 reveals that a larger context such as 2 sentences from the left and the right actually yields less F-score performance for the classifier model. To further validate this result, a context as large as whole paragraph has been considered. 
+
+According to the F-score, software purpose classification actually worsened when an entire sentences in the paragraph is considered as a context information. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_6/2.left_context_vs_right/HD/context_paragrapgh}
+	\caption{Software purpose classification (Total) F1-score performance for devel. set (left) and test set (right) deteriorates when very large context, paragraph, is considered.}
 	\label{fig:chapter06:with}
 \end{figure}
 
@@ -142,53 +148,65 @@ Theoretically consideration of broader context, more than two adjacent sentences
 \label{sec:chapter06:contxtOutside}
 
 
-The other scenario considered was evaluation of model’s performance when context is not limited to a paragraph. The results indicate that, classifier’s performance degraded when a context is not limited within a paragraph. This agrees with the fact that each paragraph of a scientific publication conveys a specific information and a contextual information outside a paragraph might not be useful for the classifier. The classifier model which considers context outside a paragraph has been listed on \emph{“contxt\_out\_parg”} git-hub branch of SoMeNLP project\footnote{\url{https://github.com/BeTKH/SoMeNLP/tree/contxt_out_parg}}. 
+The other scenario considered was evaluation of software purpose classifier's performance when context is not limited within a paragraph. Accordingly, 2 adjacent sentences for context has been considered within a paragraph versus regardless of paragraph. 
+
+Evaluation of the classifier's performance indicate that, classifier’s F-score degraded when a context is not limited within a paragraph as shown on the figure 6.6. This agrees with the fact that each paragraph of a scientific publication conveys a specific information and a contextual information outside a paragraph is not useful for the classifier.  The classifier model which considers context outside a paragraph has been listed on \emph{“contxt\_out\_parg”} git-hub branch of SoMeNLP project\footnote{\url{https://github.com/BeTKH/SoMeNLP/tree/contxt_out_parg}}. \\
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_6/4.context_outside_paragraph_vs_inside/HD/1}
-	\caption{The impact of context outside a paragraph vs inside.}
+	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_6/2.left_context_vs_right/HD/Fscore_outside_paragrapgh_vs_inside}
+	\caption{Software purpose classification (Total) F1-score performance for devel. set (left) and test set (right) did not benefit from context outside a paragraph. }
 	\label{fig:chapter06:with}
 \end{figure}
 
-\section{Classification with 2-layers}
+
+Based on evaluation of software purpose classifier's performance, overall it was observed that left context is more important than the right context. In addition, it was observed that context from both left and right as well as a broader context outside a paragraph did not contribute to the classifier's performance in terms of F-score. Because of these results, for all subsequent steps of classifier's evaluation, only two adjacent sentences from the left context have been considered. \\
+
+
+\section{Classification with 2-Cascade}
 \label{sec:chapter06:2lc}
 
-Overall the 4-layred \ac{Bi-LSTM-CRF} multi-class classifier’s performance has been poor regardless of consideration of various factors discussed above. Because of this, the model has been simplified into a two layered Bi-LSTM-CRF model by removing software-type and mention-type classifiers. \\
+A 4-cascade of multi-class classifier \ac{Sci-BERT} model, shown on the figure 5.6, has been used for the software purpose classification until this point. This model, not only classifies software usage purposes but also other information about software such as software as an application, software types, and mention-types. \\
 
-Truncating the model into two layers helped to evaluate the software purpose classifiers performance exclusively by removing the effects of intermediate layers of mention-type and software-tape classifiers. \\
+
+Overall the 4-cascade \ac{Sci-BERT} multi-class classifier’s performance has been poor regardless of consideration of various factors discussed above. For this reason, it was desired to study weather the removal of intermediate classifier modules would improve software purpose classification or not. Consequently, software-type classifier module and mention-type classifier module, has been removed and the resulting 2-cascade multi-classifier module is shown on the figure 6.7. The software-entity classifier module, however, is kept because identification of software would assist software purpose classification.  \\
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_5/2LC}
-	\caption{Two layered classifier fully connected model.}
+	\includegraphics[width=.78\textwidth]{4.graphics/figures/ch_5/2LC}
+	\caption{Fully connected, 2-cascade software and software purpose classifier model.}
 	\label{fig:chapter06:with}
 \end{figure}
 
-Evaluation of the 2-layered classifier model reveals that overall software purpose classification performance has shown small improvement compared to the original 4-layered \ac{Bi-LSTM-CRF} model, where as the software classifier’s performance does not indicate any performance improvement.  
+Evaluation of the 2-cascade classifier model reveals that overall \emph{software purpose} classification F-score performance has shown small improvement compared to the original 4-cascade classifier module  \ac{Sci-BERT} model, where as the \emph{software classifier’s} performance does not indicate any performance improvement as shown in figures 6.8 and 6.9 respectively.  
 
-\begin{figure}[h]
-	
-	\myfloatalign
-	
-	\subfloat{
-		\label{fig:chapter03:subfloat:grafik1}
-		\includegraphics[width=.90\linewidth]{4.graphics/figures/ch_6/5.2layerClassifier/HD/1}
-	} \\
-	\subfloat{
-		\label{fig:chapter03:subfloat:grafik4}
-		\includegraphics[width=.90\linewidth]{4.graphics/figures/ch_6/5.2layerClassifier/HD/2}
-	}\\
-	\caption{The Truncated 2-layer \ac{Bi-LSTM-CRF} classifier performed slightly better compared to the 4 layered model.}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.78\textwidth]{4.graphics/figures/ch_6/5.2layerClassifier/HD/4casadeVs2cascade}
+	\caption{2-cascade classifier has slightly better (Total) F-score over devl. set(left) and test set(right) for software \emph{purpose classification}.}
+	\label{fig:chapter06:with}
 \end{figure}
 
 
-\section{Model Training Bio-BERT vs Sci-BERT}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.78\textwidth]{4.graphics/figures/ch_6/5.2layerClassifier/HD/4casadeVs2cascade_software}
+	\caption{2-cascade classifier has no significant performance improvement in terms of (Total) F-score over devl. set(left) and test set(right) for \emph{software classification}.}
+	\label{fig:chapter06:with}
+\end{figure}
+
+The evaluation of classifier’s performance by removing the intermediate classifier modules from the 4-cascade model gives a marginal improvement for \emph{software purpose} classification, but not for \emph{software} classification. This might point out, probably flawed classifications of intermediate layers might have an impact on the software purpose classifier which lies at the end of the classification cascade. \\
+
+Since a 2-cascade classifier model has slightly better performance, for the next steps only 2-cascade classifier model has been considered. 
+
+\section{Bio-BERT vs Sci-BERT}
 \label{sec:chapter06:biosci}
 
-Even though both \ac{Bio-BERT} and \ac{Sci-BERT} give a contextualized representation of a word in a sentence, representations of a word would differ due to the inherent difference of corpora used for pre-trained models of Bio-BERT and Sci-BERT \citep{beltagy2019scibert,li2019fine}. For this reason, classifier’s performance has been evaluated for both Sci-BERT and Bio-BERT models. \\
+As mentioned before, on section 5.3.1, the other variant of BERT model which is trained with SoMeSci dataset in this thesis is Sci-BERT. Even though both \ac{Bio-BERT} and \ac{Sci-BERT} give a contextualized representation of a word in a sentence, representations of a word would differ due to the inherent difference of corpora used for pre-trained models of Bio-BERT and Sci-BERT \citep{beltagy2019scibert,li2019fine}. For this reason, a 2-cascade classifier model has been trained with Bio-BERT and results are compared with Sci-BERT model. \\
 
-The results of evaluation indicate that the classifier models performed slightly better when using Bio-BERT large\footnote{\url{https://huggingface.co/dmis-lab/biobert-large-cased-v1.1}} embedding compared to Sci-BERT\footnote{\url{https://huggingface.co/allenai/scibert_scivocab_cased}}. However, the model performed better with Sci-BERT compared to the Bio-BERT small embedding\footnote{\url{https://huggingface.co/dmis-lab/biobert-base-cased-v1.2}}. 
+Among various varieties of Bio-BERT models, Bio-BERT(base) and Bio-BERT(large) models have bee trained with SoMeSci data set to compare performance with Sci-BERT model.
+
+The results of evaluation indicate that  Bio-BERT-large\footnote{\url{https://huggingface.co/dmis-lab/biobert-large-cased-v1.1}} model performed slightly better than the Sci-BERT\footnote{\url{https://huggingface.co/allenai/scibert_scivocab_cased}} model according to the total F-score. However, Sci-BERT has superior overall performance compared to the Bio-BERT-base\footnote{\url{https://huggingface.co/dmis-lab/biobert-base-cased-v1.2}} model. 
 
 \begin{figure}[htbp]
 	\centering
@@ -200,17 +218,17 @@ The results of evaluation indicate that the classifier models performed slightly
 \section{Summary of Training Results }
 \label{sec:chapter06:summary}
 
-Performance evaluation of the Bi-LSTM-CRF multi-class classifier model, in various training scenarios, reveals some interesting insights. \\
+Performance evaluation and tuning of BERT models used in this thesis revealed important observations. Firstly, the analysis of Sci-BERT model classifier's performance indicates that, the composition of training data set has significant impact on the software purpose classification. Overall, when Sci-BERT classifier model is trained by including parts of the SoMeSci dataset, that lacks software purpose annotations, software purpose classification performance is deteriorated. However, classification performance for software purpose is increased when the model is trained without parts of SoMeSci data set that lacks software-purpose anotations. This result clearly indicates, including unlabeled data set in the training data will degrade the model's performance.  \\
 
-Firstly, the analysis of the model performance results indicate that, the composition of the data set has significant impact on the models performance. As stated before, when the classifier model is fed with data set that lacks software purpose annotations in creation and plos sentences, the models performance decreased. \\
+Secondly, it has been observed that various levels of context can affect classifier model's performance. Training of a classifier model based on neighboring sentences, in a scientific articles of SoMeSci dataset, has been seen to improve software purpose classification performance. Typically, a context information with two sentences at the left side of a given sentence appears to give more important clue for the classifier model. However, unbounded context information such as context as broad as the whole paragraph or a context not limited within a paragraph did not provide better classification performance compared to context information limited to only two sentences from the left side as shown on the figure 6.4. \\
 
-Secondly, it has been observed that various levels of context can affect models performance. As presented earlier, when neighboring sentences in a scientific articles of SoMeSci data set is considered it has been clearly observed that models performance has shown improvement. However, the analysis also reveals that unbounded context information such as a context outside a given paragraph is not useful to the model’s performance, rather it will degrade the models performance. Further more, it has been observed that a context of sentences on the left and right might not be equally important. The analysis results indicated that a context of sentences from the right were observed to be more useful to the models performance than the left. \\
 
-Thirdly, evaluation of the classifier’s performance by truncating the intermediate layers of classifiers indicated a marginal improvement of software purpose classifier which lies at the end of the 4-layered chain of classifiers but there was no tangible performance gain was observed for the software classifier. This might indicate that, probably there flawed classifications of intermediate layers might have an impact on the software purpose classifier. \\
+Thirdly, evaluation of the Sci-BERT models' performance by removing the intermediate modules of software-type and mention-type classifiers from the 4-cascade classifier, produced a slightly better performance for software purpose classification.  This indicates that flawed classifications, from the middle classifier modules of the 4-cascade, have an impact on the software purpose classifier. \\
 
-Further, it was also observed that the use of various types of embeddings like Bio-BERT and Sci-BERT impacted the classifier’s performance. The use of larger variants of embedding models was observed to improve classifiers performance. \\
+Further more, it was observed that training other variants of BERT model such as Bio-BERT-base and Bio-BERT-large model results in a different software-purpose classification performance. The Bio-BERT-large model has better performance compared with Sci-BERT but it is too slow for the training. On the other hand Bio-BERT-small trains fast but its software purpose classification performance is lower that Sci-BERT. \\
 
-Ultimately, it is reasonable to conclude that the study of all training scenarios and consideration of factors does not show a very large scale performance gain or loss. This might be because a constraint on the amount of labeled data set and unavailability of larger size of training data set. 
+
+Generally, it is was also observed that software purpose classification performance for software usage purposes such as analysis has much more classification performance compared to other software usage purposes which has smaller number of class labels like stimulation.
 
 
 
