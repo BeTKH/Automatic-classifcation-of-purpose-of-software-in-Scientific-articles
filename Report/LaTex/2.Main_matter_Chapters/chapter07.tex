@@ -4,8 +4,25 @@
 %
 % Section:7 - Intro
 %
+
+\section{Summary of Results }
+\label{sec:chapter06:summary}
+
+Performance evaluation and tuning of BERT models used in this thesis revealed important observations. Firstly, the analysis of Sci-BERT model classifier's performance indicates that, the composition of training data set has significant impact on the software purpose classification. Overall, when Sci-BERT classifier model is trained by including parts of the SoMeSci dataset, that lacks software purpose annotations, software purpose classification performance is deteriorated. However, classification performance for software purpose is increased when the model is trained without parts of SoMeSci data set that lacks software-purpose anotations. This result clearly indicates, including unlabeled data set in the training data will degrade the model's performance.  \\
+
+Secondly, it has been observed that various levels of context can affect classifier model's performance. Training of a classifier model based on neighboring sentences, in a scientific articles of SoMeSci dataset, has been seen to improve software purpose classification performance. Typically, a context information with two sentences at the left side of a given sentence appears to give more important clue for the classifier model. However, unbounded context information such as context as broad as the whole paragraph or a context not limited within a paragraph did not provide better classification performance compared to context information limited to only two sentences from the left side as shown on the figure 6.4. \\
+
+
+Thirdly, evaluation of the Sci-BERT models' performance by removing the intermediate modules of software-type and mention-type classifiers from the 4-cascade classifier, produced a slightly better performance for software purpose classification.  This indicates that flawed classifications, from the middle classifier modules of the 4-cascade, have an impact on the software purpose classifier. \\
+
+Further more, it was observed that training other variants of BERT model such as Bio-BERT-base and Bio-BERT-large model results in a different software-purpose classification performance. The Bio-BERT-large model has better performance compared with Sci-BERT but it is too slow for the training. On the other hand Bio-BERT-small trains fast but its software purpose classification performance is lower that Sci-BERT. \\
+
+
+Generally, it is was also observed that software purpose classification performance for software usage purposes such as analysis has much more classification performance compared to other software usage purposes which has smaller number of class labels like stimulation.   
+
+
 \section{Conclusion}
-\label{sec:chapter07:conc}
+\label{sec:chapter07:Conclusion}
 
 
 \section{Future Work}
