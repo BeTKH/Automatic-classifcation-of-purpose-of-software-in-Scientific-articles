@@ -8,24 +8,34 @@
 \section{Summary of Results }
 \label{sec:chapter06:summary}
 
-Evaluation of \ac{BERT} models used in this thesis, \ac{Sci-BERT} and \ac{Bio-BERT}, revealed important observations. Firstly, the analysis of Sci-BERT \emph{software-purpose} classification indicates that, the composition of training data set has significant impact on the software purpose classification. Overall, when Sci-BERT classifier model is trained by including parts of the SoMeSci dataset, that lacks software purpose annotations, software purpose classifier's performance is deteriorated. However, classification performance for software purpose is increased when the model is trained without parts of SoMeSci data set that lacks software-purpose annotations. This result clearly indicates, including unlabeled dataset in the training data degrades software-purpose classification performance.  \\
+The analysis of the SoMeSci dataset, revealed that most scientists use software to carry out specific task i.e. most of software tools in the research has been used for fewer purposes as shown on the figure 4.12. In addition, most of software tools used in a scientific research are application software, programming environment and plugins. \\  
 
-Secondly, it has been observed that various levels of context can affect classifier model's performance. Training of a classifier model based on neighboring sentences, in a scientific articles of SoMeSci dataset, has been seen to improve software purpose classification performance. Typically, a context information with two sentences at the left-side (2,0) of a given sentence appears to give more important clue for the \ac{Sci-BERT} \emph{software-purpose} classifier. However, unbounded context information such as the whole paragraph or a context not limited within a paragraph did not provide better classification performance compared to context information limited to only two sentences from the left-side(2,0) as shown on the figure 6.4. \\
+Evaluation of \ac{BERT} models used in this thesis, \ac{Sci-BERT} and \ac{Bio-BERT}, revealed important observations. Firstly, the analysis of Sci-BERT \emph{software-purpose} classification indicates that composition of training dataset has significant impact on the software purpose classification. Overall, when Sci-BERT classifier model is trained by including parts of the SoMeSci dataset that do not have software purpose annotations, software purpose classification performance is deteriorated. However, classification performance for software purpose is increased when the Sci-BERT model is trained with parts of \ac{SoMeSci} dataset that have software-purpose annotations. This result clearly indicates, including unlabeled dataset in the training data degrades software-purpose classification performance.  \\
 
-
-Thirdly, evaluation of the Sci-BERT model's performance by removing the intermediate modules of \emph{software-type} and \emph{mention-type} classifiers from the 4-cascade classifier, produced a slightly better performance for \emph{software purpose} classification.  This indicates that flawed classifications, from the middle classifier modules of the 4-cascade, potentially impact \emph{software-purpose} classifier's performance which lies at the end of cascade of classifier modules. \\
-
-Further more, it was observed that training other variants of BERT model such as Bio-BERT-base and Bio-BERT-large model results in a different software-purpose classification performance. The Bio-BERT-large model has better performance compared with Sci-BERT but it is too slow for training. On the other hand Bio-BERT-small trains fast but its software purpose classification performance is lower than Sci-BERT. \\
+Secondly, it has been observed that various levels of context can affect software purpose classification performance. Training of a classifier model based on neighboring sentences, in a scientific articles of SoMeSci dataset, has been seen to improve software purpose classification performance. Typically, a context information with two sentences at the left-side (2,0) of a given sentence appears to give more important clue for the \ac{Sci-BERT} \emph{software-purpose} classifier. However, unbounded context information such as the whole paragraph or a context not limited within a paragraph did not provide better classification performance compared to context information limited to only two sentences from the left-side(2,0) as shown on the figure 6.4. \\
 
 
-Generally, it is was also observed that \emph{software purpose} classification performance for software purposes such as \emph{analysis} has much more classification performance compared to other software usage purposes like \emph{stimulation or simulation} which has smaller number of class labels.   
+Thirdly, evaluation of the Sci-BERT model's performance by removing the intermediate modules of \emph{software-type} and \emph{mention-type} classifiers from the 4-cascade classifier shown on fig. 5.6, produced a slightly better performance for \emph{software purpose} classification.  This indicates that flawed classifications, from the middle classifier modules of the 4-cascade, potentially impact \emph{software-purpose} classifier's performance which lies at the end of cascade of classifier modules. \\
+
+Further more, it was observed that training other variants of BERT model such as Bio-BERT-base and Bio-BERT-large model results in a different software-purpose classification performance. The Bio-BERT-large model has slightly better performance compared with Sci-BERT but it is too slow for training. On the other hand Bio-BERT-small trains fast but its software purpose classification performance is lower than Sci-BERT. \\
+
+
+Generally, it is also observed that \emph{software purpose} classification performance is greater for software purposes with larger number of class labels such as \emph{analysis} compared to other software usage purposes like \emph{stimulation or simulation} which has smaller number of class labels.   
 
 
 \section{Conclusion}
 \label{sec:chapter07:Conclusion}
 
+The importance and roles software tools play in the scientific research arena is obvious. The use of software in a research, however, raised issues of research result reliability and reproducibility. In this thesis, extracted information about software such as the purpose of use of software, can be used further to identify a set of related software tools that are suitable to execute a given task in a given research area. This creates an opportunity to cross-validate reliability of research by comparing results obtained from a set of software tools that are used for the same purpose in a given context of scientific text. \\
 
-\section{Future Work}
+Availability of state-of-the-art transfer learning deep learning models, such as BERT, and its variants typically made automatic classification of software-purpose classification easier than ever. This is because such models have the ability to do classification based on knowledge obtained from pre-traininig, without requiring huge amount of training data unlike statistical machine learning models or LSTM based models which require a tremendous amount of training data. 
+
+
+\section{Limitations and Future Work}
 \label{sec:chapter07:futurework}
+
+In this thesis, for automatic classification of software-purposes only part of the \ac{SoMeSci} dataset was annotated because of time constraint. Because of this for most software-purposes, such as simulation and stimulation, there were no enough examples for training of classifier models. In the future, the remaining part of SoMeSci dataset can also be annotated to increase software purpose classification performance. In addition, the SoMeSci corpus size could also be increased slightly to increase software-purpose classification. Further more, annotation of software-usage purposes can also be done by domain experts to increase correct classification of software-purpose classification. 
+
+
 
 
