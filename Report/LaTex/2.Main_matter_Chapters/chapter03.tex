@@ -14,7 +14,7 @@ To enumerate possible software usage purposes, manual analysis of literature in 
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_3/softwarePurposeprocess}
+	\includegraphics[width=.80\textwidth]{4.graphics/figures/ch_3/softwarePurposeprocess}
 	\caption{Workflow indicates a sequence of steps followed to extract classes of potential software usage purposes to label data set that will be used to train a classifier.}
 	\label{fig:chapter03:setup}
 \end{figure}
@@ -33,8 +33,6 @@ In a research, scientists follow scientific method to discover knowledge. Typica
 Therefore, the analysis of literature has been carried out aimed to find out for what purpose scientists have used a given software by asking a rhetorical question \emph{ "for what purpose are scientists trying to use the software ?"} in a given context. \\
 
 Accordingly, some key words that reflect potential software usage purposes have been identified from the literature and listed on the following table 3.1 below: \\
-
-%...
 
 \begin{table}[h!]
 	\begin{center}
@@ -98,7 +96,7 @@ Since the 460 list of software categories is a large list and does not imply any
 \noindent The procedure for network analysis has been described as follows:
 
 \begin{itemize}
-	\itemsep1em
+	\itemsep.85em
 	\item First query result from the \ac{SPARQL} terminal of wikidata has been downloaded in a \ac{CSV} file format. 
 	\item Then, the \ac{CSV} file has been opened with Gephi software as \emph{“undirected graph”}. This renders a network graph with overlapping nodes and edges which is difficult to observe the relation between software categories of the network. 
 	\item To unravel the overlapping nodes for visibility, the lay-out of the graph is then changed to \emph{“Fruchterman Reingold”}. This creates automatically ordered network of software categories ordred in a circular manner as shown in the figure 3.2 below. 
@@ -213,22 +211,23 @@ Some examples of software usage purposes retrieved from SWO are shown on the tab
 	\end{center}
 \end{table}
 
-
 %-----------------------------
 \subsection{OntoSoft}
 \label{subsec:purpose:ontologies:OntoSoft}
 %-----------------------------
 Onosoft\footnote{\url{https://www.ontosoft.org/portal/}} is a software registry framework that stores important metadata about software to foster reuse and sharing of software among scientific community. The ontology provides descriptions about a software that would help scientists to identify, understand, execute, and do research with a software. Moreover, it helps scientists get information about update and support for the software. Particularly, Ontosoft focuses on the geo-science because software resources are not being shared adequately in that field \citep{gil2015ontosoft}.\\ 
 
+These descriptions are visualized in a pie-chart, on figure 3.5, with each slice indicating the completeness of the description.  The grey color in each slice of the pie-chart shows how much level of detailed information has been provided for the software and red color indicates the amount of information missing. 
+
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.65\textwidth]{4.graphics/figures/ch_3/ontosoft}
+	\includegraphics[width=.90\textwidth]{4.graphics/figures/ch_3/ontosoft}
 	\caption{Comparison of two software tools using Ontosoft website (taken 15-12-2021), indicates which software has more level of detailed information.}
 	\label{fig:chapter03:setup}
-\end{figure}
+\end{figure} 
 
-These descriptions are visualized in a 6 dimensional pie-chart, as shown on figure 3.5, with each slice indicating the completeness of the description.  The grey color in each slice of the pie-chart shows how much level of detailed information has been provided for the software and red color indicates the amount of information missiing from the given dimension (slice of the pie chart) . The type of information provided in each dimension of description entries are  summarized in the table 3.4.   \\
+The type of information provided in each dimension of description entries are  summarized in the table 3.4. \\
 
 \begin{table}
 	\caption{The six dimensions of information description in the Ontosoft software ontology}
@@ -252,7 +251,6 @@ These descriptions are visualized in a 6 dimensional pie-chart, as shown on figu
 		\hline		
 	\end{tabularx}
 \end{table}
-
 
 From the set of information provided among the 6 dimensions of the Ontosoft, particularly the “understand” dimension has nearly 400 domain specific key words that would potentially indicate software usage purposes. Therefore, those domain specific key words have been retrieved (on date 15-12-2021) from the Ontosoft website. After that the list has been manually analyzed and condensed into a more general list of software purposes. Table 3.5 lists samples of domain specific key-words that would potentially indicate software usage purposes. \\
 
@@ -282,12 +280,10 @@ From the set of information provided among the 6 dimensions of the Ontosoft, par
 		\end{tabular}
 	\end{center}
 \end{table}
-
 %-----------------------------
 \section{Analysis of Sci-crunch repository }
 \label{sec:purpose:Sci}
 %-----------------------------
-
 The other resource analyzed in addition to software ontologies, to list down software usage purposes, is Sci-crunch \footnote{\url{https://scicrunch.org/}} repository. Sci-crunch is a data portal that searches through hundreds of community databases, aggregates information resources to create a large collection of data and tools available for access at a single spot \citep{grethe2016scicrunch}. \\
 
 To identify possible software usage purposes, the Sci-crunch repository has been analyzed by selecting software resources. At the time of retrieval (16-12-2021), the sci-crunch registry has listed 7,155 software tools. These software tools have been analyzed using the website's built-in word cloud-generator. The generated word cloud indicates types of software tools as shown on the figure 3.6.  \\
@@ -295,7 +291,7 @@ To identify possible software usage purposes, the Sci-crunch repository has been
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.75\textwidth]{4.graphics/figures/ch_3/cloud}
+	\includegraphics[width=.80\textwidth]{4.graphics/figures/ch_3/cloud}
 	\caption{Word cloud retrieved from Sci-crunch repository indicating 200 different types of software that  indicate potential purpose of software usage}
 	\label{fig:chapter03:setup}
 \end{figure}
@@ -338,7 +334,7 @@ From the word cloud, 200 types of software have been identified and manually ana
 \label{sec:purpose:Types}
 %-----------------------------
 
-Based on a through analysis of scientific literature in \ac{SoMeSci} dataset, wikidata,software-ontology, Ontosoft and sci-crunch repository, key words that potentially indicate software usage purposes has been listed in tables 3.1, 3.2, 3.3, 3.4 and 3.5 respectively. These list of key words that indicate software usage purposes have been further analyzed manually and overall 8 types of software usage purposes have been identified. These are Data collection,  Data pre-processing, Analysis, Visualization, Simulation, stimulation, Modelling, and Programming. \\
+Based on a through analysis of resources in key words that indicate software purposes has been listed in tables 3.1, 3.2, 3.3, 3.4 and 3.5 respectively. These list of key words have been further analyzed manually and 8 types of software usage purposes identified are Data collection,  Data pre-processing, Analysis, Visualization, Simulation, stimulation, Modelling, and Programming. \\
 
 To establish a clear boundary and avoid ambiguity during the annotation process of software usage statements, in \ac{SoMeSci} data set, each software usage purpose has been clearly defined based on literature in the next section as follows. 
 
@@ -358,9 +354,7 @@ Often times data pre-processing involves several steps such as data cleaning, in
 
 Data collection processes produce inconsistent data and analysis of such noisy data might yield misleading results because of the “garbage in, garbage out” problem \citep{enwiki:1059558941}. To avoid this problem, scientists usually carry out data pre-processing using a software. Data pre-processing generally refers to the addition, deletion, or transformation of raw data into a clean and tidy form to improve performance and reliability of analysis results, especially in data mining applications \citep{kuhn2013data,rinnan2009data}. \\
 
-Often times data pre-processing involves several steps such as data cleaning, integration, transformation, reduction, etc. \citep{malley2016data}. Data cleaning, for instance, involves dropping of data, replacing, or imputation of missing values in order to improve performance of algorithms and reliability of analysis results, especially in data mining applications \citep{enwiki:1051181443, enwiki:1056727993}. In a scientific investigation, scientists usually carry out data pre-processing using a custom script or using an existing application software or programming library. 
-
-
+Often times data pre-processing involves several steps such as data cleaning, integration, transformation, reduction, etc. \citep{malley2016data}. Data cleaning, for instance, involves dropping of data, replacing, or imputation of missing values in order to improve performance of algorithms and reliability of analysis results, especially in data mining applications \citep{enwiki:1051181443, enwiki:1056727993}. In a scientific investigation, scientists usually carry out data pre-processing using a custom script or using an existing application software or programming library. \\
 
 \subsection{Data Analysis}
 \label{sec:purpose:Types:Analysis}
