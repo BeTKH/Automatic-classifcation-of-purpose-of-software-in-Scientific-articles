@@ -5,10 +5,8 @@
 % Section:7 - Intro
 %
 
-\section{Summary of Results }
+\section{Summary }
 \label{sec:chapter06:summary}
-
-The analysis of the SoMeSci dataset, revealed that most scientists use software to carry out specific task i.e. most of software tools in the research has been used for fewer purposes as shown on the figure 4.12. In addition, most of software tools used in a scientific research are application software, programming environment and plugins. \\  
 
 Evaluation of \ac{BERT} models used in this thesis, \ac{Sci-BERT} and \ac{Bio-BERT}, revealed important observations. Firstly, the analysis of Sci-BERT \emph{software-purpose} classification indicates that composition of training dataset has significant impact on the software purpose classification. Overall, when Sci-BERT classifier model is trained by including parts of the SoMeSci dataset that do not have software purpose annotations, software purpose classification performance is deteriorated. However, classification performance for software purpose is increased when the Sci-BERT model is trained with parts of \ac{SoMeSci} dataset that have software-purpose annotations. This result clearly indicates, including unlabeled dataset in the training data degrades software-purpose classification performance.  \\
 
@@ -22,19 +20,26 @@ Further more, it was observed that training other variants of BERT model such as
 
 Generally, it is also observed that \emph{software purpose} classification performance is greater for software purposes with larger number of class labels such as \emph{analysis} compared to other software usage purposes like \emph{stimulation or simulation} which has smaller number of class labels.   
 
+ 
 
 \section{Conclusion}
 \label{sec:chapter07:Conclusion}
 
-The importance and roles software tools play in the scientific research arena is obvious. The use of software in a research, however, raised issues of research result reliability and reproducibility. In this thesis, extracted information about software such as the purpose of use of software, can be used further to identify a set of related software tools that are suitable to execute a given task in a given research area. This creates an opportunity to cross-validate reliability of research by comparing results obtained from a set of software tools that are used for the same purpose in a given context of scientific text. \\
+The role of software in the modern scientific research is paramount. However, the use of software in a research entailed problems such as research result reliability and reproducibility. Automatically extracted information about software, such as software-purpose, can help to mitigate these problems by identifying a set of related software tools in terms of purpose of usage. Results from related software tools can be compared to cross-validate and ensure reliability of research outcomes. \\
 
-Availability of state-of-the-art transfer learning deep learning models, such as BERT, and its variants typically made automatic classification of software-purpose classification easier than ever. This is because such models have the ability to do classification based on knowledge obtained from pre-traininig, without requiring huge amount of training data unlike statistical machine learning models or LSTM based models which require a tremendous amount of training data. 
+
+Automatic classification of software-purposes have been possible with availability of labeled datasets and state-of-the-art deep learning models, such as \ac{BERT}. BERT models are efficient for software purpose classification because of their capability for transfer-learning and does not require a lot of training data, unlike \ac{LSTM} networks. \\
+
+Results of software-purpose classification indicates reasonable classification performance despite limited availability of labeled datasets of \ac{SoMeSci} and unbalanced class labels for software purposes. Particularly, the classifier model performed significantly better for software purposes whith larger number of class labels such as Analysis. \\
+
+
+The analysis of the \ac{SoMeSci} dataset also, revealed most scientists use software to carry out specific tasks in a research, fewer software-purposes, as shown on the figure 4.12. This concurs with the fact that most scientists develop software for their scientific work. \\ 
 
 
 \section{Limitations and Future Work}
 \label{sec:chapter07:futurework}
 
-In this thesis, for automatic classification of software-purposes only part of the \ac{SoMeSci} dataset was annotated because of time constraint. Because of this for most software-purposes, such as simulation and stimulation, there were no enough examples for training of classifier models. In the future, the remaining part of SoMeSci dataset can also be annotated to increase software purpose classification performance. In addition, the SoMeSci corpus size could also be increased slightly to increase software-purpose classification. Further more, annotation of software-usage purposes can also be done by domain experts to increase correct classification of software-purpose classification. 
+In this thesis, for automatic classification of software-purposes only part of the \ac{SoMeSci} dataset was annotated because of time constraint. Because of this for most software-purposes, such as simulation and stimulation, there were no enough examples for training of classifier model. In the future, the remaining part of SoMeSci dataset can also be annotated to increase software purpose classification performance. In addition, the SoMeSci corpus size could also be increased slightly to increase software-purpose classification. Further more, annotation of software-usage purposes can also be done by domain experts to increase correct classification of software-purpose classification. 
 
 
 
