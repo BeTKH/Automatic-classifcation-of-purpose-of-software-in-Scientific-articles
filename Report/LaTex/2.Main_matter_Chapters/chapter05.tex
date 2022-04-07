@@ -21,9 +21,9 @@ This section presents and compares various types of sequence labeling models sui
 \subsection{Hidden Markov models (\ac{HMM}s)}
 \label{sec:chapter05:MLModels:HMMS}
 
-One of basic machine learning models that are used for sequence labeling are Hidden Markov Models. HMMs are based on Markov processes which describe a sequence of hidden finite states (Yi) in which a given state in a sequence depends only on the state prior to it \citep{aggarwal2018machine, gagniuc2017markov}. \\
+One of basic machine learning models that are used for sequence labeling are Hidden Markov Models. HMMs are based on Markov processes which describes a sequence of hidden finite states (Yi) in which a given state in a sequence depends only on the state prior to it \citep{aggarwal2018machine, gagniuc2017markov}. \\
 
-The Markov chain of hidden states Yi generate observations Xi based on its current state using a joint probability distribution P(Y,X). The joint probability P(Y, X) is a product of conditional probability  P(X|Y) and a prior probability P(Y).  \\
+The Markov chain of hidden states Yi generate observations Xi based on its current state using a joint probability distribution P(Y, X). The joint probability P(Y, X) is a product of conditional probability  P(X|Y) and a prior probability P(Y).  \\
 
 \begin{figure}[htbp]
 	\centering
@@ -81,7 +81,7 @@ Recurrent neural network based models such as \ac{LSTM}, \ac{Bi-LSTM}, \ac{Bi-LS
 
 Fortunately, other variants of RNNs such as LSTM networks are capable overcoming unstable gradient problems \citep{akhundov2018sequence, lample2016neural, ma2016end}. This is because, unlike RNNs, LSTM networks have memory cells that are composed of three gateways which determine what amount of information to forget at a given instant of time \citep{ma2016end}. \\
 
-LSTM networks are typically composed of input layer, hidden layer(s), and output layer. Number of inputs to the input layer corresponds to input features and the number of outputs on the output layer corresponds to number of classes of the classification task. The memory cells of LSTM are found in the hidden layers of the network \citep{fischer2018deep}. A memory cell structure is depicted on the figure below. 
+LSTM networks are typically composed of input layer, hidden layer(s), and output layer. Number of inputs to the input layer corresponds to input features and the number of outputs on the output layer corresponds to number of classes of the classification task. The memory cells of LSTM are found in the hidden layers of the network \citep{fischer2018deep}. A memory cell structure is depicted on the figure 5.4 below. 
 
 \begin{figure}[htbp]
 	\centering
@@ -117,7 +117,9 @@ The use of past and future inputs using Bi-LSTM combined with CRF to capture cor
 \section{Transformer based models}
 \label{sec:chapter05:DLModels:Transformer}
 
-Although Bi-LSTM-CRF models have superior performance for sequence labeling, over other LSTM based models, they have inherent weaknesses. Firstly, Bi-LSTM-CRFs are not truly bi-directional context readers, rather  pseudo-directionality is achieved learning right and left contexts separately and concatenating them. Because of this the true context of words could be lost slightly. Secondly, Bi-LSTM-CRFs are very slow to train because of their sequential nature which does not allow to take  advantage of parallelization using \ac{GPU}s.  Third, training of Bi-LSTM-CRFs, like any other deep learning models, requires a lot of data and training models from scratch is computationally expensive. \\
+Although Bi-LSTM-CRF models have superior performance for sequence labeling, over other LSTM based models, they have inherent weaknesses. Firstly, Bi-LSTM-CRFs are not truly bi-directional context readers, rather  pseudo-directionality is achieved learning right and left contexts separately and concatenating them. Because of this the true context of words could be lost slightly. \\
+
+Secondly, Bi-LSTM-CRFs are very slow to train because of their sequential nature which does not allow to take  advantage of parallelization using \ac{GPU}s.  Third, training of Bi-LSTM-CRFs, like any other deep learning models, requires a lot of data and training models from scratch is computationally expensive. \\
 
 
 The latest deep learning models based on transformer architectures are capable of overcoming shortcomings of Bi-LSTM-CRFs. First, transformer based models employ transfer learning where knowledge gained from pre-training can be re-used and fine tuned to solve specific problems \citep{ezen2020comparison}. In addition, transformer architectures have the ability to read past and future context simultaneously unlike Bi-LSTM-CRFs \citep{devlin2018bert}. Moreover, unlike LSTM networks, transformer models can handle sequential data simultaneously which gives the opportunity to expediate model training by parallelizing with the help of modern \ac{GPU}s \citep{ezen2020comparison}. 
@@ -127,7 +129,7 @@ The latest deep learning models based on transformer architectures are capable o
 
 BERT is state-of-the-art transformer based model with transfer-learning capability i.e. it can be pre-trained with unlabeled data and fine-tuned further for downstream applications just by adding one output layer \citep{devlin2018bert, ezen2020comparison}. \\
 
-BERT is also referred to as \ac{MLM} because, the model arbitrarily masks and predicts a hidden word from a given sentence during pre-training. This is the reason why BERT is capable of capturing right and left context simultaneously \citep{devlin2018bert}.  \\
+BERT is also referred to as \ac{MLM} because, the model arbitrarily masks and predicts a hidden word from a given sentence during pre-training. This is why BERT is capable of capturing right and left context simultaneously \citep{devlin2018bert}.  \\
 
 
 Originally BERT is pre-trained on BooksCorpus (0.8 Billion words) and English Wikipedia (2.5 Billion words). However, there are also other varieties of BERT, such as \ac{Sci-BERT}, \ac{Bio-BERT}, DistilBERT, etc. \citep{beltagy2019scibert, lee2020biobert, sanh2019distilbert}. These models differ only by a corpus used during the pre-training step. Comparison of corpuses of BERT, Sci-BERT and Bio-BERT is summarized on the table 5.1 below.
@@ -142,7 +144,7 @@ Originally BERT is pre-trained on BooksCorpus (0.8 Billion words) and English Wi
 
 For the task of software purpose classification, BERT model has been chosen because of the its merit over LSTM based models. Among verities of BERT particularly Sci-BERT is chosen because its training corpus is based on scientific-text which is more relevant for software purpose classification. In addition, Bio-BERT pre-trained model is also trained to compare performance with Sci-BERT. \\
 
-The implementation of the software purpose classifier follows a previous project with SoMeSci data set, SoMeNLP, which is a cascade of classifier modules for software, software-type and mention-type. Therefore, another module for software purpose classification is added on the top of previous cascade of classifier modules. A fully connected multi-class classifier model implemented on this project is  shown on the figure below. 
+The implementation of the software purpose classifier follows a previous project with SoMeSci data set, SoMeNLP, which is a cascade of classifier modules for software, software-type and mention-type. Therefore, another module for software purpose classification is added on the top of previous cascade of classifier modules. A fully connected multi-class BERT classifier model implemented on this project is  shown on the figure below. 
 
 \begin{figure}[htbp]
 	\centering
