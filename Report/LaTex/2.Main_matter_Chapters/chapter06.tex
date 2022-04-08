@@ -5,7 +5,7 @@
 % Section: 6 - Intro
 %
 
-To automatically classify software usage purposes, \ac{Sci-BERT} multi-class model has been trained and tested using \ac{SoMeSci} data set. The model has been trained in various training scenarios to determine conditions that leads to improved performance. The training scenarios considered the effect of context information  and the impact of including or excluding parts of \ac{SoMeSci} data set on the classifier’s performance.\\
+To automatically classify software usage purposes, \ac{Sci-BERT} multi-class model has been trained and tested using \ac{SoMeSci} dataset. The model has been trained in various training scenarios to determine conditions that leads to improved performance. The training scenarios considered the effect of context information  and the impact of including or excluding parts of \ac{SoMeSci} dataset on the classifier’s performance.\\
  
 In addition, \emph{software-purpose} classification performance has also been investigated by removing \emph{mention-type} and \emph{software-type} classifiers from cascades of classifier modules shown on the figure 5.6.  Further more, the impact of using another variant of BERT model, \ac{Bio-BERT}, on classifier’s performance  has also been investigated. \\
 
@@ -38,7 +38,7 @@ In contrast, the total F-score performance for \emph{software-purpose} classific
 
 \begin{table}[ht]
 	\centering
-	\caption{Evaluation of software purpose classifier's performance with(+) and without(-) \emph{Creation/PLoS}sentences in the training data set.}
+	\caption{Evaluation of software purpose classifier's performance with(+) and without(-) \emph{Creation/PLoS}sentences in the training dataset.}
 	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}}  l  l l  l l l } %l left align , c- center
 		\hline
 		Software Purpose & Metric & Dev+        & Dev-     & Test+  &Test- \\
@@ -99,7 +99,7 @@ Software purpose classifier's performance when trained with \emph{Creation/PLoS}
 
 Scientific papers like any other well written documents, have a sequential structure that form abstraction at various levels such as sentence, paragraphs, sections, chapters, etc. These levels of abstractions often determine the meaning of words because each level of abstraction or context conveys a valuable information \citep{ghosh2016contextual}. \\
 
-Likewise, contextual information helps to determine the correct purpose of use of a software. Therefore for each sentence in a text of scientific articles of training data set, various range of neighboring sentences have been incorporated to provide a contextual information. Typically 2 adjacent sentences before a sentence, after a sentence, and before \& after a sentence have been considered. Further more, a context as broad as the whole paragraph has also been considered. \\
+Likewise, contextual information helps to determine the correct purpose of use of a software. Therefore for each sentence in a text of scientific articles of training dataset, various range of neighboring sentences have been incorporated to provide a contextual information. Typically 2 adjacent sentences before a sentence, after a sentence, and before \& after a sentence have been considered. Further more, a context as broad as the whole paragraph has also been considered. \\
 
 Excerpt of the python code for reading neighboring sentences for context is listed on the \emph{appendix-E} and the complete source code can be found on the git-hub.\footnote{\url{https://github.com/BeTKH/SoMeNLP/blob/contxt2Sentcs_wo/somenlp/NER/data_handler.py}}\\
 
