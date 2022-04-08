@@ -7,20 +7,20 @@
 In scientific investigations broad range of software is being employed for various purposes. In terms of size, software ranges from simple script to extremely complex with millions of lines of code. In terms of task, a software can be used for execution of rudimentary tasks to computation of extremely complex ones. Typical examples of purpose of software use for scientific investigation are simulation, modeling, data analysis, etc. \citep{goble2014better}. \\
 
 
-To be able to automatically classify software usage purposes, a classifier algorithm has to be trained on a manually annotated dateset that indicate software usage purpose. The \ac{SoMeSci} data set already has annotations about type of software, type of software mentions, etc. Therefore, the main goal of enumerating a comprehensive list of software usage purposes is to extend and enhance existing annotations in the SoMeSci dataset with software purpose labels, so that the data set suits training of software purpose classification. \\
+To be able to automatically classify software usage purposes, a classifier algorithm has to be trained on a manually annotated dateset that indicate software usage purpose. The \ac{SoMeSci} dataset already has annotations about type of software, type of software mentions, etc. Therefore, the main goal of enumerating a comprehensive list of software usage purposes is to extend and enhance existing annotations in the SoMeSci dataset with software purpose labels, so that the dataset suits training of software purpose classification. \\
 
 
-To enumerate possible software usage purposes, manual analysis of literature in the SoMeSci data set has been carried out. However, manual analysis of all literature is tedious and intractable task and consequently other resources such as software ontologies and repositories like Sci-Cruch have been analyzed to list down categories of software purposes. The process work flow, shown on the figure 3.1., below describes resources that have been analyzed to enumerate categories of software usage purposes.
+To enumerate possible software usage purposes, manual analysis of literature in the SoMeSci dataset has been carried out. However, manual analysis of all literature is tedious and intractable task and consequently other resources such as software ontologies and repositories like Sci-Cruch have been analyzed to list down categories of software purposes. The process work flow, shown on the figure 3.1., below describes resources that have been analyzed to enumerate categories of software usage purposes.
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.80\textwidth]{4.graphics/figures/ch_3/softwarePurposeprocess}
-	\caption{Workflow indicates a sequence of steps followed to extract classes of potential software usage purposes to label data set that will be used to train a classifier.}
+	\caption{Workflow indicates a sequence of steps followed to extract classes of potential software usage purposes to label dataset that will be used to train a classifier.}
 	\label{fig:chapter03:setup}
 \end{figure}
 
 
-After identifying a list of potential software usage purposes, the list has been consolidated further to narrow down the list to a more comprehensive list of software usage purposes for convenience during annotation of data set. This section elaborates the analysis procedure of a list of resources mentioned above to identify possible software usage purposes. \\
+After identifying a list of potential software usage purposes, the list has been consolidated further to narrow down the list to a more comprehensive list of software usage purposes for convenience during annotation of dataset. This section elaborates the analysis procedure of a list of resources mentioned above to identify possible software usage purposes. \\
  
 
 %-----------------------------
@@ -75,7 +75,7 @@ The list of key words in the above table is used to delineate possible software 
 
 Ontologies are controlled vocabularies that provide formal naming and definition of properties and relation between concepts, entities, data etc.  Ontologies  are specialized  to a specific subject matter and every academic discipline creates ontologies to organize data into useful knowledge \citep{enwiki:1060388948}. \\
 
-Effective knowledge representation begins with analysis of ontologies with in the domain of interest \citep{chandrasekaran1999ontologies}. Accordingly, analysis of software ontologies have been done to find out possible software usage purposes. The software ontologies, that have been analyzed on this project are: WikiData \footnote{\url{https://wikidata.org/}}, \ac{SWO} \footnote{\url{https://www.ebi.ac.uk/ols/ontologies/swo}}, and Ontosoft\footnote{\url{https://www.ontosoft.org/}}. 
+Effective knowledge representation begins with analysis of ontologies with in the domain of interest \citep{chandrasekaran1999ontologies}. Accordingly, analysis of software ontologies have been done to find out possible software usage purposes. The software ontologies, that have been analyzed on this project are: WikiData\footnote{\url{https://wikidata.org/}}, \ac{SWO}\footnote{\url{https://www.ebi.ac.uk/ols/ontologies/swo}}, and Ontosoft\footnote{\url{https://www.ontosoft.org/}}. 
 
  
 %-----------------------------
@@ -171,7 +171,7 @@ By further analyzing the relation between the software categories in the table a
 
 The \ac{SWO}, particularly describes software used, for preparation and maintenance of data, within fields of computational biology and bio-informatics.  The \ac{SWO} was primarily developed to improve reproducibility by providing detailed description about software used for biomedical investigations \citep{malone2014software}. \\
 
-\ac{SWO} was found on ontology search \ac{OLS} website \footnote{\url{https://www.ebi.ac.uk/ols/ontologies/swo}} and was examined (on the date 13-12-2021) for possible software purposes. Unlike wikidata, a list of possible software purpose were found directly in “browse terms” section of the SWO website.  \\
+\ac{SWO} was found on ontology search \ac{OLS} website\footnote{\url{https://www.ebi.ac.uk/ols/ontologies/swo}} and was examined (on the date 13-12-2021) for possible software purposes. Unlike wikidata, a list of possible software purpose were found directly in “browse terms” section of the SWO website.  \\
 
 To navigate to the list of key words that suggest potential software purpose one can follow the following steps: “Browse terms”> “entity“>”occurrent”> “planned” >”planned process”.  The software usage purpose in the SWO has been presented in to two main groups as “data transformation” and “data visualization”.  Under data transformation, 40 sub-types of potential software purposes are listed as shown on figure 3.4 (a screenshot taken from the SWO wesite on date 13-12-2021) below. \\
 
@@ -336,7 +336,7 @@ From the word cloud, 200 types of software have been identified and manually ana
 
 Based on a through analysis of resources in key words that indicate software purposes has been listed in tables 3.1, 3.2, 3.3, 3.4 and 3.5 respectively. These list of key words have been further analyzed manually and 8 types of software usage purposes identified are Data collection,  Data pre-processing, Analysis, Visualization, Simulation, stimulation, Modelling, and Programming. \\
 
-To establish a clear boundary and avoid ambiguity during the annotation process of software usage statements, in \ac{SoMeSci} data set, each software usage purpose has been clearly defined based on literature in the next section as follows. 
+To establish a clear boundary and avoid ambiguity during the annotation process of software usage statements, in \ac{SoMeSci} dataset, each software usage purpose has been clearly defined based on literature in the next section as follows. 
 
 
 \subsection{Data collection}

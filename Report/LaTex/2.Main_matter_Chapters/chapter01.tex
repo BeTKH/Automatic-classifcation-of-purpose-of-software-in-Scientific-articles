@@ -23,7 +23,7 @@ Various manual and rule based techniques has been attempted in the past to extra
 Producing reliable ground truth data could be accomplished by crowd sourcing for general domains but it is expensive particularly for domain-specific and scientific publications as it requires expert of the domain knowledge \citep{beltagy2019scibert}.\\
 
 
-Fortunately, identification of software mentions from scientific articles has drawn more attention over the past years and now various labelled data sets, such as BioNerDs \citep{duck2013bionerds} , SoftCite \citep{du2021softcite}, are available. Recently a more comprehensive data set, SoMeSci, has also been published.  SoMeSci contains high quality manually annotated data sets that cover broader range of information about software paving a way for a use of machine learning based approach for the automatic extraction of information about software \citep{schindler2021somesci}. 
+Fortunately, identification of software mentions from scientific articles has drawn more attention over the past years and now various labelled datasets, such as BioNerDs \citep{duck2013bionerds} , SoftCite \citep{du2021softcite}, are available. Recently a more comprehensive dataset, SoMeSci, has also been published.  SoMeSci contains high quality manually annotated datasets that cover broader range of information about software paving a way for a use of machine learning based approach for the automatic extraction of information about software \citep{schindler2021somesci}. 
 
 
 \section{Contributions }
@@ -31,7 +31,7 @@ Fortunately, identification of software mentions from scientific articles has dr
 
 This thesis applies \ac{Sci-BERT} model, a  transformer based neural network architecture, to automatically classify the purpose of software usage from a text in scientific papers using a labeled dataset, \ac{SoMeSci}. \\
 
-To accomplish this, first review of literature has been carried out about the role of software in a research. Second, possible list of software usage purposes have been identified via extensive analysis of literature and other sources like software ontologies and repositories like Sci-Crunch. Next, from already existing annotations about a software in the \ac{SoMeSci} data set, software usage mentions have been extended with software purpose labels using  BRAT annotation tool. After that, extended version of \ac{SoMeSci} data set has been cleaned, analyzed, transformed to \ac{IOB} format, and used in the classifier model. Finally, the classifier model has been optimized and evaluated by training in different scenarios. 
+To accomplish this, first review of literature has been carried out about the role of software in a research. Second, possible list of software usage purposes have been identified via extensive analysis of literature and other sources like software ontologies and repositories like Sci-Crunch. Next, from already existing annotations about a software in the \ac{SoMeSci} dataset, software usage mentions have been extended with software purpose labels using  BRAT annotation tool. After that, extended version of \ac{SoMeSci} dataset has been cleaned, analyzed, transformed to \ac{IOB} format, and used in the classifier model. Finally, the classifier model has been optimized and evaluated by training in different scenarios. 
 
 
 %
@@ -43,9 +43,9 @@ To accomplish this, first review of literature has been carried out about the ro
 
 \noindent Chapter 2 focuses on highlighting the role of software in a research to indicate driving information about software from scientific publications is an important task.  \\
 
-\noindent Chapter 3 focuses to identify possible types of software usage purposes from literature and software ontology. This is an important step taken to extend software usage statements in the \ac{SoMeSci} data set with software purpose annotations.  \\
+\noindent Chapter 3 focuses to identify possible types of software usage purposes from literature and software ontology. This is an important step taken to extend software usage statements in the \ac{SoMeSci} dataset with software purpose annotations.  \\
 
-\noindent Chapter 4  explains how \ac{SoMeSci} data set has been extended with software purpose annotations, annotation tool used, and the annotation process. In addition explains about data pre-processing, transformation to suitable format and splitting for classification purpose. At the end, results of analysis of the extended SoMeSci data set has also been presented.  \\
+\noindent Chapter 4  explains how \ac{SoMeSci} dataset has been extended with software purpose annotations, annotation tool used, and the annotation process. In addition explains about data pre-processing, transformation to suitable format and splitting for classification purpose. At the end, results of analysis of the extended SoMeSci dataset has also been presented.  \\
 
 
 \noindent Chapter 5 explores suitable approaches and models for software purpose classifications.  Then training, optimization and evaluation of the selected classifier model has been presented in chapter 6. Finally, results and observations are presented in chapter 7.  \\
