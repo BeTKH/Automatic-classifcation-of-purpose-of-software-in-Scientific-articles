@@ -1,10 +1,12 @@
-# Automatic Classification of purpose of Software Usage Statements from Scientific Articles
+## Master Thesis: Automatic Classification of purpose of Software Usage Statements from Scientific Articles
 
-### (Master-Thesis)
+A master thesis project aimed at developing automated methods for extracting the purpose of software usage in scientific papers.  
 
-These days scientific research is increasingly dependent on software as many scientists not only use existing software but also create one to use in their research process. This strong reliance on software, besides its benefits, has also created issues regarding the reliability and quality of research results from the software. Some scientists were forced to retract their scientific work upon a retrospective discovery of an error in the software they used, which rendered their research worthless. In addition, the use of software for scientific research entailed difficulty in reproducing research results mainly because of poor software citation practices.
+The project involved identification of types of software tools used in scientific research, annotating a text dataset with BRAT text annotation tool, identification of suitable classifier algorithms, classification with BERT/Sci-BERT/Bio-BERT, analysis, and visualization of results.
 
-This thesis contributes to an effort to alleviate the above problems by extracting useful information about software tools, particularly the purpose of the use of software in a scientific paper. Automatic extraction of the purpose of software usage creates an opportunity to identify a set of software tools used for the same purpose in a given context of scientific work. This in turn helps to compare results obtained among similar software tools enabling evaluation of the quality and reliability of research software. In addition, automatic extraction of software usage purposes enables to semantically browse related research articles based on their use of specific software for the same purpose.
+### Implementation steps:
 
-In this thesis, the SoMeSci dataset has been annotated with labels that indicate the purpose of software use which have been identified by extensive research of literature and software ontologies. Further, the Sci-BERT classifier model has been selected and trained on the SoMeSci dataset after exploring various kinds of models that suit for extraction of software usage purposes. The classifier model has been further optimized by considering various training scenarios such as more context information, inclusion or exclusion of some parts of the SoMeSci dataset, and simplifying the classifier model with fewer classifier modules. Overall, the results of model training, indicate the use of classifier models pre-trained on the scientific corpora, such as Sci-BERT and Bio-BERT, enabled automatic classification of software usage purposes with a reasonable performance despite a limited amount of labeled dataset. Furthermore, it was observed that consideration of broader context, such as 2 adjacent sentences, improved the classifier model’s performance.
-
+1. Identification of Software category labels & suitable algorithms
+2. Annotation of text dataset
+3. Data Cleaning and transformation to I-O-B format
+4. Text Classification and visualization of results. 
