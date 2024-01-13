@@ -11,6 +11,9 @@ The project involved identification of types of software tools used in scientifi
 3. Data Cleaning and transformation to I-O-B format
 4. Text Classification and visualization of results.
 
+
+[Paper](https://zenodo.org/records/6509908)
+
 [View the project's data analysis steps](https://htmlpreview.github.io/?https://github.com/BeTKH/Automatic-classifcation-of-purpose-of-software-in-Scientific-articles/blob/main/somecode/1.SoMeSci_Data_Analysis_%28truncated%29.html)
 
 ### Visit my other projects
