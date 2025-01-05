@@ -1,16 +1,23 @@
-## Master Thesis: Automatic Classification of purpose of Software Usage Statements from Scientific Articles
+# Scientific Text Classification with BERT
+Master's Thesis Project
 
-A master thesis project aimed at developing automated methods for extracting the purpose of software usage in scientific papers.  
+### Project Overview
 
-The project involved identification of types of software tools used in scientific research, annotating a text dataset with BRAT text annotation tool, identification of suitable classifier algorithms, classification with BERT/Sci-BERT/Bio-BERT, analysis, and visualization of results.
+This project focuses on automating the classification of scientific text using advanced BERT-based models, including Bio-BERT and Sci-BERT. The primary goal is to identify and categorize the purpose of software or tools mentioned in scientific research papers.
 
-### Implementation steps:
+To achieve this, a set of scientific texts is manually labeled using the BRAT text annotation tool. The annotated data is then leveraged along with pre-trained BERT models to automatically classify the texts based on their content.
 
-1. Identification of Software category labels & suitable algorithms
-2. Annotation of text dataset
-3. Data Cleaning and transformation to I-O-B format
-4. Text Classification and visualization of results.
+### Implementation Steps
+Define software categories and identify appropriate classification algorithms.
+Annotate the dataset using the BRAT text annotation tool.
+Clean and transform the data into the I-O-B format for model compatibility.
+Perform text classification and visualize the results for better insights.
 
+### Classifier Architecture
+![Model Comparison](arch.png)
+
+
+### Read More
 
 [Paper](https://zenodo.org/records/6509908)
 
