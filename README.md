@@ -27,6 +27,12 @@ To achieve this, a set of scientific texts is hand labeled using the BRAT text a
 ![Simplified Architecture](arch2.png)
 
 
+# Dependencies 
+
+- This project uses [Articlenizer](https://github.com/dave-s477/articlenizer) to transofrm labeled text to I-O-B format.
+- The project builds on the top of [SoMeNLP](https://github.com/dave-s477/SoMeNLP)
+
+
 # Read More
 
 [Paper](https://zenodo.org/records/6509908)
