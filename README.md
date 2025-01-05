@@ -14,14 +14,17 @@ Clean and transform the data into the I-O-B format for model compatibility.
 Perform text classification and visualize the results for better insights.
 
 ### Classifier Architecture
-![Model Comparison](arch.png)
+
+Architecture:
+![Architecture](arch4.png)
+
+Simplified Architecture:
+![Simplified Architecture](arch2.png)
 
 
-### Read More
+# Read More
 
 [Paper](https://zenodo.org/records/6509908)
 
 [View the project's data analysis steps](https://htmlpreview.github.io/?https://github.com/BeTKH/Automatic-classifcation-of-purpose-of-software-in-Scientific-articles/blob/main/somecode/1.SoMeSci_Data_Analysis_%28truncated%29.html)
 
-### Visit my other projects
-[Other projects](https://sites.google.com/view/bekaluetadesse/projects)
