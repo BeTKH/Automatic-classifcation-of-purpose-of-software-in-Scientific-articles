@@ -3,22 +3,23 @@ Master's Thesis Project
 
 ### Project Overview
 
-This project focuses on automating the classification of scientific text using advanced BERT-based models, including Bio-BERT and Sci-BERT. The primary goal is to identify and categorize the purpose of software or tools mentioned in scientific research papers.
+This project is about classification of scientific text using BERT-based models, including Bio-BERT and Sci-BERT. The primary goal is to identify and categorize the purpose of software or tools mentioned in scientific research papers.
 
-To achieve this, a set of scientific texts is manually labeled using the BRAT text annotation tool. The annotated data is then leveraged along with pre-trained BERT models to automatically classify the texts based on their content.
+To achieve this, a set of scientific texts is hand labeled using the BRAT text annotation tool. The annotated data is then leveraged along with pre-trained BERT models to automatically classify the texts based on their content.
 
-### Implementation Steps
-Define software categories and identify appropriate classification algorithms.
-Annotate the dataset using the BRAT text annotation tool.
-Clean and transform the data into the I-O-B format for model compatibility.
-Perform text classification and visualize the results for better insights.
+# Implementation Steps
+- Defined software categories for labeling using knowledge bases and network analysis 
+- identified appropriate classification algorithms.
+- Annotated the dataset using the BRAT text annotation tool.
+- Cleaned and transformed the data into the I-O-B format for model compatibility.
+- Performed text classification and visualized the results for better insights.
 
-### Classifier Architecture
+# Classifier Architecture
 
-Architecture:
+### Architecture:
 ![Architecture](arch4.png)
 
-Simplified Architecture:
+### Simplified Architecture:
 ![Simplified Architecture](arch2.png)
 
 
