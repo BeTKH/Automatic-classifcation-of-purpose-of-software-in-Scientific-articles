@@ -14,6 +14,10 @@ To achieve this, a set of scientific texts is hand labeled using the BRAT text a
 - Cleaned and transformed the data into the I-O-B format for model compatibility.
 - Performed text classification and visualized the results for better insights.
 
+## Sample Labeled text in BRAT software:
+
+![Simplified Architecture](ann2.png)
+
 # Classifier Architecture
 
 ### Architecture:
